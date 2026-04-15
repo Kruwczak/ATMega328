@@ -1,0 +1,56 @@
+============================================================
+INSTRUKCJA URUCHAMIANIA SKRYPTU GENERUJĄCEGO PLIKI HEX
+============================================================
+
+1. WYMAGANE PLIKI W FOLDERZE:
+-----------------------------
+Przed uruchomieniem upewnij się, że w folderze znajdują się:
+- arduino-cli.exe (Główny program kompilujący)
+- generuj.ps1      (Twój skrypt PowerShell)
+
+2. PRZYGOTOWANIE ŚRODOWISKA (Tylko raz):
+---------------------------------------
+Otwórz PowerShell (kliknij Start -> wpisz "PowerShell") i wpisz poniższą 
+komendę, aby pobrać niezbędne biblioteki dla procesora ATmega328P:
+
+.\arduino-cli core update-index
+.\arduino-cli core install arduino:avr
+
+3. JAK URUCHOMIĆ SKRYPT:
+------------------------
+A. Otwórz PowerShell i przejdź do folderu ze skryptem:
+   cd "C:\Twoja\Sciezka\Do\Folderu"
+
+B. Odblokuj możliwość uruchamiania skryptów w bieżącej sesji:
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+C. Odpal skrypt:
+   .\generuj.ps1
+
+4. GDZIE SĄ WYNIKI?
+-------------------
+Skrypt stworzy folder "kombinacje_hex". W środku znajdziesz podfoldery 
+o nazwach "weXwyY" (np. we2wy3). W każdym z nich znajduje się plik .hex, 
+który należy wgrać na procesor.
+
+5. LOGIKA DZIAŁANIA PROGRAMÓW:
+------------------------------
+Każdy wygenerowany plik .hex działa w następujący sposób:
+- Wejście (Pin We): Jest ustawione w trybie INPUT_PULLUP. 
+  Aby go aktywować, należy zewrzeć ten pin do MASY (GND).
+- Wyjście (Pin Wy): Gdy wejście jest zwarte do masy, na tym pinie 
+  pojawia się stan WYSOKI (5V), co zapala diodę LED.
+
+6. ROZWIĄZYWANIE PROBLEMÓW:
+---------------------------
+- Błąd "The term '.\arduino-cli' is not recognized":
+  Upewnij się, że plik arduino-cli.exe jest w tym samym folderze co skrypt.
+  
+- Błąd "Missing closing '}'" lub "Terminator expected":
+  Skrypt jest źle skopiowany (brakuje klamry lub cudzysłowu na końcu). 
+  Skopiuj kod ponownie i upewnij się, że nic nie ucięło.
+
+- Błąd "FQBN not found":
+  Wpisz komendę z punktu 2, aby zainstalować rdzeń "arduino:avr".
+
+============================================================
