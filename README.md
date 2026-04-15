@@ -81,7 +81,22 @@ Połącz piny Raspberry Pi z procesorem według poniższego schematu:
     sudo avrdude -p m328p -c linuxgpio -U flash:w:nazwa_pliku.hex:i
     ```
 
-## Korzystanie z Arduino IDE
-Podczas pisania kodu w Arduino IDE dla gołego procesora, pamiętaj, że standardowo większość funkcji działa tak samo jak na Arduino Uno. Jeśli Twój układ nie posiada zewnętrznego kwarcu (16MHz), będziesz musiał wgrać odpowiednie "Core" (np. *MiniCore*) i ustawić taktowanie na wewnętrzny oscylator 8MHz.
+## 🛠️ Programowanie: Arduino IDE vs Arduino CLI
+
+Istnieją dwie główne drogi przygotowania kodu dla ATmegi:
+
+### 1. Arduino IDE (Graficzne)
+To klasyczne środowisko okienkowe. 
+* **Jak to działa:** Piszesz kod w edytorze, a po kliknięciu przycisku "Weryfikuj", IDE uruchamia kompilator `avr-gcc`, który zamienia Twój kod na plik binarny (HEX). 
+* **Zaleta:** Wygoda, podpowiedzi składni i łatwe zarządzanie bibliotekami.
+* **Wgrywanie:** Aby wgrać program na goły procesor, wybierz `Szkic -> Eksportuj skompilowany program`. Wygenerowany plik `.hex` znajdziesz w folderze projektu.
+
+### 2. Arduino CLI (Wiersz poleceń)
+To potężne narzędzie tekstowe, które robi dokładnie to samo co IDE, ale bez interfejsu graficznego.
+* **Jak to działa:** Wszystko dzieje się za pomocą komend w terminalu. Jest idealne, jeśli programujesz bezpośrednio na Raspberry Pi przez SSH.
+* **Kluczowe komendy:**
+  * `arduino-cli compile --fqbn arduino:avr:uno MojaProjekt/` – kompiluje kod do pliku HEX.
+  * `arduino-cli core install arduino:avr` – instaluje wsparcie dla procesorów AVR.
+* **Zaleta:** Lekkość i możliwość automatyzacji procesów.
 
 ---
