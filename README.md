@@ -1,6 +1,6 @@
 # ATmega328p - Kody i Projekty
 
-Repozytorium zawiera zbiór programów oraz instrukcje dotyczące programowania i obsługi mikrokontrolera **ATmega328p** w wersji "gołego" układu (standalone).
+Repozytorium zawiera zbiór programów oraz instrukcje dotyczące programowania i obsługi mikrokontrolera **ATmega328p**.
 
 ## Mapowanie Pinów (Pinout)
 
