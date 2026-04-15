@@ -1,0 +1,4 @@
+pliki nazwywaja sie we{x}wy{y}
+we oznacza pin do ktorego podłączamy gnd, a wy to nasze wyjscie aby przetestowac ten pin
+jest tutaj ponad 100kombinacji aby przetestowac kazda mozliwosc
+nie jest nam tyle potrzebnych ale na wszelki wypadek, gdybysmy chcieli cos przetestowac to jest tutaj
