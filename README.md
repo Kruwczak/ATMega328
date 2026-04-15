@@ -85,4 +85,3 @@ Połącz piny Raspberry Pi z procesorem według poniższego schematu:
 Podczas pisania kodu w Arduino IDE dla gołego procesora, pamiętaj, że standardowo większość funkcji działa tak samo jak na Arduino Uno. Jeśli Twój układ nie posiada zewnętrznego kwarcu (16MHz), będziesz musiał wgrać odpowiednie "Core" (np. *MiniCore*) i ustawić taktowanie na wewnętrzny oscylator 8MHz.
 
 ---
-*Repozytorium stworzone do celów edukacyjnych.*
