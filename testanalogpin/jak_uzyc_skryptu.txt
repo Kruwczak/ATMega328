@@ -1,0 +1,51 @@
+============================================================
+INSTRUKCJA TESTOWANIA PINÓW ANALOGOWYCH (A0-A5)
+============================================================
+
+1. CO ROBI TEN SKRYPT?
+----------------------
+Skrypt "generuj_analogowe.ps1" tworzy 6 oddzielnych programów.
+Każdy z nich służy do sprawdzenia konkretnej nóżki analogowej:
+- test_A0 (nóżka 23)
+- test_A1 (nóżka 24)
+- test_A2 (nóżka 25)
+- test_A3 (nóżka 26)
+- test_A4 (nóżka 27)
+- test_A5 (nóżka 28)
+
+2. SCHEMAT POŁĄCZEŃ (Dla każdego testu taki sam):
+-------------------------------------------------
+WYJŚCIA (Diody LED z rezystorami):
+- Dioda 1 (20%):  Pin 2 (nóżka 4)
+- Dioda 2 (40%):  Pin 3 (nóżka 5)
+- Dioda 3 (60%):  Pin 4 (nóżka 6)
+- Dioda 4 (80%):  Pin 5 (nóżka 11)
+- Dioda 5 (100%): Pin 6 (nóżka 12)
+
+WEJŚCIE (Potencjometr):
+- Lewa nóżka:   GND
+- Prawa nóżka:  5V (VCC)
+- Środkowa:     Pin analogowy, który aktualnie testujesz.
+
+3. JAK PRZEPROWADZIĆ TEST?
+--------------------------
+KROK 1: Wgraj plik .hex dla wybranego pinu (np. test_A0).
+KROK 2: Podłącz środek potencjometru do odpowiedniej nóżki (dla A0 to nóżka 23).
+KROK 3: Kręć potencjometrem. Diody powinny zapalać się płynnie 
+        od 0 do 5 sztuk wraz ze wzrostem napięcia.
+KROK 4: Aby sprawdzić następny pin, wgraj kolejny plik .hex 
+        i przełóż kabelek od potencjometru.
+
+4. URUCHAMIANIE SKRYPTU GENERUJĄCEGO:
+-------------------------------------
+1. Otwórz PowerShell w folderze ze skryptem.
+2. Wpisz: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+3. Wpisz: .\generuj_analogowe.ps1
+
+5. UWAGA NA PINY A4 I A5:
+-------------------------
+Nóżki te pełnią też funkcję komunikacji I2C (SDA/SCL). 
+Jeśli planujesz w przyszłości używać czujników na I2C, 
+ten test potwierdzi, czy te piny w ogóle reagują na napięcie.
+
+============================================================
