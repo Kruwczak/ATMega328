@@ -1,5 +1,5 @@
 const int czujniki[] = {A0, A1, A2, A3, A4};
-const int DIODA = 13;  // <-- zmieniona nazwa
+const int DIODA = 13;
 int PROG_LINII = 500;
 
 void setup() {
