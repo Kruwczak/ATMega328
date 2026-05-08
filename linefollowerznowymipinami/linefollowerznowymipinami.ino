@@ -1,186 +1,100 @@
-// ============================================================
-//  LINE FOLLOWER — ATmega328P
-//  Mapowanie pinów zgodne ze specyfikacją sprzętową
-// ============================================================
+// --- PINY BEZ ZMIAN ---
+int m_prawy_A = 8; int m_prawy_B = 9;
+int m_lewy_A = 10; int m_lewy_B = 11;
+int en_prawy = 5;  int en_lewy = 6;
 
-// --- SILNIKI ---
-// Silnik 1 (LEWY)
-const uint8_t M1_PWM = 5;   // PD5 - OC0B - prędkość
-const uint8_t M1_A   = 8;   // PB0 - kierunek A
-const uint8_t M1_B   = 9;   // PB1 - kierunek B
-
-// Silnik 2 (PRAWY)
-const uint8_t M2_PWM = 6;   // PD6 - OC0A - prędkość
-const uint8_t M2_A   = 2;   // PD2 - kierunek A
-const uint8_t M2_B   = 3;   // PD3 - kierunek B
-
-// --- CZUJNIKI LINII (analogowe) ---
-const uint8_t CZUJNIKI[5] = {A0, A1, A2, A3, A4}; // PC0–PC4
-
-// --- DIAGNOSTYKA ---
-const uint8_t LED_STATUS  = 13; // PB5 - LED statusu
-const uint8_t BATERIA_PIN = A5; // PC5 - odczyt napięcia baterii
-const uint8_t DIAG_0      = 0;  // PD0 - dodatkowy pin diagnostyczny
-const uint8_t DIAG_1      = 1;  // PD1 - dodatkowy pin diagnostyczny
-
-// --- PROGI I KALIBRACJA ---
-const int  PROG_CZUJNIKA = 500;  // Próg ADC: >500 = linia (czarna na białym)
-const int  NAPIECIE_MIN  = 680;  // ~3.3 V na A5 (przy dzielniku 5:1 → ~16.5 V min)
+int czujniki[] = {A0, A1, A2, A3, A4};
 
 // --- NASTAWY PID ---
 float Kp = 0.15;
 float Ki = 0.001;
 float Kd = 0.8;
 
-// --- ZMIENNE STEROWANIA ---
-int   blad            = 0;
-int   poprzedni_blad  = 0;
-float calka           = 0;
-int   V_BAZA          = 150;
-int   ostatni_kierunek = 0; // -1 lewo, +1 prawo
+// --- ZMIENNE POMOCNICZE ---
+int blad = 0;
+int poprzedni_blad = 0;
+float calka = 0;
+int V_BAZA = 180;
+int ostatni_kierunek = 0;
 
-// --- ZMIENNE DIAGNOSTYCZNE ---
-unsigned long ostatni_czas_led = 0;
-bool          led_stan         = false;
+const int PROG_LINII = 500; // Czarna linia = niski odczyt (<400), białe tło = wysoki (>400)
 
-// ============================================================
 void setup() {
-  // Silnik 1
-  pinMode(M1_PWM, OUTPUT);
-  pinMode(M1_A,   OUTPUT);
-  pinMode(M1_B,   OUTPUT);
-
-  // Silnik 2
-  pinMode(M2_PWM, OUTPUT);
-  pinMode(M2_A,   OUTPUT);
-  pinMode(M2_B,   OUTPUT);
-
-  // Diagnostyka
-  pinMode(LED_STATUS, OUTPUT);
-  pinMode(DIAG_0, OUTPUT);
-  pinMode(DIAG_1, OUTPUT);
-
-  zatrzymaj();
-
-  // Sygnalizacja gotowości: 3 mignięcia LED
-  for (uint8_t i = 0; i < 3; i++) {
-    digitalWrite(LED_STATUS, HIGH); delay(200);
-    digitalWrite(LED_STATUS, LOW);  delay(200);
-  }
-
-  delay(2000); // Czas na ustawienie robota
+  pinMode(m_prawy_A, OUTPUT); pinMode(m_prawy_B, OUTPUT);
+  pinMode(m_lewy_A, OUTPUT); pinMode(m_lewy_B, OUTPUT);
+  pinMode(en_prawy, OUTPUT); pinMode(en_lewy, OUTPUT);
+  
+  delay(3000); 
 }
 
-// ============================================================
 void loop() {
-  sprawdz_baterie();   // Ostrzeżenie LED przy niskim napięciu
-
   int pozycja = oblicz_pozycje();
 
   if (pozycja == 10000) {
-    // Brak linii — szukaj w ostatnio widzianym kierunku
-    digitalWrite(DIAG_0, HIGH); // Diagnostyka: tryb szukania
     szukaj_linii();
     return;
   }
 
-  digitalWrite(DIAG_0, LOW);
+  blad = pozycja;
+  calka = calka + blad;
+  calka = constrain(calka, -3000, 3000);
 
-  // --- PID ---
-  blad         = pozycja;
-  calka       += blad;
-  calka        = constrain(calka, -3000, 3000); // Anti-windup całki
-  int pochodna = blad - poprzedni_blad;
-
-  int korekta = (int)(Kp * blad + Ki * calka + Kd * pochodna);
+  int rozniczka = blad - poprzedni_blad;
+  int korekta = Kp * blad + Ki * calka + Kd * rozniczka;
   poprzedni_blad = blad;
 
-  // --- SILNIKI ---
   int moc_lewy  = V_BAZA + korekta;
   int moc_prawy = V_BAZA - korekta;
+
   move(moc_lewy, moc_prawy);
 }
 
-// ============================================================
-//  OBLICZANIE POZYCJI (ważona średnia czujników)
-// ============================================================
 int oblicz_pozycje() {
-  const int WAGI[5] = {-2000, -1000, 0, 1000, 2000};
-  long suma_wag  = 0;
-  int  aktywnych = 0;
-
-  for (uint8_t i = 0; i < 5; i++) {
-    if (analogRead(CZUJNIKI[i]) > PROG_CZUJNIKA) {
-      suma_wag += WAGI[i];
+  long suma_wag = 0;
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+  
+  for (int i = 0; i < 5; i++) {
+    int odczyt = analogRead(czujniki[i]);
+    if (odczyt < PROG_LINII) {
+      suma_wag += wagi[i];
       aktywnych++;
     }
   }
 
-  if (aktywnych == 0) return 10000; // Kod błędu: linia zaginęła
+  if (aktywnych == 0) return 10000;
 
-  int pozycja = (int)(suma_wag / aktywnych);
+  int pozycja = suma_wag / aktywnych;
 
-  // Zapamiętaj kierunek na wypadek utraty linii
-  if      (pozycja < 0) ostatni_kierunek = -1;
-  else if (pozycja > 0) ostatni_kierunek =  1;
+  if (pozycja < 0) ostatni_kierunek = -1;
+  else if (pozycja > 0) ostatni_kierunek = 1;
 
   return pozycja;
 }
 
-// ============================================================
-//  SZUKANIE LINII
-// ============================================================
 void szukaj_linii() {
-  if (ostatni_kierunek == -1) move(-80,  80);
-  else                        move( 80, -80);
+  if (ostatni_kierunek == -1) move(-80, 80); 
+  else move(80, -80);
 }
 
-// ============================================================
-//  STEROWANIE SILNIKAMI
-//  move(ml, mp): dodatnia = do przodu, ujemna = do tyłu
-// ============================================================
 void move(int ml, int mp) {
   ml = constrain(ml, -255, 255);
   mp = constrain(mp, -255, 255);
-  ustaw_silnik(M1_A, M1_B, M1_PWM, ml);
-  ustaw_silnik(M2_A, M2_B, M2_PWM, mp);
-}
 
-void ustaw_silnik(uint8_t pinA, uint8_t pinB, uint8_t pinPWM, int moc) {
-  if (moc >= 0) {
-    digitalWrite(pinA, HIGH);
-    digitalWrite(pinB, LOW);
+  if (ml >= 0) {
+    digitalWrite(m_lewy_A, HIGH); digitalWrite(m_lewy_B, LOW);
   } else {
-    digitalWrite(pinA, LOW);
-    digitalWrite(pinB, HIGH);
-    moc = -moc;
+    digitalWrite(m_lewy_A, LOW); digitalWrite(m_lewy_B, HIGH);
+    ml = -ml;
   }
-  analogWrite(pinPWM, (uint8_t)moc);
-}
 
-void zatrzymaj() {
-  move(0, 0);
-}
-
-// ============================================================
-//  MONITORING BATERII (PC5 / A5)
-//  Szybkie mruganie LED gdy napięcie za niskie
-// ============================================================
-void sprawdz_baterie() {
-  int odczyt = analogRead(BATERIA_PIN);
-
-  if (odczyt < NAPIECIE_MIN) {
-    // Szybkie mruganie co 100 ms
-    unsigned long teraz = millis();
-    if (teraz - ostatni_czas_led >= 100) {
-      ostatni_czas_led = teraz;
-      led_stan = !led_stan;
-      digitalWrite(LED_STATUS, led_stan);
-      digitalWrite(DIAG_1, led_stan); // Dodatkowy sygnał na PD1
-    }
+  if (mp >= 0) {
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
   } else {
-    // Normalna praca: LED stale ON
-    digitalWrite(LED_STATUS, HIGH);
-    digitalWrite(DIAG_1, LOW);
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+    mp = -mp;
   }
+
+  analogWrite(en_lewy, ml);
+  analogWrite(en_prawy, mp);
 }
