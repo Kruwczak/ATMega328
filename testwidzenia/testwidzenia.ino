@@ -1,20 +1,15 @@
-const int czujniki[] = {A0, A1, A2, A3, A4};
-const int DIODA = 13;
-int PROG_LINII = 500;
+const int CZUJNIK_TESTOWY = A2; 
+const int DIODA = 13;           
+int PROG_LINII = 850; // Proponowana wartosc 
 
 void setup() {
   pinMode(DIODA, OUTPUT);
 }
 
 void loop() {
-  int widzi = 0;
-  for (int i = 0; i < 5; i++) {
-    if (analogRead(czujniki[i]) > PROG_LINII) widzi++;
+  if (analogRead(CZUJNIK_TESTOWY) < PROG_LINII) {
+    digitalWrite(DIODA, HIGH); // Świeci, gdy widzi CZARNĄ LINIĘ
+  } else {
+    digitalWrite(DIODA, LOW);  // Gaśnie, gdy widzi BIAŁE TŁO
   }
-
-  for (int i = 0; i < widzi; i++) {
-    digitalWrite(DIODA, HIGH); delay(200);
-    digitalWrite(DIODA, LOW);  delay(200);
-  }
-  delay(500);
 }

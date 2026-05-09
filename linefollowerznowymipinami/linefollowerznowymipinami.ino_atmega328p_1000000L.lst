@@ -1,0 +1,2198 @@
+
+/home/blobinnit/.cache/arduino/sketches/B6890854B1BFDEF774729D767DDCB4FE/linefollowerznowymipinami.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 61 00 	jmp	0xc2	; 0xc2 <__ctors_end>
+   4:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+   8:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+   c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  10:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  14:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  18:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  1c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  20:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  24:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  28:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  2c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  30:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  34:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  38:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  3c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  40:	0c 94 c8 01 	jmp	0x390	; 0x390 <__vector_16>
+  44:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  48:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  4c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  50:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  54:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  58:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  5c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  60:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  64:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 09       	sbc	r16, r0
+  6c:	00 03       	mulsu	r16, r16
+  6e:	02 00       	.word	0x0002	; ????
+  70:	00 04       	cpc	r0, r0
+  72:	05 08       	sbc	r0, r5
+	...
+
+0000007f <port_to_output_PGM>:
+  7f:	00 00 00 00 25 00 28 00 2b 00                       ....%.(.+.
+
+00000089 <port_to_mode_PGM>:
+  89:	00 00 00 00 24 00 27 00 2a 00                       ....$.'.*.
+
+00000093 <digital_pin_to_port_PGM>:
+  93:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  a3:	03 03 03 03 02 02 03                                .......
+
+000000aa <digital_pin_to_bit_mask_PGM>:
+  aa:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  ba:	04 08 10 20 40 80 40 00                             ... @.@.
+
+000000c2 <__ctors_end>:
+__dtors_end():
+  c2:	11 24       	eor	r1, r1
+  c4:	1f be       	out	0x3f, r1	; 63
+  c6:	cf ef       	ldi	r28, 0xFF	; 255
+  c8:	d8 e0       	ldi	r29, 0x08	; 8
+  ca:	de bf       	out	0x3e, r29	; 62
+  cc:	cd bf       	out	0x3d, r28	; 61
+
+000000ce <__do_copy_data>:
+__do_copy_data():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  ce:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  d0:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  d2:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  d4:	e6 e1       	ldi	r30, 0x16	; 22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  d6:	fb e0       	ldi	r31, 0x0B	; 11
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  d8:	02 c0       	rjmp	.+4      	; 0xde <__do_copy_data+0x10>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  da:	05 90       	lpm	r0, Z+
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  dc:	0d 92       	st	X+, r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  de:	a4 31       	cpi	r26, 0x14	; 20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  e0:	b1 07       	cpc	r27, r17
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  e2:	d9 f7       	brne	.-10     	; 0xda <__do_copy_data+0xc>
+
+000000e4 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  e4:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  e6:	a4 e1       	ldi	r26, 0x14	; 20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  e8:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  ea:	01 c0       	rjmp	.+2      	; 0xee <.do_clear_bss_start>
+
+000000ec <.do_clear_bss_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  ec:	1d 92       	st	X+, r1
+
+000000ee <.do_clear_bss_start>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  ee:	a5 32       	cpi	r26, 0x25	; 37
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  f0:	b2 07       	cpc	r27, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  f2:	e1 f7       	brne	.-8      	; 0xec <.do_clear_bss_loop>
+.do_clear_bss_start():
+  f4:	0e 94 12 02 	call	0x424	; 0x424 <main>
+  f8:	0c 94 89 05 	jmp	0xb12	; 0xb12 <_exit>
+
+000000fc <__bad_interrupt>:
+__vector_22():
+  fc:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000100 <pinMode.constprop.1>:
+pinMode.constprop.1():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:31
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  uint8_t bit = digitalPinToBitMask(pin);
+ 100:	90 e0       	ldi	r25, 0x00	; 0
+ 102:	fc 01       	movw	r30, r24
+ 104:	e6 55       	subi	r30, 0x56	; 86
+ 106:	ff 4f       	sbci	r31, 0xFF	; 255
+ 108:	24 91       	lpm	r18, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:32
+  uint8_t port = digitalPinToPort(pin);
+ 10a:	8d 56       	subi	r24, 0x6D	; 109
+ 10c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 10e:	fc 01       	movw	r30, r24
+ 110:	84 91       	lpm	r24, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:35
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 112:	88 23       	and	r24, r24
+ 114:	99 f0       	breq	.+38     	; 0x13c <pinMode.constprop.1+0x3c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:38
+
+  // JWS: can I let the optimizer do this?
+  reg = portModeRegister(port);
+ 116:	90 e0       	ldi	r25, 0x00	; 0
+ 118:	88 0f       	add	r24, r24
+ 11a:	99 1f       	adc	r25, r25
+ 11c:	fc 01       	movw	r30, r24
+ 11e:	e7 57       	subi	r30, 0x77	; 119
+ 120:	ff 4f       	sbci	r31, 0xFF	; 255
+ 122:	a5 91       	lpm	r26, Z+
+ 124:	b4 91       	lpm	r27, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:39
+  out = portOutputRegister(port);
+ 126:	fc 01       	movw	r30, r24
+ 128:	e1 58       	subi	r30, 0x81	; 129
+ 12a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 12c:	85 91       	lpm	r24, Z+
+ 12e:	94 91       	lpm	r25, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:54
+    cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 130:	8f b7       	in	r24, 0x3f	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:55
+    cli();
+ 132:	f8 94       	cli
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:56
+    *reg |= bit;
+ 134:	ec 91       	ld	r30, X
+ 136:	e2 2b       	or	r30, r18
+ 138:	ec 93       	st	X, r30
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:57
+    SREG = oldSREG;
+ 13a:	8f bf       	out	0x3f, r24	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:59
+  }
+}
+ 13c:	08 95       	ret
+
+0000013e <digitalWrite>:
+digitalWrite():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	fc 01       	movw	r30, r24
+ 142:	e8 59       	subi	r30, 0x98	; 152
+ 144:	ff 4f       	sbci	r31, 0xFF	; 255
+ 146:	24 91       	lpm	r18, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 148:	fc 01       	movw	r30, r24
+ 14a:	e6 55       	subi	r30, 0x56	; 86
+ 14c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14e:	34 91       	lpm	r19, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 150:	fc 01       	movw	r30, r24
+ 152:	ed 56       	subi	r30, 0x6D	; 109
+ 154:	ff 4f       	sbci	r31, 0xFF	; 255
+ 156:	e4 91       	lpm	r30, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 158:	ee 23       	and	r30, r30
+ 15a:	c9 f0       	breq	.+50     	; 0x18e <digitalWrite+0x50>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 15c:	22 23       	and	r18, r18
+ 15e:	39 f0       	breq	.+14     	; 0x16e <digitalWrite+0x30>
+turnOffPWM():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 160:	24 30       	cpi	r18, 0x04	; 4
+ 162:	01 f1       	breq	.+64     	; 0x1a4 <digitalWrite+0x66>
+ 164:	a8 f4       	brcc	.+42     	; 0x190 <digitalWrite+0x52>
+ 166:	22 30       	cpi	r18, 0x02	; 2
+ 168:	69 f1       	breq	.+90     	; 0x1c4 <digitalWrite+0x86>
+ 16a:	23 30       	cpi	r18, 0x03	; 3
+ 16c:	79 f1       	breq	.+94     	; 0x1cc <digitalWrite+0x8e>
+digitalWrite():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:200
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 16e:	f0 e0       	ldi	r31, 0x00	; 0
+ 170:	ee 0f       	add	r30, r30
+ 172:	ff 1f       	adc	r31, r31
+ 174:	e1 58       	subi	r30, 0x81	; 129
+ 176:	ff 4f       	sbci	r31, 0xFF	; 255
+ 178:	a5 91       	lpm	r26, Z+
+ 17a:	b4 91       	lpm	r27, Z
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 17c:	8f b7       	in	r24, 0x3f	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 17e:	f8 94       	cli
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 180:	ec 91       	ld	r30, X
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:205
+  out = portOutputRegister(port);
+
+  uint8_t oldSREG = SREG;
+  cli();
+
+  if (val == LOW) {
+ 182:	61 11       	cpse	r22, r1
+ 184:	26 c0       	rjmp	.+76     	; 0x1d2 <digitalWrite+0x94>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 186:	30 95       	com	r19
+ 188:	3e 23       	and	r19, r30
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 18a:	3c 93       	st	X, r19
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 18c:	8f bf       	out	0x3f, r24	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:212
+}
+ 18e:	08 95       	ret
+turnOffPWM():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 190:	28 30       	cpi	r18, 0x08	; 8
+ 192:	71 f0       	breq	.+28     	; 0x1b0 <digitalWrite+0x72>
+ 194:	29 30       	cpi	r18, 0x09	; 9
+ 196:	91 f0       	breq	.+36     	; 0x1bc <digitalWrite+0x7e>
+ 198:	25 30       	cpi	r18, 0x05	; 5
+ 19a:	49 f7       	brne	.-46     	; 0x16e <digitalWrite+0x30>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 19c:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1a0:	8f 7d       	andi	r24, 0xDF	; 223
+ 1a2:	03 c0       	rjmp	.+6      	; 0x1aa <digitalWrite+0x6c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 1a4:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1a8:	8f 77       	andi	r24, 0x7F	; 127
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 1aa:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1ae:	df cf       	rjmp	.-66     	; 0x16e <digitalWrite+0x30>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 1b0:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1b4:	8f 77       	andi	r24, 0x7F	; 127
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 1b6:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1ba:	d9 cf       	rjmp	.-78     	; 0x16e <digitalWrite+0x30>
+ 1bc:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1c0:	8f 7d       	andi	r24, 0xDF	; 223
+ 1c2:	f9 cf       	rjmp	.-14     	; 0x1b6 <digitalWrite+0x78>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 1c4:	84 b5       	in	r24, 0x24	; 36
+ 1c6:	8f 77       	andi	r24, 0x7F	; 127
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 1c8:	84 bd       	out	0x24, r24	; 36
+ 1ca:	d1 cf       	rjmp	.-94     	; 0x16e <digitalWrite+0x30>
+ 1cc:	84 b5       	in	r24, 0x24	; 36
+ 1ce:	8f 7d       	andi	r24, 0xDF	; 223
+ 1d0:	fb cf       	rjmp	.-10     	; 0x1c8 <digitalWrite+0x8a>
+digitalWrite():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 1d2:	3e 2b       	or	r19, r30
+ 1d4:	da cf       	rjmp	.-76     	; 0x18a <digitalWrite+0x4c>
+
+000001d6 <analogWrite>:
+analogWrite():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:95
+// Right now, PWM output only works on the pins with
+// hardware support.  These are defined in the appropriate
+// pins_*.c file.  For the rest of the pins, we default
+// to digital output.
+void analogWrite(uint8_t pin, int val)
+{
+ 1d6:	1f 93       	push	r17
+ 1d8:	cf 93       	push	r28
+ 1da:	df 93       	push	r29
+ 1dc:	18 2f       	mov	r17, r24
+ 1de:	eb 01       	movw	r28, r22
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:101
+  // We need to make sure the PWM output is enabled for those pins
+  // that support it, as we turn it off when digitally reading or
+  // writing with them.  Also, make sure the pin is in output mode
+  // for consistenty with Wiring, which doesn't require a pinMode
+  // call for the analog output pins.
+  pinMode(pin, OUTPUT);
+ 1e0:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:102
+  if (val == 0)
+ 1e4:	20 97       	sbiw	r28, 0x00	; 0
+ 1e6:	39 f4       	brne	.+14     	; 0x1f6 <analogWrite+0x20>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:104
+  {
+    digitalWrite(pin, LOW);
+ 1e8:	60 e0       	ldi	r22, 0x00	; 0
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:108
+  }
+  else if (val == 255)
+  {
+    digitalWrite(pin, HIGH);
+ 1ea:	81 2f       	mov	r24, r17
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:299
+        } else {
+          digitalWrite(pin, HIGH);
+        }
+    }
+  }
+}
+ 1ec:	df 91       	pop	r29
+ 1ee:	cf 91       	pop	r28
+ 1f0:	1f 91       	pop	r17
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:108
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val == 255)
+  {
+    digitalWrite(pin, HIGH);
+ 1f2:	0c 94 9f 00 	jmp	0x13e	; 0x13e <digitalWrite>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:106
+  pinMode(pin, OUTPUT);
+  if (val == 0)
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val == 255)
+ 1f6:	cf 3f       	cpi	r28, 0xFF	; 255
+ 1f8:	d1 05       	cpc	r29, r1
+ 1fa:	11 f4       	brne	.+4      	; 0x200 <analogWrite+0x2a>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:108
+  {
+    digitalWrite(pin, HIGH);
+ 1fc:	61 e0       	ldi	r22, 0x01	; 1
+ 1fe:	f5 cf       	rjmp	.-22     	; 0x1ea <analogWrite+0x14>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:112
+  }
+  else
+  {
+    switch(digitalPinToTimer(pin))
+ 200:	e1 2f       	mov	r30, r17
+ 202:	f0 e0       	ldi	r31, 0x00	; 0
+ 204:	e8 59       	subi	r30, 0x98	; 152
+ 206:	ff 4f       	sbci	r31, 0xFF	; 255
+ 208:	e4 91       	lpm	r30, Z
+ 20a:	e4 30       	cpi	r30, 0x04	; 4
+ 20c:	31 f1       	breq	.+76     	; 0x25a <analogWrite+0x84>
+ 20e:	40 f4       	brcc	.+16     	; 0x220 <analogWrite+0x4a>
+ 210:	e2 30       	cpi	r30, 0x02	; 2
+ 212:	b1 f0       	breq	.+44     	; 0x240 <analogWrite+0x6a>
+ 214:	e3 30       	cpi	r30, 0x03	; 3
+ 216:	e1 f0       	breq	.+56     	; 0x250 <analogWrite+0x7a>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:292
+        break;
+      #endif
+
+      case NOT_ON_TIMER:
+      default:
+        if (val < 128) {
+ 218:	c0 38       	cpi	r28, 0x80	; 128
+ 21a:	d1 05       	cpc	r29, r1
+ 21c:	7c f7       	brge	.-34     	; 0x1fc <analogWrite+0x26>
+ 21e:	e4 cf       	rjmp	.-56     	; 0x1e8 <analogWrite+0x12>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:112
+  {
+    digitalWrite(pin, HIGH);
+  }
+  else
+  {
+    switch(digitalPinToTimer(pin))
+ 220:	e8 30       	cpi	r30, 0x08	; 8
+ 222:	29 f1       	breq	.+74     	; 0x26e <analogWrite+0x98>
+ 224:	e9 30       	cpi	r30, 0x09	; 9
+ 226:	59 f1       	breq	.+86     	; 0x27e <analogWrite+0xa8>
+ 228:	e5 30       	cpi	r30, 0x05	; 5
+ 22a:	b1 f7       	brne	.-20     	; 0x218 <analogWrite+0x42>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:156
+      #endif
+
+      #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        // connect pwm to pin on timer 1, channel B
+        TCCR1A |= _BV(COM1B1);
+ 22c:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 230:	80 62       	ori	r24, 0x20	; 32
+ 232:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:157
+        OCR1B = val; // set pwm duty
+ 236:	d0 93 8b 00 	sts	0x008B, r29	; 0x80008b <__DATA_REGION_ORIGIN__+0x2b>
+ 23a:	c0 93 8a 00 	sts	0x008A, r28	; 0x80008a <__DATA_REGION_ORIGIN__+0x2a>
+ 23e:	04 c0       	rjmp	.+8      	; 0x248 <analogWrite+0x72>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:132
+      #endif
+
+      #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        // connect pwm to pin on timer 0, channel A
+        TCCR0A |= _BV(COM0A1);
+ 240:	84 b5       	in	r24, 0x24	; 36
+ 242:	80 68       	ori	r24, 0x80	; 128
+ 244:	84 bd       	out	0x24, r24	; 36
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:133
+        OCR0A = val; // set pwm duty
+ 246:	c7 bd       	out	0x27, r28	; 39
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:299
+        } else {
+          digitalWrite(pin, HIGH);
+        }
+    }
+  }
+}
+ 248:	df 91       	pop	r29
+ 24a:	cf 91       	pop	r28
+ 24c:	1f 91       	pop	r17
+ 24e:	08 95       	ret
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:140
+      #endif
+
+      #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        // connect pwm to pin on timer 0, channel B
+        TCCR0A |= _BV(COM0B1);
+ 250:	84 b5       	in	r24, 0x24	; 36
+ 252:	80 62       	ori	r24, 0x20	; 32
+ 254:	84 bd       	out	0x24, r24	; 36
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:141
+        OCR0B = val; // set pwm duty
+ 256:	c8 bd       	out	0x28, r28	; 40
+ 258:	f7 cf       	rjmp	.-18     	; 0x248 <analogWrite+0x72>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:148
+      #endif
+
+      #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        // connect pwm to pin on timer 1, channel A
+        TCCR1A |= _BV(COM1A1);
+ 25a:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 25e:	80 68       	ori	r24, 0x80	; 128
+ 260:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:149
+        OCR1A = val; // set pwm duty
+ 264:	d0 93 89 00 	sts	0x0089, r29	; 0x800089 <__DATA_REGION_ORIGIN__+0x29>
+ 268:	c0 93 88 00 	sts	0x0088, r28	; 0x800088 <__DATA_REGION_ORIGIN__+0x28>
+ 26c:	ed cf       	rjmp	.-38     	; 0x248 <analogWrite+0x72>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:180
+      #endif
+
+      #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        // connect pwm to pin on timer 2, channel A
+        TCCR2A |= _BV(COM2A1);
+ 26e:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 272:	80 68       	ori	r24, 0x80	; 128
+ 274:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:181
+        OCR2A = val; // set pwm duty
+ 278:	c0 93 b3 00 	sts	0x00B3, r28	; 0x8000b3 <__DATA_REGION_ORIGIN__+0x53>
+ 27c:	e5 cf       	rjmp	.-54     	; 0x248 <analogWrite+0x72>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:188
+      #endif
+
+      #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        // connect pwm to pin on timer 2, channel B
+        TCCR2A |= _BV(COM2B1);
+ 27e:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 282:	80 62       	ori	r24, 0x20	; 32
+ 284:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:189
+        OCR2B = val; // set pwm duty
+ 288:	c0 93 b4 00 	sts	0x00B4, r28	; 0x8000b4 <__DATA_REGION_ORIGIN__+0x54>
+ 28c:	dd cf       	rjmp	.-70     	; 0x248 <analogWrite+0x72>
+
+0000028e <micros>:
+micros():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 28e:	3f b7       	in	r19, 0x3f	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 290:	f8 94       	cli
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+ 292:	80 91 21 01 	lds	r24, 0x0121	; 0x800121 <timer0_overflow_count>
+ 296:	90 91 22 01 	lds	r25, 0x0122	; 0x800122 <timer0_overflow_count+0x1>
+ 29a:	a0 91 23 01 	lds	r26, 0x0123	; 0x800123 <timer0_overflow_count+0x2>
+ 29e:	b0 91 24 01 	lds	r27, 0x0124	; 0x800124 <timer0_overflow_count+0x3>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 2a2:	26 b5       	in	r18, 0x26	; 38
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:261
+  #error TIMER 0 not defined
+#endif
+
+  // Timer0 Interrupt Flag Register
+#ifdef TIFR0
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 2a4:	a8 9b       	sbis	0x15, 0	; 21
+ 2a6:	05 c0       	rjmp	.+10     	; 0x2b2 <micros+0x24>
+ 2a8:	2f 3f       	cpi	r18, 0xFF	; 255
+ 2aa:	19 f0       	breq	.+6      	; 0x2b2 <micros+0x24>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:263
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 2ac:	01 96       	adiw	r24, 0x01	; 1
+ 2ae:	a1 1d       	adc	r26, r1
+ 2b0:	b1 1d       	adc	r27, r1
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 2b2:	3f bf       	out	0x3f, r19	; 63
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 2b4:	ba 2f       	mov	r27, r26
+ 2b6:	a9 2f       	mov	r26, r25
+ 2b8:	98 2f       	mov	r25, r24
+ 2ba:	88 27       	eor	r24, r24
+ 2bc:	bc 01       	movw	r22, r24
+ 2be:	cd 01       	movw	r24, r26
+ 2c0:	62 0f       	add	r22, r18
+ 2c2:	71 1d       	adc	r23, r1
+ 2c4:	81 1d       	adc	r24, r1
+ 2c6:	91 1d       	adc	r25, r1
+ 2c8:	46 e0       	ldi	r20, 0x06	; 6
+ 2ca:	66 0f       	add	r22, r22
+ 2cc:	77 1f       	adc	r23, r23
+ 2ce:	88 1f       	adc	r24, r24
+ 2d0:	99 1f       	adc	r25, r25
+ 2d2:	4a 95       	dec	r20
+ 2d4:	d1 f7       	brne	.-12     	; 0x2ca <micros+0x3c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 2d6:	08 95       	ret
+
+000002d8 <move(int, int)>:
+_Z4moveii():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:87
+void szukaj_linii() {
+  if (ostatni_kierunek == -1) move(-80, 80); 
+  else move(80, -80);
+}
+
+void move(int ml, int mp) {
+ 2d8:	ef 92       	push	r14
+ 2da:	ff 92       	push	r15
+ 2dc:	0f 93       	push	r16
+ 2de:	1f 93       	push	r17
+ 2e0:	cf 93       	push	r28
+ 2e2:	df 93       	push	r29
+ 2e4:	7b 01       	movw	r14, r22
+ 2e6:	8c 01       	movw	r16, r24
+ 2e8:	8f 3f       	cpi	r24, 0xFF	; 255
+ 2ea:	91 05       	cpc	r25, r1
+ 2ec:	19 f0       	breq	.+6      	; 0x2f4 <move(int, int)+0x1c>
+ 2ee:	14 f0       	brlt	.+4      	; 0x2f4 <move(int, int)+0x1c>
+ 2f0:	0f ef       	ldi	r16, 0xFF	; 255
+ 2f2:	10 e0       	ldi	r17, 0x00	; 0
+ 2f4:	01 30       	cpi	r16, 0x01	; 1
+ 2f6:	2f ef       	ldi	r18, 0xFF	; 255
+ 2f8:	12 07       	cpc	r17, r18
+ 2fa:	14 f4       	brge	.+4      	; 0x300 <move(int, int)+0x28>
+ 2fc:	01 e0       	ldi	r16, 0x01	; 1
+ 2fe:	1f ef       	ldi	r17, 0xFF	; 255
+ 300:	e7 01       	movw	r28, r14
+ 302:	2f ef       	ldi	r18, 0xFF	; 255
+ 304:	e2 16       	cp	r14, r18
+ 306:	f1 04       	cpc	r15, r1
+ 308:	19 f0       	breq	.+6      	; 0x310 <move(int, int)+0x38>
+ 30a:	14 f0       	brlt	.+4      	; 0x310 <move(int, int)+0x38>
+ 30c:	cf ef       	ldi	r28, 0xFF	; 255
+ 30e:	d0 e0       	ldi	r29, 0x00	; 0
+ 310:	c1 30       	cpi	r28, 0x01	; 1
+ 312:	2f ef       	ldi	r18, 0xFF	; 255
+ 314:	d2 07       	cpc	r29, r18
+ 316:	14 f4       	brge	.+4      	; 0x31c <move(int, int)+0x44>
+ 318:	c1 e0       	ldi	r28, 0x01	; 1
+ 31a:	df ef       	ldi	r29, 0xFF	; 255
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:91
+  ml = constrain(ml, -255, 255);
+  mp = constrain(mp, -255, 255);
+
+  if (ml >= 0) {
+ 31c:	97 fd       	sbrc	r25, 7
+ 31e:	20 c0       	rjmp	.+64     	; 0x360 <move(int, int)+0x88>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:92
+    digitalWrite(m_lewy_A, HIGH); digitalWrite(m_lewy_B, LOW);
+ 320:	61 e0       	ldi	r22, 0x01	; 1
+ 322:	82 e0       	ldi	r24, 0x02	; 2
+ 324:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 328:	60 e0       	ldi	r22, 0x00	; 0
+ 32a:	83 e0       	ldi	r24, 0x03	; 3
+ 32c:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:98
+  } else {
+    digitalWrite(m_lewy_A, LOW); digitalWrite(m_lewy_B, HIGH);
+    ml = -ml;
+  }
+
+  if (mp >= 0) {
+ 330:	f7 fc       	sbrc	r15, 7
+ 332:	22 c0       	rjmp	.+68     	; 0x378 <move(int, int)+0xa0>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:99
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
+ 334:	61 e0       	ldi	r22, 0x01	; 1
+ 336:	88 e0       	ldi	r24, 0x08	; 8
+ 338:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 33c:	60 e0       	ldi	r22, 0x00	; 0
+ 33e:	89 e0       	ldi	r24, 0x09	; 9
+ 340:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:105
+  } else {
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+    mp = -mp;
+  }
+
+  analogWrite(en_lewy, ml);
+ 344:	b8 01       	movw	r22, r16
+ 346:	86 e0       	ldi	r24, 0x06	; 6
+ 348:	0e 94 eb 00 	call	0x1d6	; 0x1d6 <analogWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:106
+  analogWrite(en_prawy, mp);
+ 34c:	be 01       	movw	r22, r28
+ 34e:	85 e0       	ldi	r24, 0x05	; 5
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:107
+}
+ 350:	df 91       	pop	r29
+ 352:	cf 91       	pop	r28
+ 354:	1f 91       	pop	r17
+ 356:	0f 91       	pop	r16
+ 358:	ff 90       	pop	r15
+ 35a:	ef 90       	pop	r14
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:106
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+    mp = -mp;
+  }
+
+  analogWrite(en_lewy, ml);
+  analogWrite(en_prawy, mp);
+ 35c:	0c 94 eb 00 	jmp	0x1d6	; 0x1d6 <analogWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:94
+  mp = constrain(mp, -255, 255);
+
+  if (ml >= 0) {
+    digitalWrite(m_lewy_A, HIGH); digitalWrite(m_lewy_B, LOW);
+  } else {
+    digitalWrite(m_lewy_A, LOW); digitalWrite(m_lewy_B, HIGH);
+ 360:	60 e0       	ldi	r22, 0x00	; 0
+ 362:	82 e0       	ldi	r24, 0x02	; 2
+ 364:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 368:	61 e0       	ldi	r22, 0x01	; 1
+ 36a:	83 e0       	ldi	r24, 0x03	; 3
+ 36c:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:95
+    ml = -ml;
+ 370:	11 95       	neg	r17
+ 372:	01 95       	neg	r16
+ 374:	11 09       	sbc	r17, r1
+ 376:	dc cf       	rjmp	.-72     	; 0x330 <move(int, int)+0x58>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:101
+  }
+
+  if (mp >= 0) {
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
+  } else {
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+ 378:	60 e0       	ldi	r22, 0x00	; 0
+ 37a:	88 e0       	ldi	r24, 0x08	; 8
+ 37c:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 380:	61 e0       	ldi	r22, 0x01	; 1
+ 382:	89 e0       	ldi	r24, 0x09	; 9
+ 384:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:102
+    mp = -mp;
+ 388:	d1 95       	neg	r29
+ 38a:	c1 95       	neg	r28
+ 38c:	d1 09       	sbc	r29, r1
+ 38e:	da cf       	rjmp	.-76     	; 0x344 <move(int, int)+0x6c>
+
+00000390 <__vector_16>:
+__vector_16():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 390:	1f 92       	push	r1
+ 392:	0f 92       	push	r0
+ 394:	0f b6       	in	r0, 0x3f	; 63
+ 396:	0f 92       	push	r0
+ 398:	11 24       	eor	r1, r1
+ 39a:	2f 93       	push	r18
+ 39c:	3f 93       	push	r19
+ 39e:	8f 93       	push	r24
+ 3a0:	9f 93       	push	r25
+ 3a2:	af 93       	push	r26
+ 3a4:	bf 93       	push	r27
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 3a6:	80 91 1d 01 	lds	r24, 0x011D	; 0x80011d <timer0_millis>
+ 3aa:	90 91 1e 01 	lds	r25, 0x011E	; 0x80011e <timer0_millis+0x1>
+ 3ae:	a0 91 1f 01 	lds	r26, 0x011F	; 0x80011f <timer0_millis+0x2>
+ 3b2:	b0 91 20 01 	lds	r27, 0x0120	; 0x800120 <timer0_millis+0x3>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 3b6:	30 91 1c 01 	lds	r19, 0x011C	; 0x80011c <timer0_fract>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 3ba:	20 e3       	ldi	r18, 0x30	; 48
+ 3bc:	23 0f       	add	r18, r19
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 3be:	2d 37       	cpi	r18, 0x7D	; 125
+ 3c0:	68 f1       	brcs	.+90     	; 0x41c <__LOCK_REGION_LENGTH__+0x1c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 3c2:	23 eb       	ldi	r18, 0xB3	; 179
+ 3c4:	23 0f       	add	r18, r19
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 3c6:	41 96       	adiw	r24, 0x11	; 17
+ 3c8:	a1 1d       	adc	r26, r1
+ 3ca:	b1 1d       	adc	r27, r1
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 3cc:	20 93 1c 01 	sts	0x011C, r18	; 0x80011c <timer0_fract>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 3d0:	80 93 1d 01 	sts	0x011D, r24	; 0x80011d <timer0_millis>
+ 3d4:	90 93 1e 01 	sts	0x011E, r25	; 0x80011e <timer0_millis+0x1>
+ 3d8:	a0 93 1f 01 	sts	0x011F, r26	; 0x80011f <timer0_millis+0x2>
+ 3dc:	b0 93 20 01 	sts	0x0120, r27	; 0x800120 <timer0_millis+0x3>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 3e0:	80 91 21 01 	lds	r24, 0x0121	; 0x800121 <timer0_overflow_count>
+ 3e4:	90 91 22 01 	lds	r25, 0x0122	; 0x800122 <timer0_overflow_count+0x1>
+ 3e8:	a0 91 23 01 	lds	r26, 0x0123	; 0x800123 <timer0_overflow_count+0x2>
+ 3ec:	b0 91 24 01 	lds	r27, 0x0124	; 0x800124 <timer0_overflow_count+0x3>
+ 3f0:	01 96       	adiw	r24, 0x01	; 1
+ 3f2:	a1 1d       	adc	r26, r1
+ 3f4:	b1 1d       	adc	r27, r1
+ 3f6:	80 93 21 01 	sts	0x0121, r24	; 0x800121 <timer0_overflow_count>
+ 3fa:	90 93 22 01 	sts	0x0122, r25	; 0x800122 <timer0_overflow_count+0x1>
+ 3fe:	a0 93 23 01 	sts	0x0123, r26	; 0x800123 <timer0_overflow_count+0x2>
+ 402:	b0 93 24 01 	sts	0x0124, r27	; 0x800124 <timer0_overflow_count+0x3>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 406:	bf 91       	pop	r27
+ 408:	af 91       	pop	r26
+ 40a:	9f 91       	pop	r25
+ 40c:	8f 91       	pop	r24
+ 40e:	3f 91       	pop	r19
+ 410:	2f 91       	pop	r18
+ 412:	0f 90       	pop	r0
+ 414:	0f be       	out	0x3f, r0	; 63
+ 416:	0f 90       	pop	r0
+ 418:	1f 90       	pop	r1
+ 41a:	18 95       	reti
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 41c:	40 96       	adiw	r24, 0x10	; 16
+ 41e:	a1 1d       	adc	r26, r1
+ 420:	b1 1d       	adc	r27, r1
+ 422:	d4 cf       	rjmp	.-88     	; 0x3cc <__vector_16+0x3c>
+
+00000424 <main>:
+main():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/main.cpp:34
+
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+ 424:	cf 93       	push	r28
+ 426:	df 93       	push	r29
+ 428:	cd b7       	in	r28, 0x3d	; 61
+ 42a:	de b7       	in	r29, 0x3e	; 62
+ 42c:	2e 97       	sbiw	r28, 0x0e	; 14
+ 42e:	0f b6       	in	r0, 0x3f	; 63
+ 430:	f8 94       	cli
+ 432:	de bf       	out	0x3e, r29	; 62
+ 434:	0f be       	out	0x3f, r0	; 63
+ 436:	cd bf       	out	0x3d, r28	; 61
+init():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 438:	78 94       	sei
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 43a:	84 b5       	in	r24, 0x24	; 36
+ 43c:	83 60       	ori	r24, 0x03	; 3
+ 43e:	84 bd       	out	0x24, r24	; 36
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 440:	85 b5       	in	r24, 0x25	; 37
+ 442:	83 60       	ori	r24, 0x03	; 3
+ 444:	85 bd       	out	0x25, r24	; 37
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 446:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+ 44a:	81 60       	ori	r24, 0x01	; 1
+ 44c:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 450:	82 e0       	ldi	r24, 0x02	; 2
+ 452:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 456:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 45a:	81 60       	ori	r24, 0x01	; 1
+ 45c:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 460:	80 91 b1 00 	lds	r24, 0x00B1	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+ 464:	84 60       	ori	r24, 0x04	; 4
+ 466:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 46a:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 46e:	81 60       	ori	r24, 0x01	; 1
+ 470:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:1058
+  #elif F_CPU >= 4000000 // 4 MHz / 32 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 2000000 // 2 MHz / 16 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADEN);
+  #elif F_CPU >= 1000000 // 1 MHz / 8 = 125 KHz
+    ADCSRA = _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 474:	83 e8       	ldi	r24, 0x83	; 131
+ 476:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 47a:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+setup():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:30
+
+// jacob - wydaje mi sie ze taki jest odpowieni w razie czego zmniejszyc do 800
+const int PROG_LINII = 850; // Czarna linia = niski odczyt (<400), białe tło = wysoki (>400)
+
+void setup() {
+  pinMode(m_prawy_A, OUTPUT); pinMode(m_prawy_B, OUTPUT);
+ 47e:	88 e0       	ldi	r24, 0x08	; 8
+ 480:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+ 484:	89 e0       	ldi	r24, 0x09	; 9
+ 486:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:31
+  pinMode(m_lewy_A, OUTPUT); pinMode(m_lewy_B, OUTPUT);
+ 48a:	82 e0       	ldi	r24, 0x02	; 2
+ 48c:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+ 490:	83 e0       	ldi	r24, 0x03	; 3
+ 492:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:32
+  pinMode(en_prawy, OUTPUT); pinMode(en_lewy, OUTPUT);
+ 496:	85 e0       	ldi	r24, 0x05	; 5
+ 498:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+ 49c:	86 e0       	ldi	r24, 0x06	; 6
+ 49e:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.1>
+delay():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:397
+#endif // 0
+}
+
+void delay(unsigned long ms)
+{
+  unsigned long start = micros();
+ 4a2:	0e 94 47 01 	call	0x28e	; 0x28e <micros>
+ 4a6:	4b 01       	movw	r8, r22
+ 4a8:	5c 01       	movw	r10, r24
+ 4aa:	38 eb       	ldi	r19, 0xB8	; 184
+ 4ac:	c3 2e       	mov	r12, r19
+ 4ae:	3b e0       	ldi	r19, 0x0B	; 11
+ 4b0:	d3 2e       	mov	r13, r19
+ 4b2:	e1 2c       	mov	r14, r1
+ 4b4:	f1 2c       	mov	r15, r1
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 4b6:	0e 94 47 01 	call	0x28e	; 0x28e <micros>
+ 4ba:	68 19       	sub	r22, r8
+ 4bc:	79 09       	sbc	r23, r9
+ 4be:	8a 09       	sbc	r24, r10
+ 4c0:	9b 09       	sbc	r25, r11
+ 4c2:	68 3e       	cpi	r22, 0xE8	; 232
+ 4c4:	73 40       	sbci	r23, 0x03	; 3
+ 4c6:	81 05       	cpc	r24, r1
+ 4c8:	91 05       	cpc	r25, r1
+ 4ca:	a8 f3       	brcs	.-22     	; 0x4b6 <main+0x92>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:402
+      ms--;
+ 4cc:	21 e0       	ldi	r18, 0x01	; 1
+ 4ce:	c2 1a       	sub	r12, r18
+ 4d0:	d1 08       	sbc	r13, r1
+ 4d2:	e1 08       	sbc	r14, r1
+ 4d4:	f1 08       	sbc	r15, r1
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 4d6:	68 ee       	ldi	r22, 0xE8	; 232
+ 4d8:	86 0e       	add	r8, r22
+ 4da:	63 e0       	ldi	r22, 0x03	; 3
+ 4dc:	96 1e       	adc	r9, r22
+ 4de:	a1 1c       	adc	r10, r1
+ 4e0:	b1 1c       	adc	r11, r1
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 4e2:	c1 14       	cp	r12, r1
+ 4e4:	d1 04       	cpc	r13, r1
+ 4e6:	e1 04       	cpc	r14, r1
+ 4e8:	f1 04       	cpc	r15, r1
+ 4ea:	29 f7       	brne	.-54     	; 0x4b6 <main+0x92>
+oblicz_pozycje():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:77
+  if (aktywnych == 0) return 10000;
+
+  int pozycja = suma_wag / aktywnych;
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+  else if (pozycja > 0) ostatni_kierunek = 1;
+ 4ec:	22 24       	eor	r2, r2
+ 4ee:	23 94       	inc	r2
+ 4f0:	31 2c       	mov	r3, r1
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:76
+
+  if (aktywnych == 0) return 10000;
+
+  int pozycja = suma_wag / aktywnych;
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+ 4f2:	0f ef       	ldi	r16, 0xFF	; 255
+ 4f4:	1f ef       	ldi	r17, 0xFF	; 255
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:62
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+ 4f6:	8a e0       	ldi	r24, 0x0A	; 10
+ 4f8:	e0 e0       	ldi	r30, 0x00	; 0
+ 4fa:	f1 e0       	ldi	r31, 0x01	; 1
+ 4fc:	de 01       	movw	r26, r28
+ 4fe:	11 96       	adiw	r26, 0x01	; 1
+ 500:	01 90       	ld	r0, Z+
+ 502:	0d 92       	st	X+, r0
+ 504:	8a 95       	dec	r24
+ 506:	e1 f7       	brne	.-8      	; 0x500 <main+0xdc>
+ 508:	ea e0       	ldi	r30, 0x0A	; 10
+ 50a:	f1 e0       	ldi	r31, 0x01	; 1
+ 50c:	ae 01       	movw	r20, r28
+ 50e:	4f 5f       	subi	r20, 0xFF	; 255
+ 510:	5f 4f       	sbci	r21, 0xFF	; 255
+main():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:61
+  move(moc_lewy, moc_prawy);
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+ 512:	30 e0       	ldi	r19, 0x00	; 0
+ 514:	20 e0       	ldi	r18, 0x00	; 0
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:60
+
+  move(moc_lewy, moc_prawy);
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+ 516:	c1 2c       	mov	r12, r1
+ 518:	d1 2c       	mov	r13, r1
+ 51a:	76 01       	movw	r14, r12
+oblicz_pozycje():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:65
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+  
+  for (int i = 0; i < 5; i++) {
+    int odczyt = analogRead(czujniki[i]);
+ 51c:	90 81       	ld	r25, Z
+ 51e:	32 96       	adiw	r30, 0x02	; 2
+ 520:	89 2f       	mov	r24, r25
+analogRead():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:49
+int analogRead(uint8_t pin)
+{
+
+// Macro located in the pins_arduino.h file
+#ifdef analogPinToChannel
+  pin = analogPinToChannel(pin);
+ 522:	98 30       	cpi	r25, 0x08	; 8
+ 524:	20 f0       	brcs	.+8      	; 0x52e <main+0x10a>
+ 526:	9d 30       	cpi	r25, 0x0D	; 13
+ 528:	08 f4       	brcc	.+2      	; 0x52c <main+0x108>
+ 52a:	8d e0       	ldi	r24, 0x0D	; 13
+ 52c:	8e 50       	subi	r24, 0x0E	; 14
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:68
+  
+  // set the analog reference (high two bits of ADMUX) and select the
+  // channel (low 4 bits).  this also sets ADLAR (left-adjust result)
+  // to 0 (the default).
+#if defined(ADMUX)
+  ADMUX = (analog_reference << 6) | (pin & 0x07);
+ 52e:	87 70       	andi	r24, 0x07	; 7
+ 530:	80 64       	ori	r24, 0x40	; 64
+ 532:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__DATA_REGION_ORIGIN__+0x1c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:76
+  // without a delay, we seem to read from the wrong channel
+  //delay(1);
+
+#if defined(ADCSRA) && defined(ADC)
+  // start the conversion
+  ADCSRA |= _BV(ADSC);
+ 536:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+ 53a:	80 64       	ori	r24, 0x40	; 64
+ 53c:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:79
+
+  // ADSC is cleared when the conversion finishes
+  while (ADCSRA & _BV(ADSC)) {};
+ 540:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+ 544:	86 fd       	sbrc	r24, 6
+ 546:	fc cf       	rjmp	.-8      	; 0x540 <main+0x11c>
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/wiring_analog.c:83
+
+  // ADC macro takes care of reading ADC register.
+ 	// avr-gcc implements the proper reading order: ADCL is read first.
+ 	return ADC;
+ 548:	80 91 78 00 	lds	r24, 0x0078	; 0x800078 <__DATA_REGION_ORIGIN__+0x18>
+ 54c:	90 91 79 00 	lds	r25, 0x0079	; 0x800079 <__DATA_REGION_ORIGIN__+0x19>
+oblicz_pozycje():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:66
+    if (odczyt < PROG_LINII) {
+ 550:	82 35       	cpi	r24, 0x52	; 82
+ 552:	93 40       	sbci	r25, 0x03	; 3
+ 554:	6c f4       	brge	.+26     	; 0x570 <main+0x14c>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:67
+      suma_wag += wagi[i];
+ 556:	da 01       	movw	r26, r20
+ 558:	8d 91       	ld	r24, X+
+ 55a:	9c 91       	ld	r25, X
+ 55c:	09 2e       	mov	r0, r25
+ 55e:	00 0c       	add	r0, r0
+ 560:	aa 0b       	sbc	r26, r26
+ 562:	bb 0b       	sbc	r27, r27
+ 564:	c8 0e       	add	r12, r24
+ 566:	d9 1e       	adc	r13, r25
+ 568:	ea 1e       	adc	r14, r26
+ 56a:	fb 1e       	adc	r15, r27
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:68
+      aktywnych++;
+ 56c:	2f 5f       	subi	r18, 0xFF	; 255
+ 56e:	3f 4f       	sbci	r19, 0xFF	; 255
+ 570:	4e 5f       	subi	r20, 0xFE	; 254
+ 572:	5f 4f       	sbci	r21, 0xFF	; 255
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:64
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+  
+  for (int i = 0; i < 5; i++) {
+ 574:	84 e1       	ldi	r24, 0x14	; 20
+ 576:	91 e0       	ldi	r25, 0x01	; 1
+ 578:	8e 17       	cp	r24, r30
+ 57a:	9f 07       	cpc	r25, r31
+ 57c:	79 f6       	brne	.-98     	; 0x51c <main+0xf8>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:72
+      suma_wag += wagi[i];
+      aktywnych++;
+    }
+  }
+
+  if (aktywnych == 0) return 10000;
+ 57e:	21 15       	cp	r18, r1
+ 580:	31 05       	cpc	r19, r1
+ 582:	09 f4       	brne	.+2      	; 0x586 <main+0x162>
+ 584:	90 c0       	rjmp	.+288    	; 0x6a6 <main+0x282>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:74
+
+  int pozycja = suma_wag / aktywnych;
+ 586:	03 2e       	mov	r0, r19
+ 588:	00 0c       	add	r0, r0
+ 58a:	44 0b       	sbc	r20, r20
+ 58c:	55 0b       	sbc	r21, r21
+ 58e:	c7 01       	movw	r24, r14
+ 590:	b6 01       	movw	r22, r12
+ 592:	0e 94 48 05 	call	0xa90	; 0xa90 <__divmodsi4>
+ 596:	29 01       	movw	r4, r18
+ 598:	c9 01       	movw	r24, r18
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:76
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+ 59a:	37 ff       	sbrs	r19, 7
+ 59c:	79 c0       	rjmp	.+242    	; 0x690 <main+0x26c>
+ 59e:	10 93 15 01 	sts	0x0115, r17	; 0x800115 <__data_end+0x1>
+ 5a2:	00 93 14 01 	sts	0x0114, r16	; 0x800114 <__data_end>
+loop():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:46
+    szukaj_linii();
+    return;
+  }
+
+  blad = pozycja;
+  calka = calka + blad;
+ 5a6:	b2 01       	movw	r22, r4
+ 5a8:	05 2c       	mov	r0, r5
+ 5aa:	00 0c       	add	r0, r0
+ 5ac:	88 0b       	sbc	r24, r24
+ 5ae:	99 0b       	sbc	r25, r25
+ 5b0:	0e 94 26 04 	call	0x84c	; 0x84c <__floatsisf>
+ 5b4:	4b 01       	movw	r8, r22
+ 5b6:	5c 01       	movw	r10, r24
+ 5b8:	20 91 18 01 	lds	r18, 0x0118	; 0x800118 <calka>
+ 5bc:	30 91 19 01 	lds	r19, 0x0119	; 0x800119 <calka+0x1>
+ 5c0:	40 91 1a 01 	lds	r20, 0x011A	; 0x80011a <calka+0x2>
+ 5c4:	50 91 1b 01 	lds	r21, 0x011B	; 0x80011b <calka+0x3>
+ 5c8:	0e 94 7d 03 	call	0x6fa	; 0x6fa <__addsf3>
+ 5cc:	6b 01       	movw	r12, r22
+ 5ce:	7c 01       	movw	r14, r24
+_Z9constrainIfiiEDTqultfp_fp0_fp0_qugtfp_fp1_fp1_fp_ERKT_RKT0_RKT1_():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/Arduino.h:345
+    return rad * RAD_TO_DEG;
+  }
+
+  template<class T, class L, class H>
+	auto constrain(const T& x, const L& l, const H& h) -> decltype((x < l) ? l : (x > h) ? h : x) {
+		return (x < l) ? l : (x > h) ? h : x;
+ 5d0:	20 e0       	ldi	r18, 0x00	; 0
+ 5d2:	30 e8       	ldi	r19, 0x80	; 128
+ 5d4:	4b e3       	ldi	r20, 0x3B	; 59
+ 5d6:	55 ec       	ldi	r21, 0xC5	; 197
+ 5d8:	0e 94 e9 03 	call	0x7d2	; 0x7d2 <__cmpsf2>
+ 5dc:	87 fd       	sbrc	r24, 7
+ 5de:	7c c0       	rjmp	.+248    	; 0x6d8 <main+0x2b4>
+ 5e0:	20 e0       	ldi	r18, 0x00	; 0
+ 5e2:	30 e8       	ldi	r19, 0x80	; 128
+ 5e4:	4b e3       	ldi	r20, 0x3B	; 59
+ 5e6:	55 e4       	ldi	r21, 0x45	; 69
+ 5e8:	c7 01       	movw	r24, r14
+ 5ea:	b6 01       	movw	r22, r12
+ 5ec:	0e 94 d6 04 	call	0x9ac	; 0x9ac <__gesf2>
+ 5f0:	18 16       	cp	r1, r24
+ 5f2:	0c f4       	brge	.+2      	; 0x5f6 <main+0x1d2>
+ 5f4:	79 c0       	rjmp	.+242    	; 0x6e8 <main+0x2c4>
+loop():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:47
+  calka = constrain(calka, -3000, 3000);
+ 5f6:	c0 92 18 01 	sts	0x0118, r12	; 0x800118 <calka>
+ 5fa:	d0 92 19 01 	sts	0x0119, r13	; 0x800119 <calka+0x1>
+ 5fe:	e0 92 1a 01 	sts	0x011A, r14	; 0x80011a <calka+0x2>
+ 602:	f0 92 1b 01 	sts	0x011B, r15	; 0x80011b <calka+0x3>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:49
+
+  int rozniczka = blad - poprzedni_blad;
+ 606:	80 91 16 01 	lds	r24, 0x0116	; 0x800116 <poprzedni_blad>
+ 60a:	90 91 17 01 	lds	r25, 0x0117	; 0x800117 <poprzedni_blad+0x1>
+ 60e:	b2 01       	movw	r22, r4
+ 610:	68 1b       	sub	r22, r24
+ 612:	79 0b       	sbc	r23, r25
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:50
+  int korekta = Kp * blad + Ki * calka + Kd * rozniczka;
+ 614:	07 2e       	mov	r0, r23
+ 616:	00 0c       	add	r0, r0
+ 618:	88 0b       	sbc	r24, r24
+ 61a:	99 0b       	sbc	r25, r25
+ 61c:	0e 94 26 04 	call	0x84c	; 0x84c <__floatsisf>
+ 620:	20 e0       	ldi	r18, 0x00	; 0
+ 622:	30 e0       	ldi	r19, 0x00	; 0
+ 624:	40 e0       	ldi	r20, 0x00	; 0
+ 626:	5f e3       	ldi	r21, 0x3F	; 63
+ 628:	0e 94 db 04 	call	0x9b6	; 0x9b6 <__mulsf3>
+ 62c:	6b 87       	std	Y+11, r22	; 0x0b
+ 62e:	7c 87       	std	Y+12, r23	; 0x0c
+ 630:	8d 87       	std	Y+13, r24	; 0x0d
+ 632:	9e 87       	std	Y+14, r25	; 0x0e
+ 634:	2d ec       	ldi	r18, 0xCD	; 205
+ 636:	3c ec       	ldi	r19, 0xCC	; 204
+ 638:	4c e4       	ldi	r20, 0x4C	; 76
+ 63a:	5d e3       	ldi	r21, 0x3D	; 61
+ 63c:	c5 01       	movw	r24, r10
+ 63e:	b4 01       	movw	r22, r8
+ 640:	0e 94 db 04 	call	0x9b6	; 0x9b6 <__mulsf3>
+ 644:	4b 01       	movw	r8, r22
+ 646:	5c 01       	movw	r10, r24
+ 648:	20 e0       	ldi	r18, 0x00	; 0
+ 64a:	30 e0       	ldi	r19, 0x00	; 0
+ 64c:	a9 01       	movw	r20, r18
+ 64e:	c7 01       	movw	r24, r14
+ 650:	b6 01       	movw	r22, r12
+ 652:	0e 94 db 04 	call	0x9b6	; 0x9b6 <__mulsf3>
+ 656:	9b 01       	movw	r18, r22
+ 658:	ac 01       	movw	r20, r24
+ 65a:	c5 01       	movw	r24, r10
+ 65c:	b4 01       	movw	r22, r8
+ 65e:	0e 94 7d 03 	call	0x6fa	; 0x6fa <__addsf3>
+ 662:	9b 01       	movw	r18, r22
+ 664:	ac 01       	movw	r20, r24
+ 666:	6b 85       	ldd	r22, Y+11	; 0x0b
+ 668:	7c 85       	ldd	r23, Y+12	; 0x0c
+ 66a:	8d 85       	ldd	r24, Y+13	; 0x0d
+ 66c:	9e 85       	ldd	r25, Y+14	; 0x0e
+ 66e:	0e 94 7d 03 	call	0x6fa	; 0x6fa <__addsf3>
+ 672:	0e 94 ee 03 	call	0x7dc	; 0x7dc <__fixsfsi>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:51
+  poprzedni_blad = blad;
+ 676:	50 92 17 01 	sts	0x0117, r5	; 0x800117 <poprzedni_blad+0x1>
+ 67a:	40 92 16 01 	sts	0x0116, r4	; 0x800116 <poprzedni_blad>
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:54
+
+  int moc_lewy  = V_BAZA + korekta;
+  int moc_prawy = V_BAZA - korekta;
+ 67e:	26 e4       	ldi	r18, 0x46	; 70
+ 680:	30 e0       	ldi	r19, 0x00	; 0
+ 682:	26 1b       	sub	r18, r22
+ 684:	37 0b       	sbc	r19, r23
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:53
+
+  int rozniczka = blad - poprzedni_blad;
+  int korekta = Kp * blad + Ki * calka + Kd * rozniczka;
+  poprzedni_blad = blad;
+
+  int moc_lewy  = V_BAZA + korekta;
+ 686:	cb 01       	movw	r24, r22
+ 688:	8a 5b       	subi	r24, 0xBA	; 186
+ 68a:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:56
+  int moc_prawy = V_BAZA - korekta;
+
+  move(moc_lewy, moc_prawy);
+ 68c:	b9 01       	movw	r22, r18
+ 68e:	15 c0       	rjmp	.+42     	; 0x6ba <main+0x296>
+oblicz_pozycje():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:77
+  if (aktywnych == 0) return 10000;
+
+  int pozycja = suma_wag / aktywnych;
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+  else if (pozycja > 0) ostatni_kierunek = 1;
+ 690:	89 2b       	or	r24, r25
+ 692:	09 f4       	brne	.+2      	; 0x696 <main+0x272>
+ 694:	88 cf       	rjmp	.-240    	; 0x5a6 <main+0x182>
+ 696:	30 92 15 01 	sts	0x0115, r3	; 0x800115 <__data_end+0x1>
+ 69a:	20 92 14 01 	sts	0x0114, r2	; 0x800114 <__data_end>
+loop():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:40
+}
+
+void loop() {
+  int pozycja = oblicz_pozycje();
+
+  if (pozycja == 10000) {
+ 69e:	20 31       	cpi	r18, 0x10	; 16
+ 6a0:	37 42       	sbci	r19, 0x27	; 39
+ 6a2:	09 f0       	breq	.+2      	; 0x6a6 <main+0x282>
+ 6a4:	80 cf       	rjmp	.-256    	; 0x5a6 <main+0x182>
+szukaj_linii():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:83
+
+  return pozycja;
+}
+
+void szukaj_linii() {
+  if (ostatni_kierunek == -1) move(-80, 80); 
+ 6a6:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <__data_end>
+ 6aa:	90 91 15 01 	lds	r25, 0x0115	; 0x800115 <__data_end+0x1>
+ 6ae:	01 96       	adiw	r24, 0x01	; 1
+ 6b0:	71 f4       	brne	.+28     	; 0x6ce <main+0x2aa>
+ 6b2:	60 e5       	ldi	r22, 0x50	; 80
+ 6b4:	70 e0       	ldi	r23, 0x00	; 0
+ 6b6:	80 eb       	ldi	r24, 0xB0	; 176
+ 6b8:	9f ef       	ldi	r25, 0xFF	; 255
+loop():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:56
+  poprzedni_blad = blad;
+
+  int moc_lewy  = V_BAZA + korekta;
+  int moc_prawy = V_BAZA - korekta;
+
+  move(moc_lewy, moc_prawy);
+ 6ba:	0e 94 6c 01 	call	0x2d8	; 0x2d8 <move(int, int)>
+main():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/main.cpp:47
+  
+  setup();
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 6be:	80 e0       	ldi	r24, 0x00	; 0
+ 6c0:	90 e0       	ldi	r25, 0x00	; 0
+ 6c2:	89 2b       	or	r24, r25
+ 6c4:	09 f4       	brne	.+2      	; 0x6c8 <main+0x2a4>
+ 6c6:	17 cf       	rjmp	.-466    	; 0x4f6 <main+0xd2>
+ 6c8:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 6cc:	14 cf       	rjmp	.-472    	; 0x4f6 <main+0xd2>
+szukaj_linii():
+/home/blobinnit/github_repos/ATMega328/linefollowerznowymipinami/linefollowerznowymipinami.ino:84
+  return pozycja;
+}
+
+void szukaj_linii() {
+  if (ostatni_kierunek == -1) move(-80, 80); 
+  else move(80, -80);
+ 6ce:	60 eb       	ldi	r22, 0xB0	; 176
+ 6d0:	7f ef       	ldi	r23, 0xFF	; 255
+ 6d2:	80 e5       	ldi	r24, 0x50	; 80
+ 6d4:	90 e0       	ldi	r25, 0x00	; 0
+ 6d6:	f1 cf       	rjmp	.-30     	; 0x6ba <main+0x296>
+main():
+/home/blobinnit/.arduino15/packages/MiniCore/hardware/avr/3.1.2/cores/MCUdude_corefiles/Arduino.h:345
+ 6d8:	c1 2c       	mov	r12, r1
+ 6da:	90 e8       	ldi	r25, 0x80	; 128
+ 6dc:	d9 2e       	mov	r13, r25
+ 6de:	9b e3       	ldi	r25, 0x3B	; 59
+ 6e0:	e9 2e       	mov	r14, r25
+ 6e2:	95 ec       	ldi	r25, 0xC5	; 197
+ 6e4:	f9 2e       	mov	r15, r25
+ 6e6:	87 cf       	rjmp	.-242    	; 0x5f6 <main+0x1d2>
+ 6e8:	c1 2c       	mov	r12, r1
+ 6ea:	80 e8       	ldi	r24, 0x80	; 128
+ 6ec:	d8 2e       	mov	r13, r24
+ 6ee:	8b e3       	ldi	r24, 0x3B	; 59
+ 6f0:	e8 2e       	mov	r14, r24
+ 6f2:	85 e4       	ldi	r24, 0x45	; 69
+ 6f4:	f8 2e       	mov	r15, r24
+ 6f6:	7f cf       	rjmp	.-258    	; 0x5f6 <main+0x1d2>
+
+000006f8 <__subsf3>:
+__subsf3():
+ 6f8:	50 58       	subi	r21, 0x80	; 128
+
+000006fa <__addsf3>:
+ 6fa:	bb 27       	eor	r27, r27
+ 6fc:	aa 27       	eor	r26, r26
+ 6fe:	0e 94 94 03 	call	0x728	; 0x728 <__addsf3x>
+ 702:	0c 94 9c 04 	jmp	0x938	; 0x938 <__fp_round>
+__addsf3():
+ 706:	0e 94 8e 04 	call	0x91c	; 0x91c <__fp_pscA>
+ 70a:	38 f0       	brcs	.+14     	; 0x71a <__addsf3+0x20>
+ 70c:	0e 94 95 04 	call	0x92a	; 0x92a <__fp_pscB>
+ 710:	20 f0       	brcs	.+8      	; 0x71a <__addsf3+0x20>
+ 712:	39 f4       	brne	.+14     	; 0x722 <__addsf3+0x28>
+ 714:	9f 3f       	cpi	r25, 0xFF	; 255
+ 716:	19 f4       	brne	.+6      	; 0x71e <__addsf3+0x24>
+ 718:	26 f4       	brtc	.+8      	; 0x722 <__addsf3+0x28>
+ 71a:	0c 94 8b 04 	jmp	0x916	; 0x916 <__fp_nan>
+ 71e:	0e f4       	brtc	.+2      	; 0x722 <__addsf3+0x28>
+ 720:	e0 95       	com	r30
+ 722:	e7 fb       	bst	r30, 7
+ 724:	0c 94 85 04 	jmp	0x90a	; 0x90a <__fp_inf>
+
+00000728 <__addsf3x>:
+__addsf3x():
+ 728:	e9 2f       	mov	r30, r25
+ 72a:	0e 94 ad 04 	call	0x95a	; 0x95a <__fp_split3>
+ 72e:	58 f3       	brcs	.-42     	; 0x706 <__addsf3+0xc>
+ 730:	ba 17       	cp	r27, r26
+ 732:	62 07       	cpc	r22, r18
+ 734:	73 07       	cpc	r23, r19
+ 736:	84 07       	cpc	r24, r20
+ 738:	95 07       	cpc	r25, r21
+ 73a:	20 f0       	brcs	.+8      	; 0x744 <__addsf3x+0x1c>
+ 73c:	79 f4       	brne	.+30     	; 0x75c <__addsf3x+0x34>
+ 73e:	a6 f5       	brtc	.+104    	; 0x7a8 <__addsf3x+0x80>
+ 740:	0c 94 cf 04 	jmp	0x99e	; 0x99e <__fp_zero>
+ 744:	0e f4       	brtc	.+2      	; 0x748 <__addsf3x+0x20>
+ 746:	e0 95       	com	r30
+ 748:	0b 2e       	mov	r0, r27
+ 74a:	ba 2f       	mov	r27, r26
+ 74c:	a0 2d       	mov	r26, r0
+ 74e:	0b 01       	movw	r0, r22
+ 750:	b9 01       	movw	r22, r18
+ 752:	90 01       	movw	r18, r0
+ 754:	0c 01       	movw	r0, r24
+ 756:	ca 01       	movw	r24, r20
+ 758:	a0 01       	movw	r20, r0
+ 75a:	11 24       	eor	r1, r1
+ 75c:	ff 27       	eor	r31, r31
+ 75e:	59 1b       	sub	r21, r25
+ 760:	99 f0       	breq	.+38     	; 0x788 <__addsf3x+0x60>
+ 762:	59 3f       	cpi	r21, 0xF9	; 249
+ 764:	50 f4       	brcc	.+20     	; 0x77a <__addsf3x+0x52>
+ 766:	50 3e       	cpi	r21, 0xE0	; 224
+ 768:	68 f1       	brcs	.+90     	; 0x7c4 <__addsf3x+0x9c>
+ 76a:	1a 16       	cp	r1, r26
+ 76c:	f0 40       	sbci	r31, 0x00	; 0
+ 76e:	a2 2f       	mov	r26, r18
+ 770:	23 2f       	mov	r18, r19
+ 772:	34 2f       	mov	r19, r20
+ 774:	44 27       	eor	r20, r20
+ 776:	58 5f       	subi	r21, 0xF8	; 248
+ 778:	f3 cf       	rjmp	.-26     	; 0x760 <__addsf3x+0x38>
+ 77a:	46 95       	lsr	r20
+ 77c:	37 95       	ror	r19
+ 77e:	27 95       	ror	r18
+ 780:	a7 95       	ror	r26
+ 782:	f0 40       	sbci	r31, 0x00	; 0
+ 784:	53 95       	inc	r21
+ 786:	c9 f7       	brne	.-14     	; 0x77a <__addsf3x+0x52>
+ 788:	7e f4       	brtc	.+30     	; 0x7a8 <__addsf3x+0x80>
+ 78a:	1f 16       	cp	r1, r31
+ 78c:	ba 0b       	sbc	r27, r26
+ 78e:	62 0b       	sbc	r22, r18
+ 790:	73 0b       	sbc	r23, r19
+ 792:	84 0b       	sbc	r24, r20
+ 794:	ba f0       	brmi	.+46     	; 0x7c4 <__addsf3x+0x9c>
+ 796:	91 50       	subi	r25, 0x01	; 1
+ 798:	a1 f0       	breq	.+40     	; 0x7c2 <__addsf3x+0x9a>
+ 79a:	ff 0f       	add	r31, r31
+ 79c:	bb 1f       	adc	r27, r27
+ 79e:	66 1f       	adc	r22, r22
+ 7a0:	77 1f       	adc	r23, r23
+ 7a2:	88 1f       	adc	r24, r24
+ 7a4:	c2 f7       	brpl	.-16     	; 0x796 <__addsf3x+0x6e>
+ 7a6:	0e c0       	rjmp	.+28     	; 0x7c4 <__addsf3x+0x9c>
+ 7a8:	ba 0f       	add	r27, r26
+ 7aa:	62 1f       	adc	r22, r18
+ 7ac:	73 1f       	adc	r23, r19
+ 7ae:	84 1f       	adc	r24, r20
+ 7b0:	48 f4       	brcc	.+18     	; 0x7c4 <__addsf3x+0x9c>
+ 7b2:	87 95       	ror	r24
+ 7b4:	77 95       	ror	r23
+ 7b6:	67 95       	ror	r22
+ 7b8:	b7 95       	ror	r27
+ 7ba:	f7 95       	ror	r31
+ 7bc:	9e 3f       	cpi	r25, 0xFE	; 254
+ 7be:	08 f0       	brcs	.+2      	; 0x7c2 <__addsf3x+0x9a>
+ 7c0:	b0 cf       	rjmp	.-160    	; 0x722 <__addsf3+0x28>
+ 7c2:	93 95       	inc	r25
+ 7c4:	88 0f       	add	r24, r24
+ 7c6:	08 f0       	brcs	.+2      	; 0x7ca <__addsf3x+0xa2>
+ 7c8:	99 27       	eor	r25, r25
+ 7ca:	ee 0f       	add	r30, r30
+ 7cc:	97 95       	ror	r25
+ 7ce:	87 95       	ror	r24
+ 7d0:	08 95       	ret
+
+000007d2 <__cmpsf2>:
+ 7d2:	0e 94 61 04 	call	0x8c2	; 0x8c2 <__fp_cmp>
+ 7d6:	08 f4       	brcc	.+2      	; 0x7da <__cmpsf2+0x8>
+ 7d8:	81 e0       	ldi	r24, 0x01	; 1
+ 7da:	08 95       	ret
+
+000007dc <__fixsfsi>:
+ 7dc:	0e 94 f5 03 	call	0x7ea	; 0x7ea <__fixunssfsi>
+ 7e0:	68 94       	set
+ 7e2:	b1 11       	cpse	r27, r1
+ 7e4:	0c 94 d0 04 	jmp	0x9a0	; 0x9a0 <__fp_szero>
+ 7e8:	08 95       	ret
+
+000007ea <__fixunssfsi>:
+ 7ea:	0e 94 b5 04 	call	0x96a	; 0x96a <__fp_splitA>
+ 7ee:	88 f0       	brcs	.+34     	; 0x812 <__fixunssfsi+0x28>
+ 7f0:	9f 57       	subi	r25, 0x7F	; 127
+ 7f2:	98 f0       	brcs	.+38     	; 0x81a <__fixunssfsi+0x30>
+__fixunssfsi():
+ 7f4:	b9 2f       	mov	r27, r25
+ 7f6:	99 27       	eor	r25, r25
+ 7f8:	b7 51       	subi	r27, 0x17	; 23
+ 7fa:	b0 f0       	brcs	.+44     	; 0x828 <__fixunssfsi+0x3e>
+ 7fc:	e1 f0       	breq	.+56     	; 0x836 <__fixunssfsi+0x4c>
+ 7fe:	66 0f       	add	r22, r22
+ 800:	77 1f       	adc	r23, r23
+ 802:	88 1f       	adc	r24, r24
+ 804:	99 1f       	adc	r25, r25
+ 806:	1a f0       	brmi	.+6      	; 0x80e <__fixunssfsi+0x24>
+ 808:	ba 95       	dec	r27
+ 80a:	c9 f7       	brne	.-14     	; 0x7fe <__fixunssfsi+0x14>
+ 80c:	14 c0       	rjmp	.+40     	; 0x836 <__fixunssfsi+0x4c>
+ 80e:	b1 30       	cpi	r27, 0x01	; 1
+ 810:	91 f0       	breq	.+36     	; 0x836 <__fixunssfsi+0x4c>
+ 812:	0e 94 cf 04 	call	0x99e	; 0x99e <__fp_zero>
+ 816:	b1 e0       	ldi	r27, 0x01	; 1
+ 818:	08 95       	ret
+ 81a:	0c 94 cf 04 	jmp	0x99e	; 0x99e <__fp_zero>
+ 81e:	67 2f       	mov	r22, r23
+ 820:	78 2f       	mov	r23, r24
+ 822:	88 27       	eor	r24, r24
+ 824:	b8 5f       	subi	r27, 0xF8	; 248
+ 826:	39 f0       	breq	.+14     	; 0x836 <__fixunssfsi+0x4c>
+ 828:	b9 3f       	cpi	r27, 0xF9	; 249
+ 82a:	cc f3       	brlt	.-14     	; 0x81e <__fixunssfsi+0x34>
+ 82c:	86 95       	lsr	r24
+ 82e:	77 95       	ror	r23
+ 830:	67 95       	ror	r22
+ 832:	b3 95       	inc	r27
+ 834:	d9 f7       	brne	.-10     	; 0x82c <__fixunssfsi+0x42>
+ 836:	3e f4       	brtc	.+14     	; 0x846 <__fixunssfsi+0x5c>
+ 838:	90 95       	com	r25
+ 83a:	80 95       	com	r24
+ 83c:	70 95       	com	r23
+ 83e:	61 95       	neg	r22
+ 840:	7f 4f       	sbci	r23, 0xFF	; 255
+ 842:	8f 4f       	sbci	r24, 0xFF	; 255
+ 844:	9f 4f       	sbci	r25, 0xFF	; 255
+ 846:	08 95       	ret
+
+00000848 <__floatunsisf>:
+__floatunsisf():
+ 848:	e8 94       	clt
+ 84a:	09 c0       	rjmp	.+18     	; 0x85e <__floatsisf+0x12>
+
+0000084c <__floatsisf>:
+ 84c:	97 fb       	bst	r25, 7
+ 84e:	3e f4       	brtc	.+14     	; 0x85e <__floatsisf+0x12>
+ 850:	90 95       	com	r25
+ 852:	80 95       	com	r24
+ 854:	70 95       	com	r23
+ 856:	61 95       	neg	r22
+ 858:	7f 4f       	sbci	r23, 0xFF	; 255
+ 85a:	8f 4f       	sbci	r24, 0xFF	; 255
+ 85c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 85e:	99 23       	and	r25, r25
+ 860:	a9 f0       	breq	.+42     	; 0x88c <__floatsisf+0x40>
+ 862:	f9 2f       	mov	r31, r25
+ 864:	96 e9       	ldi	r25, 0x96	; 150
+ 866:	bb 27       	eor	r27, r27
+ 868:	93 95       	inc	r25
+ 86a:	f6 95       	lsr	r31
+ 86c:	87 95       	ror	r24
+ 86e:	77 95       	ror	r23
+ 870:	67 95       	ror	r22
+ 872:	b7 95       	ror	r27
+ 874:	f1 11       	cpse	r31, r1
+ 876:	f8 cf       	rjmp	.-16     	; 0x868 <__floatsisf+0x1c>
+ 878:	fa f4       	brpl	.+62     	; 0x8b8 <__floatsisf+0x6c>
+ 87a:	bb 0f       	add	r27, r27
+ 87c:	11 f4       	brne	.+4      	; 0x882 <__floatsisf+0x36>
+ 87e:	60 ff       	sbrs	r22, 0
+ 880:	1b c0       	rjmp	.+54     	; 0x8b8 <__floatsisf+0x6c>
+ 882:	6f 5f       	subi	r22, 0xFF	; 255
+ 884:	7f 4f       	sbci	r23, 0xFF	; 255
+ 886:	8f 4f       	sbci	r24, 0xFF	; 255
+ 888:	9f 4f       	sbci	r25, 0xFF	; 255
+ 88a:	16 c0       	rjmp	.+44     	; 0x8b8 <__floatsisf+0x6c>
+ 88c:	88 23       	and	r24, r24
+ 88e:	11 f0       	breq	.+4      	; 0x894 <__floatsisf+0x48>
+ 890:	96 e9       	ldi	r25, 0x96	; 150
+ 892:	11 c0       	rjmp	.+34     	; 0x8b6 <__floatsisf+0x6a>
+ 894:	77 23       	and	r23, r23
+ 896:	21 f0       	breq	.+8      	; 0x8a0 <__floatsisf+0x54>
+ 898:	9e e8       	ldi	r25, 0x8E	; 142
+ 89a:	87 2f       	mov	r24, r23
+ 89c:	76 2f       	mov	r23, r22
+ 89e:	05 c0       	rjmp	.+10     	; 0x8aa <__floatsisf+0x5e>
+ 8a0:	66 23       	and	r22, r22
+ 8a2:	71 f0       	breq	.+28     	; 0x8c0 <__floatsisf+0x74>
+ 8a4:	96 e8       	ldi	r25, 0x86	; 134
+ 8a6:	86 2f       	mov	r24, r22
+ 8a8:	70 e0       	ldi	r23, 0x00	; 0
+ 8aa:	60 e0       	ldi	r22, 0x00	; 0
+ 8ac:	2a f0       	brmi	.+10     	; 0x8b8 <__floatsisf+0x6c>
+ 8ae:	9a 95       	dec	r25
+ 8b0:	66 0f       	add	r22, r22
+ 8b2:	77 1f       	adc	r23, r23
+ 8b4:	88 1f       	adc	r24, r24
+ 8b6:	da f7       	brpl	.-10     	; 0x8ae <__floatsisf+0x62>
+ 8b8:	88 0f       	add	r24, r24
+ 8ba:	96 95       	lsr	r25
+ 8bc:	87 95       	ror	r24
+ 8be:	97 f9       	bld	r25, 7
+ 8c0:	08 95       	ret
+
+000008c2 <__fp_cmp>:
+__fp_cmp():
+ 8c2:	99 0f       	add	r25, r25
+ 8c4:	00 08       	sbc	r0, r0
+ 8c6:	55 0f       	add	r21, r21
+ 8c8:	aa 0b       	sbc	r26, r26
+ 8ca:	e0 e8       	ldi	r30, 0x80	; 128
+ 8cc:	fe ef       	ldi	r31, 0xFE	; 254
+ 8ce:	16 16       	cp	r1, r22
+ 8d0:	17 06       	cpc	r1, r23
+ 8d2:	e8 07       	cpc	r30, r24
+ 8d4:	f9 07       	cpc	r31, r25
+ 8d6:	c0 f0       	brcs	.+48     	; 0x908 <__stack+0x9>
+ 8d8:	12 16       	cp	r1, r18
+ 8da:	13 06       	cpc	r1, r19
+ 8dc:	e4 07       	cpc	r30, r20
+ 8de:	f5 07       	cpc	r31, r21
+ 8e0:	98 f0       	brcs	.+38     	; 0x908 <__stack+0x9>
+ 8e2:	62 1b       	sub	r22, r18
+ 8e4:	73 0b       	sbc	r23, r19
+ 8e6:	84 0b       	sbc	r24, r20
+ 8e8:	95 0b       	sbc	r25, r21
+ 8ea:	39 f4       	brne	.+14     	; 0x8fa <__fp_cmp+0x38>
+ 8ec:	0a 26       	eor	r0, r26
+ 8ee:	61 f0       	breq	.+24     	; 0x908 <__stack+0x9>
+ 8f0:	23 2b       	or	r18, r19
+ 8f2:	24 2b       	or	r18, r20
+ 8f4:	25 2b       	or	r18, r21
+ 8f6:	21 f4       	brne	.+8      	; 0x900 <__stack+0x1>
+ 8f8:	08 95       	ret
+ 8fa:	0a 26       	eor	r0, r26
+ 8fc:	09 f4       	brne	.+2      	; 0x900 <__stack+0x1>
+ 8fe:	a1 40       	sbci	r26, 0x01	; 1
+ 900:	a6 95       	lsr	r26
+ 902:	8f ef       	ldi	r24, 0xFF	; 255
+ 904:	81 1d       	adc	r24, r1
+ 906:	81 1d       	adc	r24, r1
+ 908:	08 95       	ret
+
+0000090a <__fp_inf>:
+__fp_inf():
+ 90a:	97 f9       	bld	r25, 7
+ 90c:	9f 67       	ori	r25, 0x7F	; 127
+ 90e:	80 e8       	ldi	r24, 0x80	; 128
+ 910:	70 e0       	ldi	r23, 0x00	; 0
+ 912:	60 e0       	ldi	r22, 0x00	; 0
+ 914:	08 95       	ret
+
+00000916 <__fp_nan>:
+__fp_nan():
+ 916:	9f ef       	ldi	r25, 0xFF	; 255
+ 918:	80 ec       	ldi	r24, 0xC0	; 192
+ 91a:	08 95       	ret
+
+0000091c <__fp_pscA>:
+__fp_pscA():
+ 91c:	00 24       	eor	r0, r0
+ 91e:	0a 94       	dec	r0
+ 920:	16 16       	cp	r1, r22
+ 922:	17 06       	cpc	r1, r23
+ 924:	18 06       	cpc	r1, r24
+ 926:	09 06       	cpc	r0, r25
+ 928:	08 95       	ret
+
+0000092a <__fp_pscB>:
+__fp_pscB():
+ 92a:	00 24       	eor	r0, r0
+ 92c:	0a 94       	dec	r0
+ 92e:	12 16       	cp	r1, r18
+ 930:	13 06       	cpc	r1, r19
+ 932:	14 06       	cpc	r1, r20
+ 934:	05 06       	cpc	r0, r21
+ 936:	08 95       	ret
+
+00000938 <__fp_round>:
+__fp_round():
+ 938:	09 2e       	mov	r0, r25
+ 93a:	03 94       	inc	r0
+ 93c:	00 0c       	add	r0, r0
+ 93e:	11 f4       	brne	.+4      	; 0x944 <__fp_round+0xc>
+ 940:	88 23       	and	r24, r24
+ 942:	52 f0       	brmi	.+20     	; 0x958 <__fp_round+0x20>
+ 944:	bb 0f       	add	r27, r27
+ 946:	40 f4       	brcc	.+16     	; 0x958 <__fp_round+0x20>
+ 948:	bf 2b       	or	r27, r31
+ 94a:	11 f4       	brne	.+4      	; 0x950 <__fp_round+0x18>
+ 94c:	60 ff       	sbrs	r22, 0
+ 94e:	04 c0       	rjmp	.+8      	; 0x958 <__fp_round+0x20>
+ 950:	6f 5f       	subi	r22, 0xFF	; 255
+ 952:	7f 4f       	sbci	r23, 0xFF	; 255
+ 954:	8f 4f       	sbci	r24, 0xFF	; 255
+ 956:	9f 4f       	sbci	r25, 0xFF	; 255
+ 958:	08 95       	ret
+
+0000095a <__fp_split3>:
+__fp_split3():
+ 95a:	57 fd       	sbrc	r21, 7
+ 95c:	90 58       	subi	r25, 0x80	; 128
+ 95e:	44 0f       	add	r20, r20
+ 960:	55 1f       	adc	r21, r21
+ 962:	59 f0       	breq	.+22     	; 0x97a <__fp_splitA+0x10>
+ 964:	5f 3f       	cpi	r21, 0xFF	; 255
+ 966:	71 f0       	breq	.+28     	; 0x984 <__fp_splitA+0x1a>
+ 968:	47 95       	ror	r20
+
+0000096a <__fp_splitA>:
+ 96a:	88 0f       	add	r24, r24
+ 96c:	97 fb       	bst	r25, 7
+ 96e:	99 1f       	adc	r25, r25
+ 970:	61 f0       	breq	.+24     	; 0x98a <__fp_splitA+0x20>
+ 972:	9f 3f       	cpi	r25, 0xFF	; 255
+ 974:	79 f0       	breq	.+30     	; 0x994 <__fp_splitA+0x2a>
+ 976:	87 95       	ror	r24
+ 978:	08 95       	ret
+ 97a:	12 16       	cp	r1, r18
+ 97c:	13 06       	cpc	r1, r19
+ 97e:	14 06       	cpc	r1, r20
+ 980:	55 1f       	adc	r21, r21
+ 982:	f2 cf       	rjmp	.-28     	; 0x968 <__fp_split3+0xe>
+ 984:	46 95       	lsr	r20
+ 986:	f1 df       	rcall	.-30     	; 0x96a <__fp_splitA>
+ 988:	08 c0       	rjmp	.+16     	; 0x99a <__fp_splitA+0x30>
+ 98a:	16 16       	cp	r1, r22
+ 98c:	17 06       	cpc	r1, r23
+ 98e:	18 06       	cpc	r1, r24
+ 990:	99 1f       	adc	r25, r25
+ 992:	f1 cf       	rjmp	.-30     	; 0x976 <__fp_splitA+0xc>
+ 994:	86 95       	lsr	r24
+ 996:	71 05       	cpc	r23, r1
+ 998:	61 05       	cpc	r22, r1
+ 99a:	08 94       	sec
+ 99c:	08 95       	ret
+
+0000099e <__fp_zero>:
+__fp_zero():
+ 99e:	e8 94       	clt
+
+000009a0 <__fp_szero>:
+ 9a0:	bb 27       	eor	r27, r27
+ 9a2:	66 27       	eor	r22, r22
+ 9a4:	77 27       	eor	r23, r23
+ 9a6:	cb 01       	movw	r24, r22
+ 9a8:	97 f9       	bld	r25, 7
+ 9aa:	08 95       	ret
+
+000009ac <__gesf2>:
+__gesf2():
+ 9ac:	0e 94 61 04 	call	0x8c2	; 0x8c2 <__fp_cmp>
+ 9b0:	08 f4       	brcc	.+2      	; 0x9b4 <__gesf2+0x8>
+ 9b2:	8f ef       	ldi	r24, 0xFF	; 255
+ 9b4:	08 95       	ret
+
+000009b6 <__mulsf3>:
+__mulsf3():
+ 9b6:	0e 94 ee 04 	call	0x9dc	; 0x9dc <__mulsf3x>
+ 9ba:	0c 94 9c 04 	jmp	0x938	; 0x938 <__fp_round>
+ 9be:	0e 94 8e 04 	call	0x91c	; 0x91c <__fp_pscA>
+ 9c2:	38 f0       	brcs	.+14     	; 0x9d2 <__mulsf3+0x1c>
+ 9c4:	0e 94 95 04 	call	0x92a	; 0x92a <__fp_pscB>
+ 9c8:	20 f0       	brcs	.+8      	; 0x9d2 <__mulsf3+0x1c>
+ 9ca:	95 23       	and	r25, r21
+ 9cc:	11 f0       	breq	.+4      	; 0x9d2 <__mulsf3+0x1c>
+ 9ce:	0c 94 85 04 	jmp	0x90a	; 0x90a <__fp_inf>
+ 9d2:	0c 94 8b 04 	jmp	0x916	; 0x916 <__fp_nan>
+ 9d6:	11 24       	eor	r1, r1
+ 9d8:	0c 94 d0 04 	jmp	0x9a0	; 0x9a0 <__fp_szero>
+
+000009dc <__mulsf3x>:
+__mulsf3x():
+ 9dc:	0e 94 ad 04 	call	0x95a	; 0x95a <__fp_split3>
+ 9e0:	70 f3       	brcs	.-36     	; 0x9be <__mulsf3+0x8>
+
+000009e2 <__mulsf3_pse>:
+ 9e2:	95 9f       	mul	r25, r21
+ 9e4:	c1 f3       	breq	.-16     	; 0x9d6 <__mulsf3+0x20>
+ 9e6:	95 0f       	add	r25, r21
+ 9e8:	50 e0       	ldi	r21, 0x00	; 0
+ 9ea:	55 1f       	adc	r21, r21
+ 9ec:	62 9f       	mul	r22, r18
+ 9ee:	f0 01       	movw	r30, r0
+ 9f0:	72 9f       	mul	r23, r18
+ 9f2:	bb 27       	eor	r27, r27
+ 9f4:	f0 0d       	add	r31, r0
+ 9f6:	b1 1d       	adc	r27, r1
+ 9f8:	63 9f       	mul	r22, r19
+ 9fa:	aa 27       	eor	r26, r26
+ 9fc:	f0 0d       	add	r31, r0
+ 9fe:	b1 1d       	adc	r27, r1
+ a00:	aa 1f       	adc	r26, r26
+ a02:	64 9f       	mul	r22, r20
+ a04:	66 27       	eor	r22, r22
+ a06:	b0 0d       	add	r27, r0
+ a08:	a1 1d       	adc	r26, r1
+ a0a:	66 1f       	adc	r22, r22
+ a0c:	82 9f       	mul	r24, r18
+ a0e:	22 27       	eor	r18, r18
+ a10:	b0 0d       	add	r27, r0
+ a12:	a1 1d       	adc	r26, r1
+ a14:	62 1f       	adc	r22, r18
+ a16:	73 9f       	mul	r23, r19
+ a18:	b0 0d       	add	r27, r0
+ a1a:	a1 1d       	adc	r26, r1
+ a1c:	62 1f       	adc	r22, r18
+ a1e:	83 9f       	mul	r24, r19
+ a20:	a0 0d       	add	r26, r0
+ a22:	61 1d       	adc	r22, r1
+ a24:	22 1f       	adc	r18, r18
+ a26:	74 9f       	mul	r23, r20
+ a28:	33 27       	eor	r19, r19
+ a2a:	a0 0d       	add	r26, r0
+ a2c:	61 1d       	adc	r22, r1
+ a2e:	23 1f       	adc	r18, r19
+ a30:	84 9f       	mul	r24, r20
+ a32:	60 0d       	add	r22, r0
+ a34:	21 1d       	adc	r18, r1
+ a36:	82 2f       	mov	r24, r18
+ a38:	76 2f       	mov	r23, r22
+ a3a:	6a 2f       	mov	r22, r26
+ a3c:	11 24       	eor	r1, r1
+ a3e:	9f 57       	subi	r25, 0x7F	; 127
+ a40:	50 40       	sbci	r21, 0x00	; 0
+ a42:	9a f0       	brmi	.+38     	; 0xa6a <__mulsf3_pse+0x88>
+ a44:	f1 f0       	breq	.+60     	; 0xa82 <__mulsf3_pse+0xa0>
+ a46:	88 23       	and	r24, r24
+ a48:	4a f0       	brmi	.+18     	; 0xa5c <__mulsf3_pse+0x7a>
+ a4a:	ee 0f       	add	r30, r30
+ a4c:	ff 1f       	adc	r31, r31
+ a4e:	bb 1f       	adc	r27, r27
+ a50:	66 1f       	adc	r22, r22
+ a52:	77 1f       	adc	r23, r23
+ a54:	88 1f       	adc	r24, r24
+ a56:	91 50       	subi	r25, 0x01	; 1
+ a58:	50 40       	sbci	r21, 0x00	; 0
+ a5a:	a9 f7       	brne	.-22     	; 0xa46 <__mulsf3_pse+0x64>
+ a5c:	9e 3f       	cpi	r25, 0xFE	; 254
+ a5e:	51 05       	cpc	r21, r1
+ a60:	80 f0       	brcs	.+32     	; 0xa82 <__mulsf3_pse+0xa0>
+ a62:	0c 94 85 04 	jmp	0x90a	; 0x90a <__fp_inf>
+ a66:	0c 94 d0 04 	jmp	0x9a0	; 0x9a0 <__fp_szero>
+ a6a:	5f 3f       	cpi	r21, 0xFF	; 255
+ a6c:	e4 f3       	brlt	.-8      	; 0xa66 <__mulsf3_pse+0x84>
+ a6e:	98 3e       	cpi	r25, 0xE8	; 232
+ a70:	d4 f3       	brlt	.-12     	; 0xa66 <__mulsf3_pse+0x84>
+ a72:	86 95       	lsr	r24
+ a74:	77 95       	ror	r23
+ a76:	67 95       	ror	r22
+ a78:	b7 95       	ror	r27
+ a7a:	f7 95       	ror	r31
+ a7c:	e7 95       	ror	r30
+ a7e:	9f 5f       	subi	r25, 0xFF	; 255
+ a80:	c1 f7       	brne	.-16     	; 0xa72 <__mulsf3_pse+0x90>
+ a82:	fe 2b       	or	r31, r30
+ a84:	88 0f       	add	r24, r24
+ a86:	91 1d       	adc	r25, r1
+ a88:	96 95       	lsr	r25
+ a8a:	87 95       	ror	r24
+ a8c:	97 f9       	bld	r25, 7
+ a8e:	08 95       	ret
+
+00000a90 <__divmodsi4>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1686
+ a90:	05 2e       	mov	r0, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1687
+ a92:	97 fb       	bst	r25, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1688
+ a94:	1e f4       	brtc	.+6      	; 0xa9c <__divmodsi4+0xc>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1689
+ a96:	00 94       	com	r0
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1690
+ a98:	0e 94 5f 05 	call	0xabe	; 0xabe <__negsi2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1692
+ a9c:	57 fd       	sbrc	r21, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1693
+ a9e:	07 d0       	rcall	.+14     	; 0xaae <__divmodsi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1694
+ aa0:	0e 94 67 05 	call	0xace	; 0xace <__udivmodsi4>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1695
+ aa4:	07 fc       	sbrc	r0, 7
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1696
+ aa6:	03 d0       	rcall	.+6      	; 0xaae <__divmodsi4_neg2>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1697
+ aa8:	4e f4       	brtc	.+18     	; 0xabc <__divmodsi4_exit>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1698
+ aaa:	0c 94 5f 05 	jmp	0xabe	; 0xabe <__negsi2>
+
+00000aae <__divmodsi4_neg2>:
+__divmodsi4_neg2():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1701
+ aae:	50 95       	com	r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1702
+ ab0:	40 95       	com	r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1703
+ ab2:	30 95       	com	r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1704
+ ab4:	21 95       	neg	r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1705
+ ab6:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1706
+ ab8:	4f 4f       	sbci	r20, 0xFF	; 255
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1707
+ aba:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000abc <__divmodsi4_exit>:
+__divmodsi4_exit():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1709
+ abc:	08 95       	ret
+
+00000abe <__negsi2>:
+__negsi2():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1718
+ abe:	90 95       	com	r25
+ ac0:	80 95       	com	r24
+ ac2:	70 95       	com	r23
+ ac4:	61 95       	neg	r22
+ ac6:	7f 4f       	sbci	r23, 0xFF	; 255
+ ac8:	8f 4f       	sbci	r24, 0xFF	; 255
+ aca:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1719
+ acc:	08 95       	ret
+
+00000ace <__udivmodsi4>:
+__udivmodsi4():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ ace:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ ad0:	1a 2e       	mov	r1, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ ad2:	aa 1b       	sub	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ ad4:	bb 1b       	sub	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ ad6:	fd 01       	movw	r30, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ ad8:	0d c0       	rjmp	.+26     	; 0xaf4 <__udivmodsi4_ep>
+
+00000ada <__udivmodsi4_loop>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ ada:	aa 1f       	adc	r26, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ adc:	bb 1f       	adc	r27, r27
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ ade:	ee 1f       	adc	r30, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ ae0:	ff 1f       	adc	r31, r31
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ ae2:	a2 17       	cp	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ ae4:	b3 07       	cpc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ ae6:	e4 07       	cpc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ ae8:	f5 07       	cpc	r31, r21
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ aea:	20 f0       	brcs	.+8      	; 0xaf4 <__udivmodsi4_ep>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ aec:	a2 1b       	sub	r26, r18
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ aee:	b3 0b       	sbc	r27, r19
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ af0:	e4 0b       	sbc	r30, r20
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ af2:	f5 0b       	sbc	r31, r21
+
+00000af4 <__udivmodsi4_ep>:
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ af4:	66 1f       	adc	r22, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ af6:	77 1f       	adc	r23, r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ af8:	88 1f       	adc	r24, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ afa:	99 1f       	adc	r25, r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ afc:	1a 94       	dec	r1
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ afe:	69 f7       	brne	.-38     	; 0xada <__udivmodsi4_loop>
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ b00:	60 95       	com	r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ b02:	70 95       	com	r23
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ b04:	80 95       	com	r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ b06:	90 95       	com	r25
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ b08:	9b 01       	movw	r18, r22
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ b0a:	ac 01       	movw	r20, r24
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ b0c:	bd 01       	movw	r22, r26
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ b0e:	cf 01       	movw	r24, r30
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ b10:	08 95       	ret
+
+00000b12 <_exit>:
+exit():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ b12:	f8 94       	cli
+
+00000b14 <__stop_program>:
+__stop_program():
+/home/jenkins/workspace/avr-gcc-staging/label/debian7-x86_64/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ b14:	ff cf       	rjmp	.-2      	; 0xb14 <__stop_program>
