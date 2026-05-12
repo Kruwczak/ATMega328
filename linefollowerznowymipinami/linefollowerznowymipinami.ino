@@ -1,23 +1,30 @@
 // --- PINY BEZ ZMIAN ---
 int m_prawy_A = 8; int m_prawy_B = 9;
-int m_lewy_A = 10; int m_lewy_B = 11;
+int m_lewy_A = 2; int m_lewy_B = 3; // poprawka pinów
 int en_prawy = 5;  int en_lewy = 6;
 
 int czujniki[] = {A0, A1, A2, A3, A4};
 
 // --- NASTAWY PID ---
-float Kp = 0.15;
-float Ki = 0.001;
-float Kd = 0.8;
+// float Kp = 0.15;
+// float Ki = 0.001;
+// float Kd = 0.8;
+
+// jacob - tymczasowe NASTAWY PID
+float Kp = 0.05;
+float Ki = 0.0;
+float Kd = 0.5;
 
 // --- ZMIENNE POMOCNICZE ---
 int blad = 0;
 int poprzedni_blad = 0;
 float calka = 0;
-int V_BAZA = 180;
+// jacob - do testow zmniejszam do 70 ( domyslenie 180 , zasieg od 0 do 255)
+int V_BAZA = 70;
 int ostatni_kierunek = 0;
 
-const int PROG_LINII = 500; // Czarna linia = niski odczyt (<400), białe tło = wysoki (>400)
+// jacob - wydaje mi sie ze taki jest odpowieni w razie czego zmniejszyc do 800
+const int PROG_LINII = 850; // Czarna linia = niski odczyt (<400), białe tło = wysoki (>400)
 
 void setup() {
   pinMode(m_prawy_A, OUTPUT); pinMode(m_prawy_B, OUTPUT);
