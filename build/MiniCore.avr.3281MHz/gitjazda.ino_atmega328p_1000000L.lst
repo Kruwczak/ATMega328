@@ -1,0 +1,2462 @@
+
+C:\Users\user\AppData\Local\arduino\sketches\7804DCC5EDDF2E4E45F4FA5FF793AEF7/gitjazda.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+   0:	0c 94 61 00 	jmp	0xc2	; 0xc2 <__ctors_end>
+   4:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+   8:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+   c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  10:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  14:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  18:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  1c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  20:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  24:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  28:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  2c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  30:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  34:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  38:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  3c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  40:	0c 94 12 02 	jmp	0x424	; 0x424 <__vector_16>
+  44:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  48:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  4c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  50:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  54:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  58:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  5c:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  60:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+  64:	0c 94 7e 00 	jmp	0xfc	; 0xfc <__bad_interrupt>
+
+00000068 <__trampolines_end>:
+__trampolines_start():
+  68:	00 00       	nop
+  6a:	00 09       	sbc	r16, r0
+  6c:	00 03       	mulsu	r16, r16
+  6e:	02 00       	.word	0x0002	; ????
+  70:	00 04       	cpc	r0, r0
+  72:	05 08       	sbc	r0, r5
+	...
+
+0000007f <port_to_output_PGM>:
+  7f:	00 00 00 00 25 00 28 00 2b 00                       ....%.(.+.
+
+00000089 <port_to_mode_PGM>:
+  89:	00 00 00 00 24 00 27 00 2a 00                       ....$.'.*.
+
+00000093 <digital_pin_to_port_PGM>:
+  93:	04 04 04 04 04 04 04 04 02 02 02 02 02 02 03 03     ................
+  a3:	03 03 03 03 02 02 03                                .......
+
+000000aa <digital_pin_to_bit_mask_PGM>:
+  aa:	01 02 04 08 10 20 40 80 01 02 04 08 10 20 01 02     ..... @...... ..
+  ba:	04 08 10 20 40 80 40 00                             ... @.@.
+
+000000c2 <__ctors_end>:
+__dtors_end():
+  c2:	11 24       	eor	r1, r1
+  c4:	1f be       	out	0x3f, r1	; 63
+  c6:	cf ef       	ldi	r28, 0xFF	; 255
+  c8:	d8 e0       	ldi	r29, 0x08	; 8
+  ca:	de bf       	out	0x3e, r29	; 62
+  cc:	cd bf       	out	0x3d, r28	; 61
+
+000000ce <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  ce:	11 e0       	ldi	r17, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  d0:	a0 e0       	ldi	r26, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  d2:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  d4:	e4 ea       	ldi	r30, 0xA4	; 164
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  d6:	fc e0       	ldi	r31, 0x0C	; 12
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  d8:	02 c0       	rjmp	.+4      	; 0xde <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  da:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  dc:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  de:	a4 31       	cpi	r26, 0x14	; 20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  e0:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  e2:	d9 f7       	brne	.-10     	; 0xda <__do_copy_data+0xc>
+
+000000e4 <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  e4:	21 e0       	ldi	r18, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  e6:	a4 e1       	ldi	r26, 0x14	; 20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  e8:	b1 e0       	ldi	r27, 0x01	; 1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  ea:	01 c0       	rjmp	.+2      	; 0xee <.do_clear_bss_start>
+
+000000ec <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  ec:	1d 92       	st	X+, r1
+
+000000ee <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  ee:	ac 32       	cpi	r26, 0x2C	; 44
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  f0:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  f2:	e1 f7       	brne	.-8      	; 0xec <.do_clear_bss_loop>
+.do_clear_bss_start():
+  f4:	0e 94 5c 02 	call	0x4b8	; 0x4b8 <main>
+  f8:	0c 94 50 06 	jmp	0xca0	; 0xca0 <_exit>
+
+000000fc <__bad_interrupt>:
+__vector_22():
+  fc:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000100 <pinMode.constprop.0>:
+pinMode.constprop.0():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:31
+#include "wiring_private.h"
+#include "pins_arduino.h"
+
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  uint8_t bit = digitalPinToBitMask(pin);
+ 100:	90 e0       	ldi	r25, 0x00	; 0
+ 102:	fc 01       	movw	r30, r24
+ 104:	e6 55       	subi	r30, 0x56	; 86
+ 106:	ff 4f       	sbci	r31, 0xFF	; 255
+ 108:	24 91       	lpm	r18, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:32
+  uint8_t port = digitalPinToPort(pin);
+ 10a:	8d 56       	subi	r24, 0x6D	; 109
+ 10c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 10e:	fc 01       	movw	r30, r24
+ 110:	84 91       	lpm	r24, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:35
+  volatile uint8_t *reg, *out;
+
+  if (port == NOT_A_PIN) return;
+ 112:	88 23       	and	r24, r24
+ 114:	99 f0       	breq	.+38     	; 0x13c <pinMode.constprop.0+0x3c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:38
+
+  // JWS: can I let the optimizer do this?
+  reg = portModeRegister(port);
+ 116:	90 e0       	ldi	r25, 0x00	; 0
+ 118:	88 0f       	add	r24, r24
+ 11a:	99 1f       	adc	r25, r25
+ 11c:	fc 01       	movw	r30, r24
+ 11e:	e7 57       	subi	r30, 0x77	; 119
+ 120:	ff 4f       	sbci	r31, 0xFF	; 255
+ 122:	a5 91       	lpm	r26, Z+
+ 124:	b4 91       	lpm	r27, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:39
+  out = portOutputRegister(port);
+ 126:	fc 01       	movw	r30, r24
+ 128:	e1 58       	subi	r30, 0x81	; 129
+ 12a:	ff 4f       	sbci	r31, 0xFF	; 255
+ 12c:	85 91       	lpm	r24, Z+
+ 12e:	94 91       	lpm	r25, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:54
+    cli();
+    *reg &= ~bit;
+    *out |= bit;
+    SREG = oldSREG;
+  } else {
+    uint8_t oldSREG = SREG;
+ 130:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:55
+    cli();
+ 132:	f8 94       	cli
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:56
+    *reg |= bit;
+ 134:	ec 91       	ld	r30, X
+ 136:	e2 2b       	or	r30, r18
+ 138:	ec 93       	st	X, r30
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:57
+    SREG = oldSREG;
+ 13a:	8f bf       	out	0x3f, r24	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:59
+  }
+}
+ 13c:	08 95       	ret
+
+0000013e <digitalWrite>:
+digitalWrite():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:189
+  }
+}
+
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  uint8_t timer = digitalPinToTimer(pin);
+ 13e:	90 e0       	ldi	r25, 0x00	; 0
+ 140:	fc 01       	movw	r30, r24
+ 142:	e8 59       	subi	r30, 0x98	; 152
+ 144:	ff 4f       	sbci	r31, 0xFF	; 255
+ 146:	24 91       	lpm	r18, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:190
+  uint8_t bit = digitalPinToBitMask(pin);
+ 148:	fc 01       	movw	r30, r24
+ 14a:	e6 55       	subi	r30, 0x56	; 86
+ 14c:	ff 4f       	sbci	r31, 0xFF	; 255
+ 14e:	34 91       	lpm	r19, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:191
+  uint8_t port = digitalPinToPort(pin);
+ 150:	fc 01       	movw	r30, r24
+ 152:	ed 56       	subi	r30, 0x6D	; 109
+ 154:	ff 4f       	sbci	r31, 0xFF	; 255
+ 156:	e4 91       	lpm	r30, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:194
+  volatile uint8_t *out;
+
+  if (port == NOT_A_PIN) return;
+ 158:	ee 23       	and	r30, r30
+ 15a:	c9 f0       	breq	.+50     	; 0x18e <digitalWrite+0x50>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:198
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+ 15c:	22 23       	and	r18, r18
+ 15e:	39 f0       	breq	.+14     	; 0x16e <digitalWrite+0x30>
+turnOffPWM():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 160:	24 30       	cpi	r18, 0x04	; 4
+ 162:	01 f1       	breq	.+64     	; 0x1a4 <digitalWrite+0x66>
+ 164:	a8 f4       	brcc	.+42     	; 0x190 <digitalWrite+0x52>
+ 166:	22 30       	cpi	r18, 0x02	; 2
+ 168:	69 f1       	breq	.+90     	; 0x1c4 <digitalWrite+0x86>
+ 16a:	23 30       	cpi	r18, 0x03	; 3
+ 16c:	79 f1       	breq	.+94     	; 0x1cc <digitalWrite+0x8e>
+digitalWrite():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:200
+
+  // If the pin that support PWM output, we need to turn it off
+  // before doing a digital write.
+  if (timer != NOT_ON_TIMER) turnOffPWM(timer);
+
+  out = portOutputRegister(port);
+ 16e:	f0 e0       	ldi	r31, 0x00	; 0
+ 170:	ee 0f       	add	r30, r30
+ 172:	ff 1f       	adc	r31, r31
+ 174:	e1 58       	subi	r30, 0x81	; 129
+ 176:	ff 4f       	sbci	r31, 0xFF	; 255
+ 178:	a5 91       	lpm	r26, Z+
+ 17a:	b4 91       	lpm	r27, Z
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:202
+
+  uint8_t oldSREG = SREG;
+ 17c:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:203
+  cli();
+ 17e:	f8 94       	cli
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:206
+
+  if (val == LOW) {
+    *out &= ~bit;
+ 180:	ec 91       	ld	r30, X
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:205
+  out = portOutputRegister(port);
+
+  uint8_t oldSREG = SREG;
+  cli();
+
+  if (val == LOW) {
+ 182:	61 11       	cpse	r22, r1
+ 184:	26 c0       	rjmp	.+76     	; 0x1d2 <digitalWrite+0x94>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:206
+    *out &= ~bit;
+ 186:	30 95       	com	r19
+ 188:	3e 23       	and	r19, r30
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:208
+  } else {
+    *out |= bit;
+ 18a:	3c 93       	st	X, r19
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:211
+  }
+
+  SREG = oldSREG;
+ 18c:	8f bf       	out	0x3f, r24	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:212
+}
+ 18e:	08 95       	ret
+turnOffPWM():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:77
+//
+//static inline void turnOffPWM(uint8_t timer) __attribute__ ((always_inline));
+//static inline void turnOffPWM(uint8_t timer)
+static void turnOffPWM(uint8_t timer)
+{
+  switch (timer)
+ 190:	28 30       	cpi	r18, 0x08	; 8
+ 192:	71 f0       	breq	.+28     	; 0x1b0 <digitalWrite+0x72>
+ 194:	29 30       	cpi	r18, 0x09	; 9
+ 196:	91 f0       	breq	.+36     	; 0x1bc <digitalWrite+0x7e>
+ 198:	25 30       	cpi	r18, 0x05	; 5
+ 19a:	49 f7       	brne	.-46     	; 0x16e <digitalWrite+0x30>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        TCCR1A &= ~_BV(COM1A1);
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 19c:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1a0:	8f 7d       	andi	r24, 0xDF	; 223
+ 1a2:	03 c0       	rjmp	.+6      	; 0x1aa <digitalWrite+0x6c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:82
+  switch (timer)
+  {
+    // Timer1
+    #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        TCCR1A &= ~_BV(COM1A1);
+ 1a4:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1a8:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:87
+        break;
+    #endif
+    #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        TCCR1A &= ~_BV(COM1B1);
+ 1aa:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 1ae:	df cf       	rjmp	.-66     	; 0x16e <digitalWrite+0x30>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:104
+        TCCR2 &= ~_BV(COM21);
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        TCCR2A &= ~_BV(COM2A1);
+ 1b0:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1b4:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:109
+        break;
+    #endif
+    #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        TCCR2A &= ~_BV(COM2B1);
+ 1b6:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1ba:	d9 cf       	rjmp	.-78     	; 0x16e <digitalWrite+0x30>
+ 1bc:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 1c0:	8f 7d       	andi	r24, 0xDF	; 223
+ 1c2:	f9 cf       	rjmp	.-14     	; 0x1b6 <digitalWrite+0x78>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:176
+        TCCR0 &= ~_BV(COM01);
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        TCCR0A &= ~_BV(COM0A1);
+ 1c4:	84 b5       	in	r24, 0x24	; 36
+ 1c6:	8f 77       	andi	r24, 0x7F	; 127
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:181
+        break;
+    #endif
+    #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        TCCR0A &= ~_BV(COM0B1);
+ 1c8:	84 bd       	out	0x24, r24	; 36
+ 1ca:	d1 cf       	rjmp	.-94     	; 0x16e <digitalWrite+0x30>
+ 1cc:	84 b5       	in	r24, 0x24	; 36
+ 1ce:	8f 7d       	andi	r24, 0xDF	; 223
+ 1d0:	fb cf       	rjmp	.-10     	; 0x1c8 <digitalWrite+0x8a>
+digitalWrite():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_digital.c:208
+  cli();
+
+  if (val == LOW) {
+    *out &= ~bit;
+  } else {
+    *out |= bit;
+ 1d2:	3e 2b       	or	r19, r30
+ 1d4:	da cf       	rjmp	.-76     	; 0x18a <digitalWrite+0x4c>
+
+000001d6 <analogWrite>:
+analogWrite():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:95
+// Right now, PWM output only works on the pins with
+// hardware support.  These are defined in the appropriate
+// pins_*.c file.  For the rest of the pins, we default
+// to digital output.
+void analogWrite(uint8_t pin, int val)
+{
+ 1d6:	1f 93       	push	r17
+ 1d8:	cf 93       	push	r28
+ 1da:	df 93       	push	r29
+ 1dc:	18 2f       	mov	r17, r24
+ 1de:	eb 01       	movw	r28, r22
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:101
+  // We need to make sure the PWM output is enabled for those pins
+  // that support it, as we turn it off when digitally reading or
+  // writing with them.  Also, make sure the pin is in output mode
+  // for consistenty with Wiring, which doesn't require a pinMode
+  // call for the analog output pins.
+  pinMode(pin, OUTPUT);
+ 1e0:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:102
+  if (val == 0)
+ 1e4:	20 97       	sbiw	r28, 0x00	; 0
+ 1e6:	39 f4       	brne	.+14     	; 0x1f6 <analogWrite+0x20>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:104
+  {
+    digitalWrite(pin, LOW);
+ 1e8:	60 e0       	ldi	r22, 0x00	; 0
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:108
+  }
+  else if (val == 255)
+  {
+    digitalWrite(pin, HIGH);
+ 1ea:	81 2f       	mov	r24, r17
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:299
+        } else {
+          digitalWrite(pin, HIGH);
+        }
+    }
+  }
+}
+ 1ec:	df 91       	pop	r29
+ 1ee:	cf 91       	pop	r28
+ 1f0:	1f 91       	pop	r17
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:108
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val == 255)
+  {
+    digitalWrite(pin, HIGH);
+ 1f2:	0c 94 9f 00 	jmp	0x13e	; 0x13e <digitalWrite>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:106
+  pinMode(pin, OUTPUT);
+  if (val == 0)
+  {
+    digitalWrite(pin, LOW);
+  }
+  else if (val == 255)
+ 1f6:	cf 3f       	cpi	r28, 0xFF	; 255
+ 1f8:	d1 05       	cpc	r29, r1
+ 1fa:	11 f4       	brne	.+4      	; 0x200 <analogWrite+0x2a>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:108
+  {
+    digitalWrite(pin, HIGH);
+ 1fc:	61 e0       	ldi	r22, 0x01	; 1
+ 1fe:	f5 cf       	rjmp	.-22     	; 0x1ea <analogWrite+0x14>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:112
+  }
+  else
+  {
+    switch(digitalPinToTimer(pin))
+ 200:	e1 2f       	mov	r30, r17
+ 202:	f0 e0       	ldi	r31, 0x00	; 0
+ 204:	e8 59       	subi	r30, 0x98	; 152
+ 206:	ff 4f       	sbci	r31, 0xFF	; 255
+ 208:	e4 91       	lpm	r30, Z
+ 20a:	e4 30       	cpi	r30, 0x04	; 4
+ 20c:	31 f1       	breq	.+76     	; 0x25a <analogWrite+0x84>
+ 20e:	40 f4       	brcc	.+16     	; 0x220 <analogWrite+0x4a>
+ 210:	e2 30       	cpi	r30, 0x02	; 2
+ 212:	b1 f0       	breq	.+44     	; 0x240 <analogWrite+0x6a>
+ 214:	e3 30       	cpi	r30, 0x03	; 3
+ 216:	e1 f0       	breq	.+56     	; 0x250 <analogWrite+0x7a>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:292
+        break;
+      #endif
+
+      case NOT_ON_TIMER:
+      default:
+        if (val < 128) {
+ 218:	c0 38       	cpi	r28, 0x80	; 128
+ 21a:	d1 05       	cpc	r29, r1
+ 21c:	7c f7       	brge	.-34     	; 0x1fc <analogWrite+0x26>
+ 21e:	e4 cf       	rjmp	.-56     	; 0x1e8 <analogWrite+0x12>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:112
+  {
+    digitalWrite(pin, HIGH);
+  }
+  else
+  {
+    switch(digitalPinToTimer(pin))
+ 220:	e8 30       	cpi	r30, 0x08	; 8
+ 222:	29 f1       	breq	.+74     	; 0x26e <analogWrite+0x98>
+ 224:	e9 30       	cpi	r30, 0x09	; 9
+ 226:	59 f1       	breq	.+86     	; 0x27e <analogWrite+0xa8>
+ 228:	e5 30       	cpi	r30, 0x05	; 5
+ 22a:	b1 f7       	brne	.-20     	; 0x218 <analogWrite+0x42>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:156
+      #endif
+
+      #if defined(TCCR1A) && defined(COM1B1)
+      case TIMER1B:
+        // connect pwm to pin on timer 1, channel B
+        TCCR1A |= _BV(COM1B1);
+ 22c:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 230:	80 62       	ori	r24, 0x20	; 32
+ 232:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:157
+        OCR1B = val; // set pwm duty
+ 236:	d0 93 8b 00 	sts	0x008B, r29	; 0x80008b <__DATA_REGION_ORIGIN__+0x2b>
+ 23a:	c0 93 8a 00 	sts	0x008A, r28	; 0x80008a <__DATA_REGION_ORIGIN__+0x2a>
+ 23e:	04 c0       	rjmp	.+8      	; 0x248 <analogWrite+0x72>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:132
+      #endif
+
+      #if defined(TCCR0A) && defined(COM0A1)
+      case TIMER0A:
+        // connect pwm to pin on timer 0, channel A
+        TCCR0A |= _BV(COM0A1);
+ 240:	84 b5       	in	r24, 0x24	; 36
+ 242:	80 68       	ori	r24, 0x80	; 128
+ 244:	84 bd       	out	0x24, r24	; 36
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:133
+        OCR0A = val; // set pwm duty
+ 246:	c7 bd       	out	0x27, r28	; 39
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:299
+        } else {
+          digitalWrite(pin, HIGH);
+        }
+    }
+  }
+}
+ 248:	df 91       	pop	r29
+ 24a:	cf 91       	pop	r28
+ 24c:	1f 91       	pop	r17
+ 24e:	08 95       	ret
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:140
+      #endif
+
+      #if defined(TCCR0A) && defined(COM0B1)
+      case TIMER0B:
+        // connect pwm to pin on timer 0, channel B
+        TCCR0A |= _BV(COM0B1);
+ 250:	84 b5       	in	r24, 0x24	; 36
+ 252:	80 62       	ori	r24, 0x20	; 32
+ 254:	84 bd       	out	0x24, r24	; 36
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:141
+        OCR0B = val; // set pwm duty
+ 256:	c8 bd       	out	0x28, r28	; 40
+ 258:	f7 cf       	rjmp	.-18     	; 0x248 <analogWrite+0x72>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:148
+      #endif
+
+      #if defined(TCCR1A) && defined(COM1A1)
+      case TIMER1A:
+        // connect pwm to pin on timer 1, channel A
+        TCCR1A |= _BV(COM1A1);
+ 25a:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 25e:	80 68       	ori	r24, 0x80	; 128
+ 260:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:149
+        OCR1A = val; // set pwm duty
+ 264:	d0 93 89 00 	sts	0x0089, r29	; 0x800089 <__DATA_REGION_ORIGIN__+0x29>
+ 268:	c0 93 88 00 	sts	0x0088, r28	; 0x800088 <__DATA_REGION_ORIGIN__+0x28>
+ 26c:	ed cf       	rjmp	.-38     	; 0x248 <analogWrite+0x72>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:180
+      #endif
+
+      #if defined(TCCR2A) && defined(COM2A1)
+      case TIMER2A:
+        // connect pwm to pin on timer 2, channel A
+        TCCR2A |= _BV(COM2A1);
+ 26e:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 272:	80 68       	ori	r24, 0x80	; 128
+ 274:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:181
+        OCR2A = val; // set pwm duty
+ 278:	c0 93 b3 00 	sts	0x00B3, r28	; 0x8000b3 <__DATA_REGION_ORIGIN__+0x53>
+ 27c:	e5 cf       	rjmp	.-54     	; 0x248 <analogWrite+0x72>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:188
+      #endif
+
+      #if defined(TCCR2A) && defined(COM2B1)
+      case TIMER2B:
+        // connect pwm to pin on timer 2, channel B
+        TCCR2A |= _BV(COM2B1);
+ 27e:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 282:	80 62       	ori	r24, 0x20	; 32
+ 284:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:189
+        OCR2B = val; // set pwm duty
+ 288:	c0 93 b4 00 	sts	0x00B4, r28	; 0x8000b4 <__DATA_REGION_ORIGIN__+0x54>
+ 28c:	dd cf       	rjmp	.-70     	; 0x248 <analogWrite+0x72>
+
+0000028e <analogRead>:
+analogRead():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:49
+int analogRead(uint8_t pin)
+{
+
+// Macro located in the pins_arduino.h file
+#ifdef analogPinToChannel
+  pin = analogPinToChannel(pin);
+ 28e:	88 30       	cpi	r24, 0x08	; 8
+ 290:	20 f0       	brcs	.+8      	; 0x29a <analogRead+0xc>
+ 292:	8d 30       	cpi	r24, 0x0D	; 13
+ 294:	08 f4       	brcc	.+2      	; 0x298 <analogRead+0xa>
+ 296:	8d e0       	ldi	r24, 0x0D	; 13
+ 298:	8e 50       	subi	r24, 0x0E	; 14
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:68
+  
+  // set the analog reference (high two bits of ADMUX) and select the
+  // channel (low 4 bits).  this also sets ADLAR (left-adjust result)
+  // to 0 (the default).
+#if defined(ADMUX)
+  ADMUX = (analog_reference << 6) | (pin & 0x07);
+ 29a:	87 70       	andi	r24, 0x07	; 7
+ 29c:	80 64       	ori	r24, 0x40	; 64
+ 29e:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__DATA_REGION_ORIGIN__+0x1c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:76
+  // without a delay, we seem to read from the wrong channel
+  //delay(1);
+
+#if defined(ADCSRA) && defined(ADC)
+  // start the conversion
+  ADCSRA |= _BV(ADSC);
+ 2a2:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+ 2a6:	80 64       	ori	r24, 0x40	; 64
+ 2a8:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:79
+
+  // ADSC is cleared when the conversion finishes
+  while (ADCSRA & _BV(ADSC)) {};
+ 2ac:	80 91 7a 00 	lds	r24, 0x007A	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+ 2b0:	86 fd       	sbrc	r24, 6
+ 2b2:	fc cf       	rjmp	.-8      	; 0x2ac <analogRead+0x1e>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:83
+
+  // ADC macro takes care of reading ADC register.
+ 	// avr-gcc implements the proper reading order: ADCL is read first.
+ 	return ADC;
+ 2b4:	80 91 78 00 	lds	r24, 0x0078	; 0x800078 <__DATA_REGION_ORIGIN__+0x18>
+ 2b8:	90 91 79 00 	lds	r25, 0x0079	; 0x800079 <__DATA_REGION_ORIGIN__+0x19>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring_analog.c:87
+#else
+  return 0;
+#endif
+}
+ 2bc:	08 95       	ret
+
+000002be <micros>:
+micros():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:237
+  unsigned char f; // temporary storage for millis fraction counter
+  unsigned char q = 0; // record whether an overflow is flagged
+#endif
+  // t will be the number where the timer0 counter stopped
+  uint8_t t;
+  uint8_t oldSREG = SREG;
+ 2be:	3f b7       	in	r19, 0x3f	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:240
+
+  // Stop all interrupts
+  cli();
+ 2c0:	f8 94       	cli
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:247
+#ifdef CORRECT_EXACT_MICROS
+  // combine exact millisec and 8usec counters
+  m = timer0_millis;
+  f = timer0_fract;
+#else
+  m = timer0_overflow_count;
+ 2c2:	80 91 28 01 	lds	r24, 0x0128	; 0x800128 <timer0_overflow_count>
+ 2c6:	90 91 29 01 	lds	r25, 0x0129	; 0x800129 <timer0_overflow_count+0x1>
+ 2ca:	a0 91 2a 01 	lds	r26, 0x012A	; 0x80012a <timer0_overflow_count+0x2>
+ 2ce:	b0 91 2b 01 	lds	r27, 0x012B	; 0x80012b <timer0_overflow_count+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:252
+#endif
+
+  // TCNT0 : The Timer Counter Register
+#if defined(TCNT0)
+  t = TCNT0;
+ 2d2:	26 b5       	in	r18, 0x26	; 38
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:261
+  #error TIMER 0 not defined
+#endif
+
+  // Timer0 Interrupt Flag Register
+#ifdef TIFR0
+  if ((TIFR0 & _BV(TOV0)) && (t < 255))
+ 2d4:	a8 9b       	sbis	0x15, 0	; 21
+ 2d6:	05 c0       	rjmp	.+10     	; 0x2e2 <micros+0x24>
+ 2d8:	2f 3f       	cpi	r18, 0xFF	; 255
+ 2da:	19 f0       	breq	.+6      	; 0x2e2 <micros+0x24>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:263
+#ifndef CORRECT_EXACT_MICROS
+    m++;
+ 2dc:	01 96       	adiw	r24, 0x01	; 1
+ 2de:	a1 1d       	adc	r26, r1
+ 2e0:	b1 1d       	adc	r27, r1
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:276
+#else
+    q = 1;
+#endif
+#endif
+  // Restore SREG
+  SREG = oldSREG;
+ 2e2:	3f bf       	out	0x3f, r19	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:292
+      ((t * MICROSECONDS_PER_TIMER0_OVERFLOW) >> 8);
+  return q ? m + MICROSECONDS_PER_TIMER0_OVERFLOW : m;
+#elif 1
+  /* All power-of-two Megahertz frequencies enter here, as well as 12.8 MHz.
+     We only end up here if right shift before multiplication is exact. */
+  return ((m << 8) + t) * (MICROSECONDS_PER_TIMER0_OVERFLOW >> 8);
+ 2e4:	ba 2f       	mov	r27, r26
+ 2e6:	a9 2f       	mov	r26, r25
+ 2e8:	98 2f       	mov	r25, r24
+ 2ea:	88 27       	eor	r24, r24
+ 2ec:	bc 01       	movw	r22, r24
+ 2ee:	cd 01       	movw	r24, r26
+ 2f0:	62 0f       	add	r22, r18
+ 2f2:	71 1d       	adc	r23, r1
+ 2f4:	81 1d       	adc	r24, r1
+ 2f6:	91 1d       	adc	r25, r1
+ 2f8:	46 e0       	ldi	r20, 0x06	; 6
+ 2fa:	66 0f       	add	r22, r22
+ 2fc:	77 1f       	adc	r23, r23
+ 2fe:	88 1f       	adc	r24, r24
+ 300:	99 1f       	adc	r25, r25
+ 302:	4a 95       	dec	r20
+ 304:	d1 f7       	brne	.-12     	; 0x2fa <micros+0x3c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:393
+  // m & t are multiplied by 4 (since it was already multiplied by 256)
+  // t is multiplied by 4
+  return ((m << 8) + t) * (64 / clockCyclesPerMicrosecond());
+#endif
+#endif // 0
+}
+ 306:	08 95       	ret
+
+00000308 <delay>:
+delay():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:396
+
+void delay(unsigned long ms)
+{
+ 308:	8f 92       	push	r8
+ 30a:	9f 92       	push	r9
+ 30c:	af 92       	push	r10
+ 30e:	bf 92       	push	r11
+ 310:	cf 92       	push	r12
+ 312:	df 92       	push	r13
+ 314:	ef 92       	push	r14
+ 316:	ff 92       	push	r15
+ 318:	4b 01       	movw	r8, r22
+ 31a:	5c 01       	movw	r10, r24
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:397
+  unsigned long start = micros();
+ 31c:	0e 94 5f 01 	call	0x2be	; 0x2be <micros>
+ 320:	6b 01       	movw	r12, r22
+ 322:	7c 01       	movw	r14, r24
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 324:	0e 94 5f 01 	call	0x2be	; 0x2be <micros>
+ 328:	6c 19       	sub	r22, r12
+ 32a:	7d 09       	sbc	r23, r13
+ 32c:	8e 09       	sbc	r24, r14
+ 32e:	9f 09       	sbc	r25, r15
+ 330:	68 3e       	cpi	r22, 0xE8	; 232
+ 332:	73 40       	sbci	r23, 0x03	; 3
+ 334:	81 05       	cpc	r24, r1
+ 336:	91 05       	cpc	r25, r1
+ 338:	a8 f3       	brcs	.-22     	; 0x324 <delay+0x1c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:402
+      ms--;
+ 33a:	21 e0       	ldi	r18, 0x01	; 1
+ 33c:	82 1a       	sub	r8, r18
+ 33e:	91 08       	sbc	r9, r1
+ 340:	a1 08       	sbc	r10, r1
+ 342:	b1 08       	sbc	r11, r1
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:403
+      start += 1000UL;
+ 344:	88 ee       	ldi	r24, 0xE8	; 232
+ 346:	c8 0e       	add	r12, r24
+ 348:	83 e0       	ldi	r24, 0x03	; 3
+ 34a:	d8 1e       	adc	r13, r24
+ 34c:	e1 1c       	adc	r14, r1
+ 34e:	f1 1c       	adc	r15, r1
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:401
+{
+  unsigned long start = micros();
+
+  while (ms > 0UL) {
+    yield();
+    while (ms > 0UL && (micros() - start) >= 1000UL) {
+ 350:	81 14       	cp	r8, r1
+ 352:	91 04       	cpc	r9, r1
+ 354:	a1 04       	cpc	r10, r1
+ 356:	b1 04       	cpc	r11, r1
+ 358:	29 f7       	brne	.-54     	; 0x324 <delay+0x1c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:406
+      ms--;
+      start += 1000UL;
+    }
+  }
+}
+ 35a:	ff 90       	pop	r15
+ 35c:	ef 90       	pop	r14
+ 35e:	df 90       	pop	r13
+ 360:	cf 90       	pop	r12
+ 362:	bf 90       	pop	r11
+ 364:	af 90       	pop	r10
+ 366:	9f 90       	pop	r9
+ 368:	8f 90       	pop	r8
+ 36a:	08 95       	ret
+
+0000036c <move(int, int)>:
+_Z4moveii():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:130
+    calka = 0;
+    poprzedni_blad = 0;
+  }
+}
+
+void move(int ml, int mp) {
+ 36c:	ef 92       	push	r14
+ 36e:	ff 92       	push	r15
+ 370:	0f 93       	push	r16
+ 372:	1f 93       	push	r17
+ 374:	cf 93       	push	r28
+ 376:	df 93       	push	r29
+ 378:	7b 01       	movw	r14, r22
+ 37a:	8c 01       	movw	r16, r24
+ 37c:	8f 3f       	cpi	r24, 0xFF	; 255
+ 37e:	91 05       	cpc	r25, r1
+ 380:	19 f0       	breq	.+6      	; 0x388 <move(int, int)+0x1c>
+ 382:	14 f0       	brlt	.+4      	; 0x388 <move(int, int)+0x1c>
+ 384:	0f ef       	ldi	r16, 0xFF	; 255
+ 386:	10 e0       	ldi	r17, 0x00	; 0
+ 388:	01 30       	cpi	r16, 0x01	; 1
+ 38a:	2f ef       	ldi	r18, 0xFF	; 255
+ 38c:	12 07       	cpc	r17, r18
+ 38e:	14 f4       	brge	.+4      	; 0x394 <move(int, int)+0x28>
+ 390:	01 e0       	ldi	r16, 0x01	; 1
+ 392:	1f ef       	ldi	r17, 0xFF	; 255
+ 394:	e7 01       	movw	r28, r14
+ 396:	2f ef       	ldi	r18, 0xFF	; 255
+ 398:	e2 16       	cp	r14, r18
+ 39a:	f1 04       	cpc	r15, r1
+ 39c:	19 f0       	breq	.+6      	; 0x3a4 <move(int, int)+0x38>
+ 39e:	14 f0       	brlt	.+4      	; 0x3a4 <move(int, int)+0x38>
+ 3a0:	cf ef       	ldi	r28, 0xFF	; 255
+ 3a2:	d0 e0       	ldi	r29, 0x00	; 0
+ 3a4:	c1 30       	cpi	r28, 0x01	; 1
+ 3a6:	2f ef       	ldi	r18, 0xFF	; 255
+ 3a8:	d2 07       	cpc	r29, r18
+ 3aa:	14 f4       	brge	.+4      	; 0x3b0 <move(int, int)+0x44>
+ 3ac:	c1 e0       	ldi	r28, 0x01	; 1
+ 3ae:	df ef       	ldi	r29, 0xFF	; 255
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:134
+  ml = constrain(ml, -255, 255);
+  mp = constrain(mp, -255, 255);
+
+  if (ml >= 0) {
+ 3b0:	97 fd       	sbrc	r25, 7
+ 3b2:	20 c0       	rjmp	.+64     	; 0x3f4 <move(int, int)+0x88>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:135
+    digitalWrite(m_lewy_A, LOW); digitalWrite(m_lewy_B, HIGH);
+ 3b4:	60 e0       	ldi	r22, 0x00	; 0
+ 3b6:	82 e0       	ldi	r24, 0x02	; 2
+ 3b8:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 3bc:	61 e0       	ldi	r22, 0x01	; 1
+ 3be:	83 e0       	ldi	r24, 0x03	; 3
+ 3c0:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:141
+  } else {
+    digitalWrite(m_lewy_A, HIGH); digitalWrite(m_lewy_B, LOW);
+    ml = -ml;
+  }
+
+  if (mp >= 0) {
+ 3c4:	f7 fc       	sbrc	r15, 7
+ 3c6:	22 c0       	rjmp	.+68     	; 0x40c <__LOCK_REGION_LENGTH__+0xc>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:142
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+ 3c8:	60 e0       	ldi	r22, 0x00	; 0
+ 3ca:	88 e0       	ldi	r24, 0x08	; 8
+ 3cc:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 3d0:	61 e0       	ldi	r22, 0x01	; 1
+ 3d2:	89 e0       	ldi	r24, 0x09	; 9
+ 3d4:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:148
+  } else {
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
+    mp = -mp;
+  }
+
+  analogWrite(en_lewy, ml);
+ 3d8:	b8 01       	movw	r22, r16
+ 3da:	86 e0       	ldi	r24, 0x06	; 6
+ 3dc:	0e 94 eb 00 	call	0x1d6	; 0x1d6 <analogWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:149
+  analogWrite(en_prawy, mp);
+ 3e0:	be 01       	movw	r22, r28
+ 3e2:	85 e0       	ldi	r24, 0x05	; 5
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:150
+ 3e4:	df 91       	pop	r29
+ 3e6:	cf 91       	pop	r28
+ 3e8:	1f 91       	pop	r17
+ 3ea:	0f 91       	pop	r16
+ 3ec:	ff 90       	pop	r15
+ 3ee:	ef 90       	pop	r14
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:149
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
+    mp = -mp;
+  }
+
+  analogWrite(en_lewy, ml);
+  analogWrite(en_prawy, mp);
+ 3f0:	0c 94 eb 00 	jmp	0x1d6	; 0x1d6 <analogWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:137
+  mp = constrain(mp, -255, 255);
+
+  if (ml >= 0) {
+    digitalWrite(m_lewy_A, LOW); digitalWrite(m_lewy_B, HIGH);
+  } else {
+    digitalWrite(m_lewy_A, HIGH); digitalWrite(m_lewy_B, LOW);
+ 3f4:	61 e0       	ldi	r22, 0x01	; 1
+ 3f6:	82 e0       	ldi	r24, 0x02	; 2
+ 3f8:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 3fc:	60 e0       	ldi	r22, 0x00	; 0
+ 3fe:	83 e0       	ldi	r24, 0x03	; 3
+ 400:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:138
+    ml = -ml;
+ 404:	11 95       	neg	r17
+ 406:	01 95       	neg	r16
+ 408:	11 09       	sbc	r17, r1
+ 40a:	dc cf       	rjmp	.-72     	; 0x3c4 <move(int, int)+0x58>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:144
+  }
+
+  if (mp >= 0) {
+    digitalWrite(m_prawy_A, LOW); digitalWrite(m_prawy_B, HIGH);
+  } else {
+    digitalWrite(m_prawy_A, HIGH); digitalWrite(m_prawy_B, LOW);
+ 40c:	61 e0       	ldi	r22, 0x01	; 1
+ 40e:	88 e0       	ldi	r24, 0x08	; 8
+ 410:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+ 414:	60 e0       	ldi	r22, 0x00	; 0
+ 416:	89 e0       	ldi	r24, 0x09	; 9
+ 418:	0e 94 9f 00 	call	0x13e	; 0x13e <digitalWrite>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:145
+    mp = -mp;
+ 41c:	d1 95       	neg	r29
+ 41e:	c1 95       	neg	r28
+ 420:	d1 09       	sbc	r29, r1
+ 422:	da cf       	rjmp	.-76     	; 0x3d8 <move(int, int)+0x6c>
+
+00000424 <__vector_16>:
+__vector_16():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:159
+#if defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__)
+ISR(TIM0_OVF_vect)
+#else
+ISR(TIMER0_OVF_vect)
+#endif
+{
+ 424:	1f 92       	push	r1
+ 426:	0f 92       	push	r0
+ 428:	0f b6       	in	r0, 0x3f	; 63
+ 42a:	0f 92       	push	r0
+ 42c:	11 24       	eor	r1, r1
+ 42e:	2f 93       	push	r18
+ 430:	3f 93       	push	r19
+ 432:	8f 93       	push	r24
+ 434:	9f 93       	push	r25
+ 436:	af 93       	push	r26
+ 438:	bf 93       	push	r27
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:167
+  static unsigned char timer0_exact = 0;
+#endif
+
+  // copy these to local variables so they can be stored in registers
+  // (volatile variables must be read from memory on every access, so this saves time)
+  unsigned long m = timer0_millis;
+ 43a:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <timer0_millis>
+ 43e:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <timer0_millis+0x1>
+ 442:	a0 91 26 01 	lds	r26, 0x0126	; 0x800126 <timer0_millis+0x2>
+ 446:	b0 91 27 01 	lds	r27, 0x0127	; 0x800127 <timer0_millis+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:168
+  unsigned char f = timer0_fract;
+ 44a:	30 91 23 01 	lds	r19, 0x0123	; 0x800123 <timer0_fract>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:170
+
+  f += FRACT_INC FRACT_INC_PLUS;
+ 44e:	20 e3       	ldi	r18, 0x30	; 48
+ 450:	23 0f       	add	r18, r19
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:200
+    ++f;
+  }
+#endif
+#endif // CORRECT_EXACT_MILLIS
+
+  if (f >= FRACT_MAX) {
+ 452:	2d 37       	cpi	r18, 0x7D	; 125
+ 454:	68 f1       	brcs	.+90     	; 0x4b0 <__vector_16+0x8c>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:201
+    f -= FRACT_MAX;
+ 456:	23 eb       	ldi	r18, 0xB3	; 179
+ 458:	23 0f       	add	r18, r19
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:202
+    m += MILLIS_INC + 1;
+ 45a:	41 96       	adiw	r24, 0x11	; 17
+ 45c:	a1 1d       	adc	r26, r1
+ 45e:	b1 1d       	adc	r27, r1
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:208
+  }
+  else {
+    m += MILLIS_INC;
+  }
+
+  timer0_fract = f;
+ 460:	20 93 23 01 	sts	0x0123, r18	; 0x800123 <timer0_fract>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:209
+  timer0_millis = m;
+ 464:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <timer0_millis>
+ 468:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <timer0_millis+0x1>
+ 46c:	a0 93 26 01 	sts	0x0126, r26	; 0x800126 <timer0_millis+0x2>
+ 470:	b0 93 27 01 	sts	0x0127, r27	; 0x800127 <timer0_millis+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:211
+#ifndef CORRECT_EXACT_MICROS
+  timer0_overflow_count++;
+ 474:	80 91 28 01 	lds	r24, 0x0128	; 0x800128 <timer0_overflow_count>
+ 478:	90 91 29 01 	lds	r25, 0x0129	; 0x800129 <timer0_overflow_count+0x1>
+ 47c:	a0 91 2a 01 	lds	r26, 0x012A	; 0x80012a <timer0_overflow_count+0x2>
+ 480:	b0 91 2b 01 	lds	r27, 0x012B	; 0x80012b <timer0_overflow_count+0x3>
+ 484:	01 96       	adiw	r24, 0x01	; 1
+ 486:	a1 1d       	adc	r26, r1
+ 488:	b1 1d       	adc	r27, r1
+ 48a:	80 93 28 01 	sts	0x0128, r24	; 0x800128 <timer0_overflow_count>
+ 48e:	90 93 29 01 	sts	0x0129, r25	; 0x800129 <timer0_overflow_count+0x1>
+ 492:	a0 93 2a 01 	sts	0x012A, r26	; 0x80012a <timer0_overflow_count+0x2>
+ 496:	b0 93 2b 01 	sts	0x012B, r27	; 0x80012b <timer0_overflow_count+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:213
+#endif
+}
+ 49a:	bf 91       	pop	r27
+ 49c:	af 91       	pop	r26
+ 49e:	9f 91       	pop	r25
+ 4a0:	8f 91       	pop	r24
+ 4a2:	3f 91       	pop	r19
+ 4a4:	2f 91       	pop	r18
+ 4a6:	0f 90       	pop	r0
+ 4a8:	0f be       	out	0x3f, r0	; 63
+ 4aa:	0f 90       	pop	r0
+ 4ac:	1f 90       	pop	r1
+ 4ae:	18 95       	reti
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:205
+  if (f >= FRACT_MAX) {
+    f -= FRACT_MAX;
+    m += MILLIS_INC + 1;
+  }
+  else {
+    m += MILLIS_INC;
+ 4b0:	40 96       	adiw	r24, 0x10	; 16
+ 4b2:	a1 1d       	adc	r26, r1
+ 4b4:	b1 1d       	adc	r27, r1
+ 4b6:	d4 cf       	rjmp	.-88     	; 0x460 <__vector_16+0x3c>
+
+000004b8 <main>:
+main():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:34
+
+//void setupUSB() __attribute__((weak));
+//void setupUSB() { }
+
+int main(void)
+{
+ 4b8:	cf 93       	push	r28
+ 4ba:	df 93       	push	r29
+ 4bc:	cd b7       	in	r28, 0x3d	; 61
+ 4be:	de b7       	in	r29, 0x3e	; 62
+ 4c0:	2e 97       	sbiw	r28, 0x0e	; 14
+ 4c2:	0f b6       	in	r0, 0x3f	; 63
+ 4c4:	f8 94       	cli
+ 4c6:	de bf       	out	0x3e, r29	; 62
+ 4c8:	0f be       	out	0x3f, r0	; 63
+ 4ca:	cd bf       	out	0x3d, r28	; 61
+init():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:945
+
+void init()
+{
+  // this needs to be called before setup() or some functions won't
+  // work there
+  sei();
+ 4cc:	78 94       	sei
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:957
+
+  // On the ATmega168, timer 0 is also used for fast hardware pwm
+  // (using phase-correct PWM would mean that timer 0 overflowed half as often
+  // resulting in different millis() behavior on the ATmega8 and ATmega168)
+#if defined(TCCR0A) && defined(WGM01)
+  TCCR0A |= _BV(WGM01) | _BV(WGM00);
+ 4ce:	84 b5       	in	r24, 0x24	; 36
+ 4d0:	83 60       	ori	r24, 0x03	; 3
+ 4d2:	84 bd       	out	0x24, r24	; 36
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:972
+  #if defined(WGM00) && defined(WGM01) // The ATmega8 doesn't have WGM00 and WGM01
+    TCCR0 |= _BV(WGM01) | _BV(WGM00);
+  #endif
+#elif defined(TCCR0B) && defined(CS01) && defined(CS00)
+  // This combination is for the standard 168/328/640/1280/1281/2560/2561
+  TCCR0B |= _BV(CS01) | _BV(CS00);
+ 4d4:	85 b5       	in	r24, 0x25	; 37
+ 4d6:	83 60       	ori	r24, 0x03	; 3
+ 4d8:	85 bd       	out	0x25, r24	; 37
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:984
+
+// Enable timer 0 overflow interrupt
+#if defined(TIMSK) && defined(TOIE0)
+  TIMSK |= _BV(TOIE0);
+#elif defined(TIMSK0) && defined(TOIE0)
+  TIMSK0 |= _BV(TOIE0);
+ 4da:	80 91 6e 00 	lds	r24, 0x006E	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+ 4de:	81 60       	ori	r24, 0x01	; 1
+ 4e0:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__DATA_REGION_ORIGIN__+0xe>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:995
+// this is better for motors as it ensures an even waveform
+// note, however, that fast pwm mode can achieve a frequency of up
+// 8 MHz (with a 16 MHz clock) at 50% duty cycle
+
+#if defined(TCCR1B) && defined(CS11) && defined(CS10)
+  TCCR1B = _BV(CS11); // Set timer 1 prescale factor to 64
+ 4e4:	82 e0       	ldi	r24, 0x02	; 2
+ 4e6:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__DATA_REGION_ORIGIN__+0x21>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1006
+#if F_CPU >= 8000000L
+  TCCR1 |= _BV(CS10);
+#endif
+#endif
+#if defined(TCCR1A) && defined(WGM10)
+  TCCR1A |= _BV(WGM10); // Put timer 1 in 8-bit phase correct pwm mode
+ 4ea:	80 91 80 00 	lds	r24, 0x0080	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+ 4ee:	81 60       	ori	r24, 0x01	; 1
+ 4f0:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__DATA_REGION_ORIGIN__+0x20>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1013
+
+// Set timer 2 prescale factor to 64
+#if defined(TCCR2) && defined(CS22)
+  TCCR2 |= _BV(CS22);
+#elif defined(TCCR2B) && defined(CS22)
+  TCCR2B |= _BV(CS22);
+ 4f4:	80 91 b1 00 	lds	r24, 0x00B1	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+ 4f8:	84 60       	ori	r24, 0x04	; 4
+ 4fa:	80 93 b1 00 	sts	0x00B1, r24	; 0x8000b1 <__DATA_REGION_ORIGIN__+0x51>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1022
+
+// Configure timer 2 for phase correct pwm (8-bit)
+#if defined(TCCR2) && defined(WGM20)
+  TCCR2 |= _BV(WGM20);
+#elif defined(TCCR2A) && defined(WGM20)
+  TCCR2A |= _BV(WGM20);
+ 4fe:	80 91 b0 00 	lds	r24, 0x00B0	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+ 502:	81 60       	ori	r24, 0x01	; 1
+ 504:	80 93 b0 00 	sts	0x00B0, r24	; 0x8000b0 <__DATA_REGION_ORIGIN__+0x50>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1058
+  #elif F_CPU >= 4000000 // 4 MHz / 32 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADPS0) | _BV(ADEN);
+  #elif F_CPU >= 2000000 // 2 MHz / 16 = 125 KHz
+    ADCSRA = _BV(ADPS2) | _BV(ADEN);
+  #elif F_CPU >= 1000000 // 1 MHz / 8 = 125 KHz
+    ADCSRA = _BV(ADPS1) | _BV(ADPS0) | _BV(ADEN);
+ 508:	83 e8       	ldi	r24, 0x83	; 131
+ 50a:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__DATA_REGION_ORIGIN__+0x1a>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:1070
+  // here so they can be used as normal digital i/o; they will be
+  // reconnected in Serial.begin()
+#if defined(UCSRB)
+  UCSRB = 0;
+#elif defined(UCSR0B)
+  UCSR0B = 0;
+ 50e:	10 92 c1 00 	sts	0x00C1, r1	; 0x8000c1 <__DATA_REGION_ORIGIN__+0x61>
+setup():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:30
+bool szukanie_aktywne = false;
+const int PREDKOSC_SZUKANIA = 100;
+const unsigned long MAX_SZUKANIA = 2000;
+
+void setup() {
+  pinMode(m_prawy_A, OUTPUT); pinMode(m_prawy_B, OUTPUT);
+ 512:	88 e0       	ldi	r24, 0x08	; 8
+ 514:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+ 518:	89 e0       	ldi	r24, 0x09	; 9
+ 51a:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:31
+  pinMode(m_lewy_A, OUTPUT);  pinMode(m_lewy_B, OUTPUT);
+ 51e:	82 e0       	ldi	r24, 0x02	; 2
+ 520:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+ 524:	83 e0       	ldi	r24, 0x03	; 3
+ 526:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:32
+  pinMode(en_prawy, OUTPUT);  pinMode(en_lewy, OUTPUT);
+ 52a:	85 e0       	ldi	r24, 0x05	; 5
+ 52c:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+ 530:	86 e0       	ldi	r24, 0x06	; 6
+ 532:	0e 94 80 00 	call	0x100	; 0x100 <pinMode.constprop.0>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:33
+  delay(3000);
+ 536:	68 eb       	ldi	r22, 0xB8	; 184
+ 538:	7b e0       	ldi	r23, 0x0B	; 11
+ 53a:	80 e0       	ldi	r24, 0x00	; 0
+ 53c:	90 e0       	ldi	r25, 0x00	; 0
+ 53e:	0e 94 84 01 	call	0x308	; 0x308 <delay>
+ 542:	24 e1       	ldi	r18, 0x14	; 20
+ 544:	22 2e       	mov	r2, r18
+ 546:	21 e0       	ldi	r18, 0x01	; 1
+ 548:	32 2e       	mov	r3, r18
+oblicz_pozycje():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:80
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+ 54a:	8a e0       	ldi	r24, 0x0A	; 10
+ 54c:	e0 e0       	ldi	r30, 0x00	; 0
+ 54e:	f1 e0       	ldi	r31, 0x01	; 1
+ 550:	de 01       	movw	r26, r28
+ 552:	11 96       	adiw	r26, 0x01	; 1
+ 554:	01 90       	ld	r0, Z+
+ 556:	0d 92       	st	X+, r0
+ 558:	8a 95       	dec	r24
+ 55a:	e1 f7       	brne	.-8      	; 0x554 <main+0x9c>
+ 55c:	0a e0       	ldi	r16, 0x0A	; 10
+ 55e:	11 e0       	ldi	r17, 0x01	; 1
+ 560:	9e 01       	movw	r18, r28
+ 562:	2f 5f       	subi	r18, 0xFF	; 255
+ 564:	3f 4f       	sbci	r19, 0xFF	; 255
+ 566:	69 01       	movw	r12, r18
+main():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:79
+  move(moc_lewy, moc_prawy);
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+ 568:	f1 2c       	mov	r15, r1
+ 56a:	e1 2c       	mov	r14, r1
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:78
+
+  move(moc_lewy, moc_prawy);
+}
+
+int oblicz_pozycje() {
+  long suma_wag = 0;
+ 56c:	81 2c       	mov	r8, r1
+ 56e:	91 2c       	mov	r9, r1
+ 570:	54 01       	movw	r10, r8
+oblicz_pozycje():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:83
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+
+  for (int i = 0; i < 5; i++) {
+    int odczyt = analogRead(czujniki[i]);
+ 572:	f8 01       	movw	r30, r16
+ 574:	80 81       	ld	r24, Z
+ 576:	0e 5f       	subi	r16, 0xFE	; 254
+ 578:	1f 4f       	sbci	r17, 0xFF	; 255
+ 57a:	0e 94 47 01 	call	0x28e	; 0x28e <analogRead>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:84
+    if (odczyt < PROG_LINII) {
+ 57e:	82 35       	cpi	r24, 0x52	; 82
+ 580:	93 40       	sbci	r25, 0x03	; 3
+ 582:	74 f4       	brge	.+28     	; 0x5a0 <main+0xe8>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:85
+      suma_wag += wagi[i];
+ 584:	f6 01       	movw	r30, r12
+ 586:	80 81       	ld	r24, Z
+ 588:	91 81       	ldd	r25, Z+1	; 0x01
+ 58a:	09 2e       	mov	r0, r25
+ 58c:	00 0c       	add	r0, r0
+ 58e:	aa 0b       	sbc	r26, r26
+ 590:	bb 0b       	sbc	r27, r27
+ 592:	88 0e       	add	r8, r24
+ 594:	99 1e       	adc	r9, r25
+ 596:	aa 1e       	adc	r10, r26
+ 598:	bb 1e       	adc	r11, r27
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:86
+      aktywnych++;
+ 59a:	ff ef       	ldi	r31, 0xFF	; 255
+ 59c:	ef 1a       	sub	r14, r31
+ 59e:	ff 0a       	sbc	r15, r31
+ 5a0:	22 e0       	ldi	r18, 0x02	; 2
+ 5a2:	c2 0e       	add	r12, r18
+ 5a4:	d1 1c       	adc	r13, r1
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:82
+int oblicz_pozycje() {
+  long suma_wag = 0;
+  int aktywnych = 0;
+  int wagi[] = {-2000, -1000, 0, 1000, 2000};
+
+  for (int i = 0; i < 5; i++) {
+ 5a6:	20 16       	cp	r2, r16
+ 5a8:	31 06       	cpc	r3, r17
+ 5aa:	19 f7       	brne	.-58     	; 0x572 <main+0xba>
+ 5ac:	10 91 22 01 	lds	r17, 0x0122	; 0x800122 <szukanie_aktywne>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:90
+      suma_wag += wagi[i];
+      aktywnych++;
+    }
+  }
+
+  if (aktywnych == 0) return 10000;
+ 5b0:	e1 14       	cp	r14, r1
+ 5b2:	f1 04       	cpc	r15, r1
+ 5b4:	09 f4       	brne	.+2      	; 0x5b8 <main+0x100>
+ 5b6:	d0 c0       	rjmp	.+416    	; 0x758 <main+0x2a0>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:92
+
+  int pozycja = suma_wag / aktywnych;
+ 5b8:	97 01       	movw	r18, r14
+ 5ba:	ff 0c       	add	r15, r15
+ 5bc:	44 0b       	sbc	r20, r20
+ 5be:	55 0b       	sbc	r21, r21
+ 5c0:	c5 01       	movw	r24, r10
+ 5c2:	b4 01       	movw	r22, r8
+ 5c4:	0e 94 31 06 	call	0xc62	; 0xc62 <__divmodsi4>
+ 5c8:	29 01       	movw	r4, r18
+ 5ca:	c9 01       	movw	r24, r18
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:94
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+ 5cc:	37 ff       	sbrs	r19, 7
+ 5ce:	b5 c0       	rjmp	.+362    	; 0x73a <main+0x282>
+ 5d0:	ef ef       	ldi	r30, 0xFF	; 255
+ 5d2:	ff ef       	ldi	r31, 0xFF	; 255
+ 5d4:	f0 93 15 01 	sts	0x0115, r31	; 0x800115 <__data_end+0x1>
+ 5d8:	e0 93 14 01 	sts	0x0114, r30	; 0x800114 <__data_end>
+loop():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:49
+    szukaj_linii();
+    return;
+  }
+
+  // Znaleźliśmy linię po szukaniu
+  if (szukanie_aktywne) {
+ 5dc:	11 23       	and	r17, r17
+ 5de:	71 f1       	breq	.+92     	; 0x63c <main+0x184>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:50
+    szukanie_aktywne = false;
+ 5e0:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <szukanie_aktywne>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:51
+    calka = 0;
+ 5e4:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <calka>
+ 5e8:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <calka+0x1>
+ 5ec:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <calka+0x2>
+ 5f0:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <calka+0x3>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:52
+    poprzedni_blad = 0;
+ 5f4:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <poprzedni_blad+0x1>
+ 5f8:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <poprzedni_blad>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:54
+
+    if (blad_przed_zguba != 0 && pozycja != 0) {
+ 5fc:	40 91 16 01 	lds	r20, 0x0116	; 0x800116 <blad_przed_zguba>
+ 600:	50 91 17 01 	lds	r21, 0x0117	; 0x800117 <blad_przed_zguba+0x1>
+ 604:	41 15       	cp	r20, r1
+ 606:	51 05       	cpc	r21, r1
+ 608:	c9 f0       	breq	.+50     	; 0x63c <main+0x184>
+ 60a:	00 97       	sbiw	r24, 0x00	; 0
+ 60c:	b9 f0       	breq	.+46     	; 0x63c <main+0x184>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:55
+      if ((blad_przed_zguba > 0) != (pozycja > 0)) {
+ 60e:	31 e0       	ldi	r19, 0x01	; 1
+ 610:	14 16       	cp	r1, r20
+ 612:	15 06       	cpc	r1, r21
+ 614:	0c f0       	brlt	.+2      	; 0x618 <main+0x160>
+ 616:	30 e0       	ldi	r19, 0x00	; 0
+ 618:	21 e0       	ldi	r18, 0x01	; 1
+ 61a:	18 16       	cp	r1, r24
+ 61c:	19 06       	cpc	r1, r25
+ 61e:	0c f0       	brlt	.+2      	; 0x622 <main+0x16a>
+ 620:	20 e0       	ldi	r18, 0x00	; 0
+ 622:	32 17       	cp	r19, r18
+ 624:	59 f0       	breq	.+22     	; 0x63c <main+0x184>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:56
+        ostatni_kierunek = -ostatni_kierunek;
+ 626:	80 91 14 01 	lds	r24, 0x0114	; 0x800114 <__data_end>
+ 62a:	90 91 15 01 	lds	r25, 0x0115	; 0x800115 <__data_end+0x1>
+ 62e:	91 95       	neg	r25
+ 630:	81 95       	neg	r24
+ 632:	91 09       	sbc	r25, r1
+ 634:	90 93 15 01 	sts	0x0115, r25	; 0x800115 <__data_end+0x1>
+ 638:	80 93 14 01 	sts	0x0114, r24	; 0x800114 <__data_end>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:61
+      }
+    }
+  }
+
+  blad_przed_zguba = pozycja;
+ 63c:	50 92 17 01 	sts	0x0117, r5	; 0x800117 <blad_przed_zguba+0x1>
+ 640:	40 92 16 01 	sts	0x0116, r4	; 0x800116 <blad_przed_zguba>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:64
+
+  blad = pozycja;
+  calka = calka + blad;
+ 644:	b2 01       	movw	r22, r4
+ 646:	05 2c       	mov	r0, r5
+ 648:	00 0c       	add	r0, r0
+ 64a:	88 0b       	sbc	r24, r24
+ 64c:	99 0b       	sbc	r25, r25
+ 64e:	0e 94 ed 04 	call	0x9da	; 0x9da <__floatsisf>
+ 652:	4b 01       	movw	r8, r22
+ 654:	5c 01       	movw	r10, r24
+ 656:	20 91 1a 01 	lds	r18, 0x011A	; 0x80011a <calka>
+ 65a:	30 91 1b 01 	lds	r19, 0x011B	; 0x80011b <calka+0x1>
+ 65e:	40 91 1c 01 	lds	r20, 0x011C	; 0x80011c <calka+0x2>
+ 662:	50 91 1d 01 	lds	r21, 0x011D	; 0x80011d <calka+0x3>
+ 666:	0e 94 44 04 	call	0x888	; 0x888 <__addsf3>
+ 66a:	6b 01       	movw	r12, r22
+ 66c:	7c 01       	movw	r14, r24
+_Z9constrainIfiiEDTqultfp_fp0_fp0_qugtfp_fp1_fp1_fp_ERKT_RKT0_RKT1_():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Arduino.h:345
+    return rad * RAD_TO_DEG;
+  }
+
+  template<class T, class L, class H>
+	auto constrain(const T& x, const L& l, const H& h) -> decltype((x < l) ? l : (x > h) ? h : x) {
+		return (x < l) ? l : (x > h) ? h : x;
+ 66e:	20 e0       	ldi	r18, 0x00	; 0
+ 670:	30 e8       	ldi	r19, 0x80	; 128
+ 672:	4b e3       	ldi	r20, 0x3B	; 59
+ 674:	55 ec       	ldi	r21, 0xC5	; 197
+ 676:	0e 94 b0 04 	call	0x960	; 0x960 <__cmpsf2>
+ 67a:	87 fd       	sbrc	r24, 7
+ 67c:	fc c0       	rjmp	.+504    	; 0x876 <main+0x3be>
+ 67e:	20 e0       	ldi	r18, 0x00	; 0
+ 680:	30 e8       	ldi	r19, 0x80	; 128
+ 682:	4b e3       	ldi	r20, 0x3B	; 59
+ 684:	55 e4       	ldi	r21, 0x45	; 69
+ 686:	c7 01       	movw	r24, r14
+ 688:	b6 01       	movw	r22, r12
+ 68a:	0e 94 9d 05 	call	0xb3a	; 0xb3a <__gesf2>
+ 68e:	18 16       	cp	r1, r24
+ 690:	3c f4       	brge	.+14     	; 0x6a0 <main+0x1e8>
+main():
+ 692:	c1 2c       	mov	r12, r1
+ 694:	90 e8       	ldi	r25, 0x80	; 128
+ 696:	d9 2e       	mov	r13, r25
+ 698:	9b e3       	ldi	r25, 0x3B	; 59
+ 69a:	e9 2e       	mov	r14, r25
+ 69c:	95 e4       	ldi	r25, 0x45	; 69
+ 69e:	f9 2e       	mov	r15, r25
+loop():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:65
+  calka = constrain(calka, -3000, 3000);
+ 6a0:	c0 92 1a 01 	sts	0x011A, r12	; 0x80011a <calka>
+ 6a4:	d0 92 1b 01 	sts	0x011B, r13	; 0x80011b <calka+0x1>
+ 6a8:	e0 92 1c 01 	sts	0x011C, r14	; 0x80011c <calka+0x2>
+ 6ac:	f0 92 1d 01 	sts	0x011D, r15	; 0x80011d <calka+0x3>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:67
+
+  int rozniczka = blad - poprzedni_blad;
+ 6b0:	80 91 18 01 	lds	r24, 0x0118	; 0x800118 <poprzedni_blad>
+ 6b4:	90 91 19 01 	lds	r25, 0x0119	; 0x800119 <poprzedni_blad+0x1>
+ 6b8:	b2 01       	movw	r22, r4
+ 6ba:	68 1b       	sub	r22, r24
+ 6bc:	79 0b       	sbc	r23, r25
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:68
+  int korekta = Kp * blad + Ki * calka + Kd * rozniczka;
+ 6be:	07 2e       	mov	r0, r23
+ 6c0:	00 0c       	add	r0, r0
+ 6c2:	88 0b       	sbc	r24, r24
+ 6c4:	99 0b       	sbc	r25, r25
+ 6c6:	0e 94 ed 04 	call	0x9da	; 0x9da <__floatsisf>
+ 6ca:	20 e0       	ldi	r18, 0x00	; 0
+ 6cc:	30 e0       	ldi	r19, 0x00	; 0
+ 6ce:	40 e0       	ldi	r20, 0x00	; 0
+ 6d0:	5f e3       	ldi	r21, 0x3F	; 63
+ 6d2:	0e 94 a2 05 	call	0xb44	; 0xb44 <__mulsf3>
+ 6d6:	6b 87       	std	Y+11, r22	; 0x0b
+ 6d8:	7c 87       	std	Y+12, r23	; 0x0c
+ 6da:	8d 87       	std	Y+13, r24	; 0x0d
+ 6dc:	9e 87       	std	Y+14, r25	; 0x0e
+ 6de:	2d ec       	ldi	r18, 0xCD	; 205
+ 6e0:	3c ec       	ldi	r19, 0xCC	; 204
+ 6e2:	4c e4       	ldi	r20, 0x4C	; 76
+ 6e4:	5d e3       	ldi	r21, 0x3D	; 61
+ 6e6:	c5 01       	movw	r24, r10
+ 6e8:	b4 01       	movw	r22, r8
+ 6ea:	0e 94 a2 05 	call	0xb44	; 0xb44 <__mulsf3>
+ 6ee:	4b 01       	movw	r8, r22
+ 6f0:	5c 01       	movw	r10, r24
+ 6f2:	20 e0       	ldi	r18, 0x00	; 0
+ 6f4:	30 e0       	ldi	r19, 0x00	; 0
+ 6f6:	a9 01       	movw	r20, r18
+ 6f8:	c7 01       	movw	r24, r14
+ 6fa:	b6 01       	movw	r22, r12
+ 6fc:	0e 94 a2 05 	call	0xb44	; 0xb44 <__mulsf3>
+ 700:	9b 01       	movw	r18, r22
+ 702:	ac 01       	movw	r20, r24
+ 704:	c5 01       	movw	r24, r10
+ 706:	b4 01       	movw	r22, r8
+ 708:	0e 94 44 04 	call	0x888	; 0x888 <__addsf3>
+ 70c:	9b 01       	movw	r18, r22
+ 70e:	ac 01       	movw	r20, r24
+ 710:	6b 85       	ldd	r22, Y+11	; 0x0b
+ 712:	7c 85       	ldd	r23, Y+12	; 0x0c
+ 714:	8d 85       	ldd	r24, Y+13	; 0x0d
+ 716:	9e 85       	ldd	r25, Y+14	; 0x0e
+ 718:	0e 94 44 04 	call	0x888	; 0x888 <__addsf3>
+ 71c:	0e 94 b5 04 	call	0x96a	; 0x96a <__fixsfsi>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:69
+  poprzedni_blad = blad;
+ 720:	50 92 19 01 	sts	0x0119, r5	; 0x800119 <poprzedni_blad+0x1>
+ 724:	40 92 18 01 	sts	0x0118, r4	; 0x800118 <poprzedni_blad>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:72
+
+  int moc_lewy  = V_BAZA + korekta;
+  int moc_prawy = V_BAZA - korekta;
+ 728:	28 e7       	ldi	r18, 0x78	; 120
+ 72a:	30 e0       	ldi	r19, 0x00	; 0
+ 72c:	26 1b       	sub	r18, r22
+ 72e:	37 0b       	sbc	r19, r23
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:71
+
+  int rozniczka = blad - poprzedni_blad;
+  int korekta = Kp * blad + Ki * calka + Kd * rozniczka;
+  poprzedni_blad = blad;
+
+  int moc_lewy  = V_BAZA + korekta;
+ 730:	cb 01       	movw	r24, r22
+ 732:	88 58       	subi	r24, 0x88	; 136
+ 734:	9f 4f       	sbci	r25, 0xFF	; 255
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:74
+  int moc_prawy = V_BAZA - korekta;
+
+  move(moc_lewy, moc_prawy);
+ 736:	b9 01       	movw	r22, r18
+ 738:	49 c0       	rjmp	.+146    	; 0x7cc <main+0x314>
+oblicz_pozycje():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:95
+  if (aktywnych == 0) return 10000;
+
+  int pozycja = suma_wag / aktywnych;
+
+  if (pozycja < 0) ostatni_kierunek = -1;
+  else if (pozycja > 0) ostatni_kierunek = 1;
+ 73a:	00 97       	sbiw	r24, 0x00	; 0
+ 73c:	09 f4       	brne	.+2      	; 0x740 <main+0x288>
+ 73e:	4e cf       	rjmp	.-356    	; 0x5dc <main+0x124>
+ 740:	21 e0       	ldi	r18, 0x01	; 1
+ 742:	30 e0       	ldi	r19, 0x00	; 0
+ 744:	30 93 15 01 	sts	0x0115, r19	; 0x800115 <__data_end+0x1>
+ 748:	20 93 14 01 	sts	0x0114, r18	; 0x800114 <__data_end>
+loop():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:39
+}
+
+void loop() {
+  int pozycja = oblicz_pozycje();
+
+  if (pozycja == 10000) {
+ 74c:	30 e1       	ldi	r19, 0x10	; 16
+ 74e:	43 16       	cp	r4, r19
+ 750:	37 e2       	ldi	r19, 0x27	; 39
+ 752:	53 06       	cpc	r5, r19
+ 754:	09 f0       	breq	.+2      	; 0x758 <main+0x2a0>
+ 756:	42 cf       	rjmp	.-380    	; 0x5dc <main+0x124>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:40
+    if (!szukanie_aktywne) {
+ 758:	11 11       	cpse	r17, r1
+ 75a:	16 c0       	rjmp	.+44     	; 0x788 <main+0x2d0>
+millis():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ 75c:	2f b7       	in	r18, 0x3f	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ 75e:	f8 94       	cli
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ 760:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <timer0_millis>
+ 764:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <timer0_millis+0x1>
+ 768:	a0 91 26 01 	lds	r26, 0x0126	; 0x800126 <timer0_millis+0x2>
+ 76c:	b0 91 27 01 	lds	r27, 0x0127	; 0x800127 <timer0_millis+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ 770:	2f bf       	out	0x3f, r18	; 63
+loop():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:41
+      czas_zguby = millis();
+ 772:	80 93 1e 01 	sts	0x011E, r24	; 0x80011e <czas_zguby>
+ 776:	90 93 1f 01 	sts	0x011F, r25	; 0x80011f <czas_zguby+0x1>
+ 77a:	a0 93 20 01 	sts	0x0120, r26	; 0x800120 <czas_zguby+0x2>
+ 77e:	b0 93 21 01 	sts	0x0121, r27	; 0x800121 <czas_zguby+0x3>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:42
+      szukanie_aktywne = true;
+ 782:	61 e0       	ldi	r22, 0x01	; 1
+ 784:	60 93 22 01 	sts	0x0122, r22	; 0x800122 <szukanie_aktywne>
+millis():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:218
+}
+
+unsigned long millis()
+{
+  unsigned long m;
+  uint8_t oldSREG = SREG;
+ 788:	8f b7       	in	r24, 0x3f	; 63
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:222
+
+  // disable interrupts while we read timer0_millis or we might get an
+  // inconsistent value (e.g. in the middle of a write to timer0_millis)
+  cli();
+ 78a:	f8 94       	cli
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:223
+  m = timer0_millis;
+ 78c:	c0 90 24 01 	lds	r12, 0x0124	; 0x800124 <timer0_millis>
+ 790:	d0 90 25 01 	lds	r13, 0x0125	; 0x800125 <timer0_millis+0x1>
+ 794:	e0 90 26 01 	lds	r14, 0x0126	; 0x800126 <timer0_millis+0x2>
+ 798:	f0 90 27 01 	lds	r15, 0x0127	; 0x800127 <timer0_millis+0x3>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/wiring.c:224
+  SREG = oldSREG;
+ 79c:	8f bf       	out	0x3f, r24	; 63
+szukaj_linii():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:101
+
+  return pozycja;
+}
+
+void szukaj_linii() {
+  unsigned long czas_szukania = millis() - czas_zguby;
+ 79e:	80 91 1e 01 	lds	r24, 0x011E	; 0x80011e <czas_zguby>
+ 7a2:	90 91 1f 01 	lds	r25, 0x011F	; 0x80011f <czas_zguby+0x1>
+ 7a6:	a0 91 20 01 	lds	r26, 0x0120	; 0x800120 <czas_zguby+0x2>
+ 7aa:	b0 91 21 01 	lds	r27, 0x0121	; 0x800121 <czas_zguby+0x3>
+ 7ae:	c8 1a       	sub	r12, r24
+ 7b0:	d9 0a       	sbc	r13, r25
+ 7b2:	ea 0a       	sbc	r14, r26
+ 7b4:	fb 0a       	sbc	r15, r27
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:106
+
+  int predkosc = PREDKOSC_SZUKANIA + (int)(czas_szukania / 20);
+  predkosc = constrain(predkosc, PREDKOSC_SZUKANIA, 200);
+
+  if (czas_szukania > MAX_SZUKANIA * 2) {
+ 7b6:	81 ea       	ldi	r24, 0xA1	; 161
+ 7b8:	c8 16       	cp	r12, r24
+ 7ba:	8f e0       	ldi	r24, 0x0F	; 15
+ 7bc:	d8 06       	cpc	r13, r24
+ 7be:	e1 04       	cpc	r14, r1
+ 7c0:	f1 04       	cpc	r15, r1
+ 7c2:	38 f0       	brcs	.+14     	; 0x7d2 <main+0x31a>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:107
+    move(0, 0);
+ 7c4:	70 e0       	ldi	r23, 0x00	; 0
+ 7c6:	60 e0       	ldi	r22, 0x00	; 0
+ 7c8:	90 e0       	ldi	r25, 0x00	; 0
+ 7ca:	80 e0       	ldi	r24, 0x00	; 0
+loop():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:74
+  poprzedni_blad = blad;
+
+  int moc_lewy  = V_BAZA + korekta;
+  int moc_prawy = V_BAZA - korekta;
+
+  move(moc_lewy, moc_prawy);
+ 7cc:	0e 94 b6 01 	call	0x36c	; 0x36c <move(int, int)>
+ 7d0:	4a c0       	rjmp	.+148    	; 0x866 <main+0x3ae>
+szukaj_linii():
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:103
+}
+
+void szukaj_linii() {
+  unsigned long czas_szukania = millis() - czas_zguby;
+
+  int predkosc = PREDKOSC_SZUKANIA + (int)(czas_szukania / 20);
+ 7d2:	c7 01       	movw	r24, r14
+ 7d4:	b6 01       	movw	r22, r12
+ 7d6:	24 e1       	ldi	r18, 0x14	; 20
+ 7d8:	30 e0       	ldi	r19, 0x00	; 0
+ 7da:	40 e0       	ldi	r20, 0x00	; 0
+ 7dc:	50 e0       	ldi	r21, 0x00	; 0
+ 7de:	0e 94 0f 06 	call	0xc1e	; 0xc1e <__udivmodsi4>
+ 7e2:	2c 59       	subi	r18, 0x9C	; 156
+ 7e4:	3f 4f       	sbci	r19, 0xFF	; 255
+ 7e6:	29 3c       	cpi	r18, 0xC9	; 201
+ 7e8:	31 05       	cpc	r19, r1
+ 7ea:	14 f0       	brlt	.+4      	; 0x7f0 <main+0x338>
+ 7ec:	28 ec       	ldi	r18, 0xC8	; 200
+ 7ee:	30 e0       	ldi	r19, 0x00	; 0
+ 7f0:	40 91 14 01 	lds	r20, 0x0114	; 0x800114 <__data_end>
+ 7f4:	50 91 15 01 	lds	r21, 0x0115	; 0x800115 <__data_end+0x1>
+ 7f8:	88 27       	eor	r24, r24
+ 7fa:	99 27       	eor	r25, r25
+ 7fc:	82 1b       	sub	r24, r18
+ 7fe:	93 0b       	sbc	r25, r19
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:111
+  if (czas_szukania > MAX_SZUKANIA * 2) {
+    move(0, 0);
+    return;
+  }
+
+  if (czas_szukania > MAX_SZUKANIA) {
+ 800:	e1 ed       	ldi	r30, 0xD1	; 209
+ 802:	ce 16       	cp	r12, r30
+ 804:	e7 e0       	ldi	r30, 0x07	; 7
+ 806:	de 06       	cpc	r13, r30
+ 808:	e1 04       	cpc	r14, r1
+ 80a:	f1 04       	cpc	r15, r1
+ 80c:	30 f0       	brcs	.+12     	; 0x81a <main+0x362>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:112
+    if (ostatni_kierunek == -1) move(predkosc, -predkosc);
+ 80e:	4f 3f       	cpi	r20, 0xFF	; 255
+ 810:	5f 4f       	sbci	r21, 0xFF	; 255
+ 812:	31 f4       	brne	.+12     	; 0x820 <main+0x368>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:116
+    else move(-predkosc, predkosc);
+  } else {
+    if (ostatni_kierunek == -1) move(-predkosc, predkosc);
+    else move(predkosc, -predkosc);
+ 814:	bc 01       	movw	r22, r24
+ 816:	c9 01       	movw	r24, r18
+ 818:	04 c0       	rjmp	.+8      	; 0x822 <main+0x36a>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:115
+
+  if (czas_szukania > MAX_SZUKANIA) {
+    if (ostatni_kierunek == -1) move(predkosc, -predkosc);
+    else move(-predkosc, predkosc);
+  } else {
+    if (ostatni_kierunek == -1) move(-predkosc, predkosc);
+ 81a:	4f 3f       	cpi	r20, 0xFF	; 255
+ 81c:	5f 4f       	sbci	r21, 0xFF	; 255
+ 81e:	d1 f7       	brne	.-12     	; 0x814 <main+0x35c>
+ 820:	b9 01       	movw	r22, r18
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:116
+    else move(predkosc, -predkosc);
+ 822:	0e 94 b6 01 	call	0x36c	; 0x36c <move(int, int)>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:120
+  }
+
+  // Gdy środkowy czujnik trafi na linię — zatrzymaj i wycentruj
+  int srodek = analogRead(A2);
+ 826:	80 e1       	ldi	r24, 0x10	; 16
+ 828:	0e 94 47 01 	call	0x28e	; 0x28e <analogRead>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:121
+  if (srodek < PROG_LINII) {
+ 82c:	82 35       	cpi	r24, 0x52	; 82
+ 82e:	93 40       	sbci	r25, 0x03	; 3
+ 830:	d4 f4       	brge	.+52     	; 0x866 <main+0x3ae>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:122
+    move(0, 0);
+ 832:	70 e0       	ldi	r23, 0x00	; 0
+ 834:	60 e0       	ldi	r22, 0x00	; 0
+ 836:	90 e0       	ldi	r25, 0x00	; 0
+ 838:	80 e0       	ldi	r24, 0x00	; 0
+ 83a:	0e 94 b6 01 	call	0x36c	; 0x36c <move(int, int)>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:123
+    delay(50);
+ 83e:	62 e3       	ldi	r22, 0x32	; 50
+ 840:	70 e0       	ldi	r23, 0x00	; 0
+ 842:	80 e0       	ldi	r24, 0x00	; 0
+ 844:	90 e0       	ldi	r25, 0x00	; 0
+ 846:	0e 94 84 01 	call	0x308	; 0x308 <delay>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:124
+    szukanie_aktywne = false;
+ 84a:	10 92 22 01 	sts	0x0122, r1	; 0x800122 <szukanie_aktywne>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:125
+    calka = 0;
+ 84e:	10 92 1a 01 	sts	0x011A, r1	; 0x80011a <calka>
+ 852:	10 92 1b 01 	sts	0x011B, r1	; 0x80011b <calka+0x1>
+ 856:	10 92 1c 01 	sts	0x011C, r1	; 0x80011c <calka+0x2>
+ 85a:	10 92 1d 01 	sts	0x011D, r1	; 0x80011d <calka+0x3>
+C:\Users\user\Documents\Arduino\gitjazda/gitjazda.ino:126
+    poprzedni_blad = 0;
+ 85e:	10 92 19 01 	sts	0x0119, r1	; 0x800119 <poprzedni_blad+0x1>
+ 862:	10 92 18 01 	sts	0x0118, r1	; 0x800118 <poprzedni_blad>
+main():
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/main.cpp:47
+  
+  setup();
+    
+  for (;;) {
+    loop();
+    if (serialEventRun) serialEventRun();
+ 866:	20 e0       	ldi	r18, 0x00	; 0
+ 868:	30 e0       	ldi	r19, 0x00	; 0
+ 86a:	23 2b       	or	r18, r19
+ 86c:	09 f4       	brne	.+2      	; 0x870 <main+0x3b8>
+ 86e:	6d ce       	rjmp	.-806    	; 0x54a <main+0x92>
+ 870:	0e 94 00 00 	call	0	; 0x0 <__vectors>
+ 874:	6a ce       	rjmp	.-812    	; 0x54a <main+0x92>
+C:\Users\user\AppData\Local\Arduino15\packages\MiniCore\hardware\avr\3.1.2\cores\MCUdude_corefiles/Arduino.h:345
+ 876:	c1 2c       	mov	r12, r1
+ 878:	80 e8       	ldi	r24, 0x80	; 128
+ 87a:	d8 2e       	mov	r13, r24
+ 87c:	8b e3       	ldi	r24, 0x3B	; 59
+ 87e:	e8 2e       	mov	r14, r24
+ 880:	85 ec       	ldi	r24, 0xC5	; 197
+ 882:	f8 2e       	mov	r15, r24
+ 884:	0d cf       	rjmp	.-486    	; 0x6a0 <main+0x1e8>
+
+00000886 <__subsf3>:
+__subsf3():
+ 886:	50 58       	subi	r21, 0x80	; 128
+
+00000888 <__addsf3>:
+ 888:	bb 27       	eor	r27, r27
+ 88a:	aa 27       	eor	r26, r26
+ 88c:	0e 94 5b 04 	call	0x8b6	; 0x8b6 <__addsf3x>
+ 890:	0c 94 63 05 	jmp	0xac6	; 0xac6 <__fp_round>
+__addsf3():
+ 894:	0e 94 55 05 	call	0xaaa	; 0xaaa <__fp_pscA>
+ 898:	38 f0       	brcs	.+14     	; 0x8a8 <__addsf3+0x20>
+ 89a:	0e 94 5c 05 	call	0xab8	; 0xab8 <__fp_pscB>
+ 89e:	20 f0       	brcs	.+8      	; 0x8a8 <__addsf3+0x20>
+ 8a0:	39 f4       	brne	.+14     	; 0x8b0 <__addsf3+0x28>
+ 8a2:	9f 3f       	cpi	r25, 0xFF	; 255
+ 8a4:	19 f4       	brne	.+6      	; 0x8ac <__addsf3+0x24>
+ 8a6:	26 f4       	brtc	.+8      	; 0x8b0 <__addsf3+0x28>
+ 8a8:	0c 94 52 05 	jmp	0xaa4	; 0xaa4 <__fp_nan>
+ 8ac:	0e f4       	brtc	.+2      	; 0x8b0 <__addsf3+0x28>
+ 8ae:	e0 95       	com	r30
+ 8b0:	e7 fb       	bst	r30, 7
+ 8b2:	0c 94 4c 05 	jmp	0xa98	; 0xa98 <__fp_inf>
+
+000008b6 <__addsf3x>:
+__addsf3x():
+ 8b6:	e9 2f       	mov	r30, r25
+ 8b8:	0e 94 74 05 	call	0xae8	; 0xae8 <__fp_split3>
+ 8bc:	58 f3       	brcs	.-42     	; 0x894 <__addsf3+0xc>
+ 8be:	ba 17       	cp	r27, r26
+ 8c0:	62 07       	cpc	r22, r18
+ 8c2:	73 07       	cpc	r23, r19
+ 8c4:	84 07       	cpc	r24, r20
+ 8c6:	95 07       	cpc	r25, r21
+ 8c8:	20 f0       	brcs	.+8      	; 0x8d2 <__addsf3x+0x1c>
+ 8ca:	79 f4       	brne	.+30     	; 0x8ea <__addsf3x+0x34>
+ 8cc:	a6 f5       	brtc	.+104    	; 0x936 <__stack+0x37>
+ 8ce:	0c 94 96 05 	jmp	0xb2c	; 0xb2c <__fp_zero>
+ 8d2:	0e f4       	brtc	.+2      	; 0x8d6 <__addsf3x+0x20>
+ 8d4:	e0 95       	com	r30
+ 8d6:	0b 2e       	mov	r0, r27
+ 8d8:	ba 2f       	mov	r27, r26
+ 8da:	a0 2d       	mov	r26, r0
+ 8dc:	0b 01       	movw	r0, r22
+ 8de:	b9 01       	movw	r22, r18
+ 8e0:	90 01       	movw	r18, r0
+ 8e2:	0c 01       	movw	r0, r24
+ 8e4:	ca 01       	movw	r24, r20
+ 8e6:	a0 01       	movw	r20, r0
+ 8e8:	11 24       	eor	r1, r1
+ 8ea:	ff 27       	eor	r31, r31
+ 8ec:	59 1b       	sub	r21, r25
+ 8ee:	99 f0       	breq	.+38     	; 0x916 <__stack+0x17>
+ 8f0:	59 3f       	cpi	r21, 0xF9	; 249
+ 8f2:	50 f4       	brcc	.+20     	; 0x908 <__stack+0x9>
+ 8f4:	50 3e       	cpi	r21, 0xE0	; 224
+ 8f6:	68 f1       	brcs	.+90     	; 0x952 <__stack+0x53>
+ 8f8:	1a 16       	cp	r1, r26
+ 8fa:	f0 40       	sbci	r31, 0x00	; 0
+ 8fc:	a2 2f       	mov	r26, r18
+ 8fe:	23 2f       	mov	r18, r19
+ 900:	34 2f       	mov	r19, r20
+ 902:	44 27       	eor	r20, r20
+ 904:	58 5f       	subi	r21, 0xF8	; 248
+ 906:	f3 cf       	rjmp	.-26     	; 0x8ee <__addsf3x+0x38>
+ 908:	46 95       	lsr	r20
+ 90a:	37 95       	ror	r19
+ 90c:	27 95       	ror	r18
+ 90e:	a7 95       	ror	r26
+ 910:	f0 40       	sbci	r31, 0x00	; 0
+ 912:	53 95       	inc	r21
+ 914:	c9 f7       	brne	.-14     	; 0x908 <__stack+0x9>
+ 916:	7e f4       	brtc	.+30     	; 0x936 <__stack+0x37>
+ 918:	1f 16       	cp	r1, r31
+ 91a:	ba 0b       	sbc	r27, r26
+ 91c:	62 0b       	sbc	r22, r18
+ 91e:	73 0b       	sbc	r23, r19
+ 920:	84 0b       	sbc	r24, r20
+ 922:	ba f0       	brmi	.+46     	; 0x952 <__stack+0x53>
+ 924:	91 50       	subi	r25, 0x01	; 1
+ 926:	a1 f0       	breq	.+40     	; 0x950 <__stack+0x51>
+ 928:	ff 0f       	add	r31, r31
+ 92a:	bb 1f       	adc	r27, r27
+ 92c:	66 1f       	adc	r22, r22
+ 92e:	77 1f       	adc	r23, r23
+ 930:	88 1f       	adc	r24, r24
+ 932:	c2 f7       	brpl	.-16     	; 0x924 <__stack+0x25>
+ 934:	0e c0       	rjmp	.+28     	; 0x952 <__stack+0x53>
+ 936:	ba 0f       	add	r27, r26
+ 938:	62 1f       	adc	r22, r18
+ 93a:	73 1f       	adc	r23, r19
+ 93c:	84 1f       	adc	r24, r20
+ 93e:	48 f4       	brcc	.+18     	; 0x952 <__stack+0x53>
+ 940:	87 95       	ror	r24
+ 942:	77 95       	ror	r23
+ 944:	67 95       	ror	r22
+ 946:	b7 95       	ror	r27
+ 948:	f7 95       	ror	r31
+ 94a:	9e 3f       	cpi	r25, 0xFE	; 254
+ 94c:	08 f0       	brcs	.+2      	; 0x950 <__stack+0x51>
+ 94e:	b0 cf       	rjmp	.-160    	; 0x8b0 <__addsf3+0x28>
+ 950:	93 95       	inc	r25
+ 952:	88 0f       	add	r24, r24
+ 954:	08 f0       	brcs	.+2      	; 0x958 <__stack+0x59>
+ 956:	99 27       	eor	r25, r25
+ 958:	ee 0f       	add	r30, r30
+ 95a:	97 95       	ror	r25
+ 95c:	87 95       	ror	r24
+ 95e:	08 95       	ret
+
+00000960 <__cmpsf2>:
+ 960:	0e 94 28 05 	call	0xa50	; 0xa50 <__fp_cmp>
+ 964:	08 f4       	brcc	.+2      	; 0x968 <__cmpsf2+0x8>
+ 966:	81 e0       	ldi	r24, 0x01	; 1
+ 968:	08 95       	ret
+
+0000096a <__fixsfsi>:
+ 96a:	0e 94 bc 04 	call	0x978	; 0x978 <__fixunssfsi>
+ 96e:	68 94       	set
+ 970:	b1 11       	cpse	r27, r1
+ 972:	0c 94 97 05 	jmp	0xb2e	; 0xb2e <__fp_szero>
+ 976:	08 95       	ret
+
+00000978 <__fixunssfsi>:
+ 978:	0e 94 7c 05 	call	0xaf8	; 0xaf8 <__fp_splitA>
+ 97c:	88 f0       	brcs	.+34     	; 0x9a0 <__fixunssfsi+0x28>
+ 97e:	9f 57       	subi	r25, 0x7F	; 127
+ 980:	98 f0       	brcs	.+38     	; 0x9a8 <__fixunssfsi+0x30>
+__fixunssfsi():
+ 982:	b9 2f       	mov	r27, r25
+ 984:	99 27       	eor	r25, r25
+ 986:	b7 51       	subi	r27, 0x17	; 23
+ 988:	b0 f0       	brcs	.+44     	; 0x9b6 <__fixunssfsi+0x3e>
+ 98a:	e1 f0       	breq	.+56     	; 0x9c4 <__fixunssfsi+0x4c>
+ 98c:	66 0f       	add	r22, r22
+ 98e:	77 1f       	adc	r23, r23
+ 990:	88 1f       	adc	r24, r24
+ 992:	99 1f       	adc	r25, r25
+ 994:	1a f0       	brmi	.+6      	; 0x99c <__fixunssfsi+0x24>
+ 996:	ba 95       	dec	r27
+ 998:	c9 f7       	brne	.-14     	; 0x98c <__fixunssfsi+0x14>
+ 99a:	14 c0       	rjmp	.+40     	; 0x9c4 <__fixunssfsi+0x4c>
+ 99c:	b1 30       	cpi	r27, 0x01	; 1
+ 99e:	91 f0       	breq	.+36     	; 0x9c4 <__fixunssfsi+0x4c>
+ 9a0:	0e 94 96 05 	call	0xb2c	; 0xb2c <__fp_zero>
+ 9a4:	b1 e0       	ldi	r27, 0x01	; 1
+ 9a6:	08 95       	ret
+ 9a8:	0c 94 96 05 	jmp	0xb2c	; 0xb2c <__fp_zero>
+ 9ac:	67 2f       	mov	r22, r23
+ 9ae:	78 2f       	mov	r23, r24
+ 9b0:	88 27       	eor	r24, r24
+ 9b2:	b8 5f       	subi	r27, 0xF8	; 248
+ 9b4:	39 f0       	breq	.+14     	; 0x9c4 <__fixunssfsi+0x4c>
+ 9b6:	b9 3f       	cpi	r27, 0xF9	; 249
+ 9b8:	cc f3       	brlt	.-14     	; 0x9ac <__fixunssfsi+0x34>
+ 9ba:	86 95       	lsr	r24
+ 9bc:	77 95       	ror	r23
+ 9be:	67 95       	ror	r22
+ 9c0:	b3 95       	inc	r27
+ 9c2:	d9 f7       	brne	.-10     	; 0x9ba <__fixunssfsi+0x42>
+ 9c4:	3e f4       	brtc	.+14     	; 0x9d4 <__fixunssfsi+0x5c>
+ 9c6:	90 95       	com	r25
+ 9c8:	80 95       	com	r24
+ 9ca:	70 95       	com	r23
+ 9cc:	61 95       	neg	r22
+ 9ce:	7f 4f       	sbci	r23, 0xFF	; 255
+ 9d0:	8f 4f       	sbci	r24, 0xFF	; 255
+ 9d2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 9d4:	08 95       	ret
+
+000009d6 <__floatunsisf>:
+__floatunsisf():
+ 9d6:	e8 94       	clt
+ 9d8:	09 c0       	rjmp	.+18     	; 0x9ec <__floatsisf+0x12>
+
+000009da <__floatsisf>:
+ 9da:	97 fb       	bst	r25, 7
+ 9dc:	3e f4       	brtc	.+14     	; 0x9ec <__floatsisf+0x12>
+ 9de:	90 95       	com	r25
+ 9e0:	80 95       	com	r24
+ 9e2:	70 95       	com	r23
+ 9e4:	61 95       	neg	r22
+ 9e6:	7f 4f       	sbci	r23, 0xFF	; 255
+ 9e8:	8f 4f       	sbci	r24, 0xFF	; 255
+ 9ea:	9f 4f       	sbci	r25, 0xFF	; 255
+ 9ec:	99 23       	and	r25, r25
+ 9ee:	a9 f0       	breq	.+42     	; 0xa1a <__floatsisf+0x40>
+ 9f0:	f9 2f       	mov	r31, r25
+ 9f2:	96 e9       	ldi	r25, 0x96	; 150
+ 9f4:	bb 27       	eor	r27, r27
+ 9f6:	93 95       	inc	r25
+ 9f8:	f6 95       	lsr	r31
+ 9fa:	87 95       	ror	r24
+ 9fc:	77 95       	ror	r23
+ 9fe:	67 95       	ror	r22
+ a00:	b7 95       	ror	r27
+ a02:	f1 11       	cpse	r31, r1
+ a04:	f8 cf       	rjmp	.-16     	; 0x9f6 <__floatsisf+0x1c>
+ a06:	fa f4       	brpl	.+62     	; 0xa46 <__floatsisf+0x6c>
+ a08:	bb 0f       	add	r27, r27
+ a0a:	11 f4       	brne	.+4      	; 0xa10 <__floatsisf+0x36>
+ a0c:	60 ff       	sbrs	r22, 0
+ a0e:	1b c0       	rjmp	.+54     	; 0xa46 <__floatsisf+0x6c>
+ a10:	6f 5f       	subi	r22, 0xFF	; 255
+ a12:	7f 4f       	sbci	r23, 0xFF	; 255
+ a14:	8f 4f       	sbci	r24, 0xFF	; 255
+ a16:	9f 4f       	sbci	r25, 0xFF	; 255
+ a18:	16 c0       	rjmp	.+44     	; 0xa46 <__floatsisf+0x6c>
+ a1a:	88 23       	and	r24, r24
+ a1c:	11 f0       	breq	.+4      	; 0xa22 <__floatsisf+0x48>
+ a1e:	96 e9       	ldi	r25, 0x96	; 150
+ a20:	11 c0       	rjmp	.+34     	; 0xa44 <__floatsisf+0x6a>
+ a22:	77 23       	and	r23, r23
+ a24:	21 f0       	breq	.+8      	; 0xa2e <__floatsisf+0x54>
+ a26:	9e e8       	ldi	r25, 0x8E	; 142
+ a28:	87 2f       	mov	r24, r23
+ a2a:	76 2f       	mov	r23, r22
+ a2c:	05 c0       	rjmp	.+10     	; 0xa38 <__floatsisf+0x5e>
+ a2e:	66 23       	and	r22, r22
+ a30:	71 f0       	breq	.+28     	; 0xa4e <__floatsisf+0x74>
+ a32:	96 e8       	ldi	r25, 0x86	; 134
+ a34:	86 2f       	mov	r24, r22
+ a36:	70 e0       	ldi	r23, 0x00	; 0
+ a38:	60 e0       	ldi	r22, 0x00	; 0
+ a3a:	2a f0       	brmi	.+10     	; 0xa46 <__floatsisf+0x6c>
+ a3c:	9a 95       	dec	r25
+ a3e:	66 0f       	add	r22, r22
+ a40:	77 1f       	adc	r23, r23
+ a42:	88 1f       	adc	r24, r24
+ a44:	da f7       	brpl	.-10     	; 0xa3c <__floatsisf+0x62>
+ a46:	88 0f       	add	r24, r24
+ a48:	96 95       	lsr	r25
+ a4a:	87 95       	ror	r24
+ a4c:	97 f9       	bld	r25, 7
+ a4e:	08 95       	ret
+
+00000a50 <__fp_cmp>:
+__fp_cmp():
+ a50:	99 0f       	add	r25, r25
+ a52:	00 08       	sbc	r0, r0
+ a54:	55 0f       	add	r21, r21
+ a56:	aa 0b       	sbc	r26, r26
+ a58:	e0 e8       	ldi	r30, 0x80	; 128
+ a5a:	fe ef       	ldi	r31, 0xFE	; 254
+ a5c:	16 16       	cp	r1, r22
+ a5e:	17 06       	cpc	r1, r23
+ a60:	e8 07       	cpc	r30, r24
+ a62:	f9 07       	cpc	r31, r25
+ a64:	c0 f0       	brcs	.+48     	; 0xa96 <__fp_cmp+0x46>
+ a66:	12 16       	cp	r1, r18
+ a68:	13 06       	cpc	r1, r19
+ a6a:	e4 07       	cpc	r30, r20
+ a6c:	f5 07       	cpc	r31, r21
+ a6e:	98 f0       	brcs	.+38     	; 0xa96 <__fp_cmp+0x46>
+ a70:	62 1b       	sub	r22, r18
+ a72:	73 0b       	sbc	r23, r19
+ a74:	84 0b       	sbc	r24, r20
+ a76:	95 0b       	sbc	r25, r21
+ a78:	39 f4       	brne	.+14     	; 0xa88 <__fp_cmp+0x38>
+ a7a:	0a 26       	eor	r0, r26
+ a7c:	61 f0       	breq	.+24     	; 0xa96 <__fp_cmp+0x46>
+ a7e:	23 2b       	or	r18, r19
+ a80:	24 2b       	or	r18, r20
+ a82:	25 2b       	or	r18, r21
+ a84:	21 f4       	brne	.+8      	; 0xa8e <__fp_cmp+0x3e>
+ a86:	08 95       	ret
+ a88:	0a 26       	eor	r0, r26
+ a8a:	09 f4       	brne	.+2      	; 0xa8e <__fp_cmp+0x3e>
+ a8c:	a1 40       	sbci	r26, 0x01	; 1
+ a8e:	a6 95       	lsr	r26
+ a90:	8f ef       	ldi	r24, 0xFF	; 255
+ a92:	81 1d       	adc	r24, r1
+ a94:	81 1d       	adc	r24, r1
+ a96:	08 95       	ret
+
+00000a98 <__fp_inf>:
+__fp_inf():
+ a98:	97 f9       	bld	r25, 7
+ a9a:	9f 67       	ori	r25, 0x7F	; 127
+ a9c:	80 e8       	ldi	r24, 0x80	; 128
+ a9e:	70 e0       	ldi	r23, 0x00	; 0
+ aa0:	60 e0       	ldi	r22, 0x00	; 0
+ aa2:	08 95       	ret
+
+00000aa4 <__fp_nan>:
+__fp_nan():
+ aa4:	9f ef       	ldi	r25, 0xFF	; 255
+ aa6:	80 ec       	ldi	r24, 0xC0	; 192
+ aa8:	08 95       	ret
+
+00000aaa <__fp_pscA>:
+__fp_pscA():
+ aaa:	00 24       	eor	r0, r0
+ aac:	0a 94       	dec	r0
+ aae:	16 16       	cp	r1, r22
+ ab0:	17 06       	cpc	r1, r23
+ ab2:	18 06       	cpc	r1, r24
+ ab4:	09 06       	cpc	r0, r25
+ ab6:	08 95       	ret
+
+00000ab8 <__fp_pscB>:
+__fp_pscB():
+ ab8:	00 24       	eor	r0, r0
+ aba:	0a 94       	dec	r0
+ abc:	12 16       	cp	r1, r18
+ abe:	13 06       	cpc	r1, r19
+ ac0:	14 06       	cpc	r1, r20
+ ac2:	05 06       	cpc	r0, r21
+ ac4:	08 95       	ret
+
+00000ac6 <__fp_round>:
+__fp_round():
+ ac6:	09 2e       	mov	r0, r25
+ ac8:	03 94       	inc	r0
+ aca:	00 0c       	add	r0, r0
+ acc:	11 f4       	brne	.+4      	; 0xad2 <__fp_round+0xc>
+ ace:	88 23       	and	r24, r24
+ ad0:	52 f0       	brmi	.+20     	; 0xae6 <__fp_round+0x20>
+ ad2:	bb 0f       	add	r27, r27
+ ad4:	40 f4       	brcc	.+16     	; 0xae6 <__fp_round+0x20>
+ ad6:	bf 2b       	or	r27, r31
+ ad8:	11 f4       	brne	.+4      	; 0xade <__fp_round+0x18>
+ ada:	60 ff       	sbrs	r22, 0
+ adc:	04 c0       	rjmp	.+8      	; 0xae6 <__fp_round+0x20>
+ ade:	6f 5f       	subi	r22, 0xFF	; 255
+ ae0:	7f 4f       	sbci	r23, 0xFF	; 255
+ ae2:	8f 4f       	sbci	r24, 0xFF	; 255
+ ae4:	9f 4f       	sbci	r25, 0xFF	; 255
+ ae6:	08 95       	ret
+
+00000ae8 <__fp_split3>:
+__fp_split3():
+ ae8:	57 fd       	sbrc	r21, 7
+ aea:	90 58       	subi	r25, 0x80	; 128
+ aec:	44 0f       	add	r20, r20
+ aee:	55 1f       	adc	r21, r21
+ af0:	59 f0       	breq	.+22     	; 0xb08 <__fp_splitA+0x10>
+ af2:	5f 3f       	cpi	r21, 0xFF	; 255
+ af4:	71 f0       	breq	.+28     	; 0xb12 <__fp_splitA+0x1a>
+ af6:	47 95       	ror	r20
+
+00000af8 <__fp_splitA>:
+ af8:	88 0f       	add	r24, r24
+ afa:	97 fb       	bst	r25, 7
+ afc:	99 1f       	adc	r25, r25
+ afe:	61 f0       	breq	.+24     	; 0xb18 <__fp_splitA+0x20>
+ b00:	9f 3f       	cpi	r25, 0xFF	; 255
+ b02:	79 f0       	breq	.+30     	; 0xb22 <__fp_splitA+0x2a>
+ b04:	87 95       	ror	r24
+ b06:	08 95       	ret
+ b08:	12 16       	cp	r1, r18
+ b0a:	13 06       	cpc	r1, r19
+ b0c:	14 06       	cpc	r1, r20
+ b0e:	55 1f       	adc	r21, r21
+ b10:	f2 cf       	rjmp	.-28     	; 0xaf6 <__fp_split3+0xe>
+ b12:	46 95       	lsr	r20
+ b14:	f1 df       	rcall	.-30     	; 0xaf8 <__fp_splitA>
+ b16:	08 c0       	rjmp	.+16     	; 0xb28 <__fp_splitA+0x30>
+ b18:	16 16       	cp	r1, r22
+ b1a:	17 06       	cpc	r1, r23
+ b1c:	18 06       	cpc	r1, r24
+ b1e:	99 1f       	adc	r25, r25
+ b20:	f1 cf       	rjmp	.-30     	; 0xb04 <__fp_splitA+0xc>
+ b22:	86 95       	lsr	r24
+ b24:	71 05       	cpc	r23, r1
+ b26:	61 05       	cpc	r22, r1
+ b28:	08 94       	sec
+ b2a:	08 95       	ret
+
+00000b2c <__fp_zero>:
+__fp_zero():
+ b2c:	e8 94       	clt
+
+00000b2e <__fp_szero>:
+ b2e:	bb 27       	eor	r27, r27
+ b30:	66 27       	eor	r22, r22
+ b32:	77 27       	eor	r23, r23
+ b34:	cb 01       	movw	r24, r22
+ b36:	97 f9       	bld	r25, 7
+ b38:	08 95       	ret
+
+00000b3a <__gesf2>:
+__gesf2():
+ b3a:	0e 94 28 05 	call	0xa50	; 0xa50 <__fp_cmp>
+ b3e:	08 f4       	brcc	.+2      	; 0xb42 <__gesf2+0x8>
+ b40:	8f ef       	ldi	r24, 0xFF	; 255
+ b42:	08 95       	ret
+
+00000b44 <__mulsf3>:
+__mulsf3():
+ b44:	0e 94 b5 05 	call	0xb6a	; 0xb6a <__mulsf3x>
+ b48:	0c 94 63 05 	jmp	0xac6	; 0xac6 <__fp_round>
+ b4c:	0e 94 55 05 	call	0xaaa	; 0xaaa <__fp_pscA>
+ b50:	38 f0       	brcs	.+14     	; 0xb60 <__mulsf3+0x1c>
+ b52:	0e 94 5c 05 	call	0xab8	; 0xab8 <__fp_pscB>
+ b56:	20 f0       	brcs	.+8      	; 0xb60 <__mulsf3+0x1c>
+ b58:	95 23       	and	r25, r21
+ b5a:	11 f0       	breq	.+4      	; 0xb60 <__mulsf3+0x1c>
+ b5c:	0c 94 4c 05 	jmp	0xa98	; 0xa98 <__fp_inf>
+ b60:	0c 94 52 05 	jmp	0xaa4	; 0xaa4 <__fp_nan>
+ b64:	11 24       	eor	r1, r1
+ b66:	0c 94 97 05 	jmp	0xb2e	; 0xb2e <__fp_szero>
+
+00000b6a <__mulsf3x>:
+__mulsf3x():
+ b6a:	0e 94 74 05 	call	0xae8	; 0xae8 <__fp_split3>
+ b6e:	70 f3       	brcs	.-36     	; 0xb4c <__mulsf3+0x8>
+
+00000b70 <__mulsf3_pse>:
+ b70:	95 9f       	mul	r25, r21
+ b72:	c1 f3       	breq	.-16     	; 0xb64 <__mulsf3+0x20>
+ b74:	95 0f       	add	r25, r21
+ b76:	50 e0       	ldi	r21, 0x00	; 0
+ b78:	55 1f       	adc	r21, r21
+ b7a:	62 9f       	mul	r22, r18
+ b7c:	f0 01       	movw	r30, r0
+ b7e:	72 9f       	mul	r23, r18
+ b80:	bb 27       	eor	r27, r27
+ b82:	f0 0d       	add	r31, r0
+ b84:	b1 1d       	adc	r27, r1
+ b86:	63 9f       	mul	r22, r19
+ b88:	aa 27       	eor	r26, r26
+ b8a:	f0 0d       	add	r31, r0
+ b8c:	b1 1d       	adc	r27, r1
+ b8e:	aa 1f       	adc	r26, r26
+ b90:	64 9f       	mul	r22, r20
+ b92:	66 27       	eor	r22, r22
+ b94:	b0 0d       	add	r27, r0
+ b96:	a1 1d       	adc	r26, r1
+ b98:	66 1f       	adc	r22, r22
+ b9a:	82 9f       	mul	r24, r18
+ b9c:	22 27       	eor	r18, r18
+ b9e:	b0 0d       	add	r27, r0
+ ba0:	a1 1d       	adc	r26, r1
+ ba2:	62 1f       	adc	r22, r18
+ ba4:	73 9f       	mul	r23, r19
+ ba6:	b0 0d       	add	r27, r0
+ ba8:	a1 1d       	adc	r26, r1
+ baa:	62 1f       	adc	r22, r18
+ bac:	83 9f       	mul	r24, r19
+ bae:	a0 0d       	add	r26, r0
+ bb0:	61 1d       	adc	r22, r1
+ bb2:	22 1f       	adc	r18, r18
+ bb4:	74 9f       	mul	r23, r20
+ bb6:	33 27       	eor	r19, r19
+ bb8:	a0 0d       	add	r26, r0
+ bba:	61 1d       	adc	r22, r1
+ bbc:	23 1f       	adc	r18, r19
+ bbe:	84 9f       	mul	r24, r20
+ bc0:	60 0d       	add	r22, r0
+ bc2:	21 1d       	adc	r18, r1
+ bc4:	82 2f       	mov	r24, r18
+ bc6:	76 2f       	mov	r23, r22
+ bc8:	6a 2f       	mov	r22, r26
+ bca:	11 24       	eor	r1, r1
+ bcc:	9f 57       	subi	r25, 0x7F	; 127
+ bce:	50 40       	sbci	r21, 0x00	; 0
+ bd0:	9a f0       	brmi	.+38     	; 0xbf8 <__mulsf3_pse+0x88>
+ bd2:	f1 f0       	breq	.+60     	; 0xc10 <__mulsf3_pse+0xa0>
+ bd4:	88 23       	and	r24, r24
+ bd6:	4a f0       	brmi	.+18     	; 0xbea <__mulsf3_pse+0x7a>
+ bd8:	ee 0f       	add	r30, r30
+ bda:	ff 1f       	adc	r31, r31
+ bdc:	bb 1f       	adc	r27, r27
+ bde:	66 1f       	adc	r22, r22
+ be0:	77 1f       	adc	r23, r23
+ be2:	88 1f       	adc	r24, r24
+ be4:	91 50       	subi	r25, 0x01	; 1
+ be6:	50 40       	sbci	r21, 0x00	; 0
+ be8:	a9 f7       	brne	.-22     	; 0xbd4 <__mulsf3_pse+0x64>
+ bea:	9e 3f       	cpi	r25, 0xFE	; 254
+ bec:	51 05       	cpc	r21, r1
+ bee:	80 f0       	brcs	.+32     	; 0xc10 <__mulsf3_pse+0xa0>
+ bf0:	0c 94 4c 05 	jmp	0xa98	; 0xa98 <__fp_inf>
+ bf4:	0c 94 97 05 	jmp	0xb2e	; 0xb2e <__fp_szero>
+ bf8:	5f 3f       	cpi	r21, 0xFF	; 255
+ bfa:	e4 f3       	brlt	.-8      	; 0xbf4 <__mulsf3_pse+0x84>
+ bfc:	98 3e       	cpi	r25, 0xE8	; 232
+ bfe:	d4 f3       	brlt	.-12     	; 0xbf4 <__mulsf3_pse+0x84>
+ c00:	86 95       	lsr	r24
+ c02:	77 95       	ror	r23
+ c04:	67 95       	ror	r22
+ c06:	b7 95       	ror	r27
+ c08:	f7 95       	ror	r31
+ c0a:	e7 95       	ror	r30
+ c0c:	9f 5f       	subi	r25, 0xFF	; 255
+ c0e:	c1 f7       	brne	.-16     	; 0xc00 <__mulsf3_pse+0x90>
+ c10:	fe 2b       	or	r31, r30
+ c12:	88 0f       	add	r24, r24
+ c14:	91 1d       	adc	r25, r1
+ c16:	96 95       	lsr	r25
+ c18:	87 95       	ror	r24
+ c1a:	97 f9       	bld	r25, 7
+ c1c:	08 95       	ret
+
+00000c1e <__udivmodsi4>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1638
+ c1e:	a1 e2       	ldi	r26, 0x21	; 33
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1639
+ c20:	1a 2e       	mov	r1, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1640
+ c22:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1641
+ c24:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1642
+ c26:	fd 01       	movw	r30, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1644
+ c28:	0d c0       	rjmp	.+26     	; 0xc44 <__udivmodsi4_ep>
+
+00000c2a <__udivmodsi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1646
+ c2a:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1647
+ c2c:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1648
+ c2e:	ee 1f       	adc	r30, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1649
+ c30:	ff 1f       	adc	r31, r31
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1650
+ c32:	a2 17       	cp	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1651
+ c34:	b3 07       	cpc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1652
+ c36:	e4 07       	cpc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1653
+ c38:	f5 07       	cpc	r31, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1654
+ c3a:	20 f0       	brcs	.+8      	; 0xc44 <__udivmodsi4_ep>
+__udivmodsi4_loop():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1655
+ c3c:	a2 1b       	sub	r26, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1656
+ c3e:	b3 0b       	sbc	r27, r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1657
+ c40:	e4 0b       	sbc	r30, r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1658
+ c42:	f5 0b       	sbc	r31, r21
+
+00000c44 <__udivmodsi4_ep>:
+__udivmodsi4_ep():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1660
+ c44:	66 1f       	adc	r22, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1661
+ c46:	77 1f       	adc	r23, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1662
+ c48:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1663
+ c4a:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1664
+ c4c:	1a 94       	dec	r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1665
+ c4e:	69 f7       	brne	.-38     	; 0xc2a <__udivmodsi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1667
+ c50:	60 95       	com	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1668
+ c52:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1669
+ c54:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1670
+ c56:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1672
+ c58:	9b 01       	movw	r18, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1674
+ c5a:	ac 01       	movw	r20, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1676
+ c5c:	bd 01       	movw	r22, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1678
+ c5e:	cf 01       	movw	r24, r30
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1680
+ c60:	08 95       	ret
+
+00000c62 <__divmodsi4>:
+__divmodsi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1686
+ c62:	05 2e       	mov	r0, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1687
+ c64:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1688
+ c66:	1e f4       	brtc	.+6      	; 0xc6e <__divmodsi4+0xc>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1689
+ c68:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1690
+ c6a:	0e 94 48 06 	call	0xc90	; 0xc90 <__negsi2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1692
+ c6e:	57 fd       	sbrc	r21, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1693
+ c70:	07 d0       	rcall	.+14     	; 0xc80 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1694
+ c72:	0e 94 0f 06 	call	0xc1e	; 0xc1e <__udivmodsi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1695
+ c76:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1696
+ c78:	03 d0       	rcall	.+6      	; 0xc80 <__divmodsi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1697
+ c7a:	4e f4       	brtc	.+18     	; 0xc8e <__divmodsi4_exit>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1698
+ c7c:	0c 94 48 06 	jmp	0xc90	; 0xc90 <__negsi2>
+
+00000c80 <__divmodsi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1701
+ c80:	50 95       	com	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1702
+ c82:	40 95       	com	r20
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1703
+ c84:	30 95       	com	r19
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1704
+ c86:	21 95       	neg	r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1705
+ c88:	3f 4f       	sbci	r19, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1706
+ c8a:	4f 4f       	sbci	r20, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1707
+ c8c:	5f 4f       	sbci	r21, 0xFF	; 255
+
+00000c8e <__divmodsi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1709
+ c8e:	08 95       	ret
+
+00000c90 <__negsi2>:
+__negsi2():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1718
+ c90:	90 95       	com	r25
+ c92:	80 95       	com	r24
+ c94:	70 95       	com	r23
+ c96:	61 95       	neg	r22
+ c98:	7f 4f       	sbci	r23, 0xFF	; 255
+ c9a:	8f 4f       	sbci	r24, 0xFF	; 255
+ c9c:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:1719
+ c9e:	08 95       	ret
+
+00000ca0 <_exit>:
+exit():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2278
+ ca0:	f8 94       	cli
+
+00000ca2 <__stop_program>:
+__stop_program():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr5/libgcc/../../../../gcc/libgcc/config/avr/lib1funcs.S:2280
+ ca2:	ff cf       	rjmp	.-2      	; 0xca2 <__stop_program>
