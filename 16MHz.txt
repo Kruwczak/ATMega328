@@ -1,0 +1,7 @@
+avrdude -p atmega328p -c linuxgpio \
+  -U lfuse:w:0xFF:m \
+  -U hfuse:w:0xDE:m \
+  -U efuse:w:0x05:m
+
+avrdude -p atmega328p -c linuxgpio \
+  -U flash:w:firmware.hex:i
